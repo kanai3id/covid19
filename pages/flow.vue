@@ -19,7 +19,7 @@
             {{ $t('かかりつけ医に相談することもできます。') }}<br />
             {{ $t('詳しくはこちらをご参照ください。') }}
           </span>
-          {{ $t('詳細を見る（東京都福祉保健局）') }}
+          {{ $t('詳細を見る（長野県福祉保健局）') }}
           <v-icon class="Flow-Card-Button-ExternalLinkIcon" size="20">
             mdi-open-in-new
           </v-icon>

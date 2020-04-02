@@ -14,7 +14,7 @@
       :url="'https://ds.yahoo.co.jp/datapolicy/'"
       :source-link-header="$t('※本データは2020年3月31日までの掲載となります')"
       :detail-page-url="'/largemap'"
-      :detail-page-string="$t('東京23区の人口推移（参考値）')"
+      :detail-page-string="$t('長野23区の人口推移（参考値）')"
       :link-string="$t('ヤフー・データソリューション')"
     />
   </v-col>

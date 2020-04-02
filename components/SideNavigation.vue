@@ -13,7 +13,7 @@
           <img
             class="SideNavigation-HeaderLogo"
             src="/logo.svg"
-            :alt="$t('東京都')"
+            :alt="$t('長野県')"
           />
           <div class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
@@ -143,7 +143,7 @@ export default Vue.extend({
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('都内の最新感染動向'),
+          title: this.$t('県内の最新感染動向'),
           link: this.localePath('/')
         },
         {
@@ -169,12 +169,12 @@ export default Vue.extend({
           divider: true
         },
         {
-          title: this.$t('東京都新型コロナウイルス感染症対策本部報'),
+          title: this.$t('長野県新型コロナウイルス感染症対策本部報'),
           link:
             'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
         },
         {
-          title: this.$t('東京都主催等 中止又は延期するイベント等'),
+          title: this.$t('長野県主催等 中止又は延期するイベント等'),
           link:
             'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
         },
@@ -192,7 +192,7 @@ export default Vue.extend({
           link: this.localePath('/contacts')
         },
         {
-          title: this.$t('東京都公式ホームページ'),
+          title: this.$t('長野県公式ホームページ'),
           link: 'https://www.metro.tokyo.lg.jp/'
         }
       ]
