@@ -7,7 +7,9 @@
       :chart-option="{}"
       :date="Data.patients.date"
       :info="sumInfoOfPatients"
-      :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'"
+      :url="
+        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien-doko.html'
+      "
       :source="$t('オープンデータを入手')"
     />
   </v-col>
@@ -40,11 +42,14 @@ export default {
     }
 
     // 陽性患者の属性 ヘッダー翻訳
+    /*
     for (const header of patientsTable.headers) {
       header.text =
         header.value === '退院' ? this.$t('退院※') : this.$t(header.value)
     }
+    */
     // 陽性患者の属性 中身の翻訳
+    /*
     for (const row of patientsTable.datasets) {
       row['居住地'] = this.$t(row['居住地'])
       row['性別'] = this.$t(row['性別'])
@@ -59,6 +64,7 @@ export default {
         row['年代'] = this.$t('{age}代', { age })
       }
     }
+    */
 
     const data = {
       Data,

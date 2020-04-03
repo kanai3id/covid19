@@ -112,7 +112,7 @@ export default Vue.extend({
           hid: 'description',
           name: 'description',
           content: this.$tc(
-            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県が開設したものです。'
+            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、個人が開設したものです。'
           )
         },
         {
@@ -123,7 +123,7 @@ export default Vue.extend({
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             ' ' +
-            this.$t('対策サイト')
+            this.$t('対策サイト(個人)')
         },
         {
           hid: 'og:url',
@@ -139,13 +139,13 @@ export default Vue.extend({
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             ' ' +
-            this.$t('対策サイト')
+            this.$t('対策サイト(個人)')
         },
         {
           hid: 'og:description',
           property: 'og:description',
           content: this.$tc(
-            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県が開設したものです。'
+            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、個人が開設したものです。'
           )
         },
         {
@@ -161,7 +161,7 @@ export default Vue.extend({
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             ' ' +
-            this.$t('対策サイト')
+            this.$t('対策サイト(個人)')
         },
         {
           hid: 'twitter:image',

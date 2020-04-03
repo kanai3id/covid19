@@ -40,7 +40,7 @@
           {{ $t('各保健所の電話番号について') }}
           <br />
           <a
-            href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+            href="https://www.pref.nagano.lg.jp/hoken-shippei/happyou/20200206sodan.html"
             target="_blank"
             rel="noopener noreferrer"
             >{{ $t('「新型コロナウイルス感染症にかかる相談窓口について」') }}</a

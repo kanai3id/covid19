@@ -9,6 +9,7 @@
       :unit="$t('人')"
     >
       <template v-slot:description>
+        <!--
         <ul>
           <li>
             {{ $t('（注）医療機関が保険適用で行った検査は含まれていない') }}
@@ -26,6 +27,7 @@
             }}
           </li>
         </ul>
+        -->
       </template>
     </time-bar-chart>
   </v-col>

@@ -39,10 +39,12 @@
             v-if="this.$i18n.locales.length > 1"
             class="SideNavigation-Language"
           >
+            <!--
             <label class="SideNavigation-LanguageLabel" for="LanguageSelector">
               {{ $t('多言語対応選択メニュー') }}
             </label>
             <LanguageSelector />
+            -->
           </div>
         </div>
         <MenuList :items="items" @click="$emit('closeNavi', $event)" />
@@ -50,6 +52,7 @@
 
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
+          <!--
           <a
             href="https://line.me/R/ti/p/%40822sysfc"
             target="_blank"
@@ -83,8 +86,9 @@
               <img src="/facebook.png" alt="Facebook" />
             </picture>
           </a>
+          -->
           <a
-            href="https://github.com/tokyo-metropolitan-gov/covid19"
+            href="https://github.com/kanai3id/covid19"
             target="_blank"
             rel="noopener noreferrer"
             class="SideNavigation-SocialLink"
@@ -117,7 +121,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
-import LanguageSelector from '@/components/LanguageSelector.vue'
+// import LanguageSelector from '@/components/LanguageSelector.vue'
 import MenuList from '@/components/MenuList.vue'
 
 type Item = {
@@ -129,7 +133,7 @@ type Item = {
 
 export default Vue.extend({
   components: {
-    LanguageSelector,
+    // LanguageSelector,
     MenuList
   },
   props: {
@@ -149,7 +153,8 @@ export default Vue.extend({
         {
           icon: 'CovidIcon',
           title: this.$t('新型コロナウイルス感染症が心配なときに'),
-          link: this.localePath('/flow'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona.html',
           divider: true
         },
         {
@@ -157,6 +162,7 @@ export default Vue.extend({
           title: this.$t('お子様をお持ちの皆様へ'),
           link: this.localePath('/parent')
         },
+        /*   
         {
           icon: 'mdi-account-multiple',
           title: this.$t('都民の皆様へ'),
@@ -177,23 +183,30 @@ export default Vue.extend({
           title: this.$t('長野県主催等 中止又は延期するイベント等'),
           link:
             'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
+*/
+        {
+          icon: 'mdi-account-multiple',
+          title: this.$t('県民の皆様へ'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/kenminnnominasamahe.pdf'
         },
         {
           title: this.$t('知事からのメッセージ'),
           link:
-            'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html'
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/onegai0329.pdf'
         },
         {
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')
         },
         {
-          title: this.$t('お問い合わせ先一覧'),
-          link: this.localePath('/contacts')
+          title: this.$t('長野県/県内相談窓口'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/happyou/20200206sodan.html'
         },
         {
           title: this.$t('長野県公式ホームページ'),
-          link: 'https://www.metro.tokyo.lg.jp/'
+          link: 'https://www.pref.nagano.lg.jp/'
         }
       ]
     }

@@ -7,7 +7,9 @@
       :chart-data="querentsGraph"
       :date="Data.querents.date"
       :unit="$t('件.reports')"
-      :url="'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000070'"
+      :url="
+        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien-doko.html'
+      "
     />
     <!-- 件.reports = 窓口相談件数 -->
   </v-col>
