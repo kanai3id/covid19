@@ -1,14 +1,19 @@
 {
-    "newsItems": [
-        {
-            "date": "2020\/04\/01",
-            "url": "https:\/\/www.metro.tokyo.lg.jp\/tosei\/governor\/governor\/kishakaiken\/2020\/03\/30.html",
-            "text": "知事記者会見（令和2年３月３０日）"
-        },
-        {
-            "date": "2020\/04\/01",
-            "url": "https:\/\/www.bousai.metro.tokyo.lg.jp\/taisaku\/saigai\/1007261\/1007566.html",
-            "text": "(141報)新型コロナウイルスに関連した患者の発生について"
-        }
-    ]
+  "newsItems": [
+    {
+      "date": "2020-04-03",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-naganoken-taiou.html#kaigihotei",
+      "text": "第3回新型コロナウイルス感染症長野県対策本部会議"
+    },
+    {
+      "date": "2020-04-01",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html#haikibutu",
+      "text": "新型コロナウイルスに係る廃棄物の処理について"
+    },
+    {
+      "date": "2020-03-31",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-naganoken-taiou.html#kihontekitaisyohoshin",
+      "text": "「新型コロナウイルス感染症対策・長野県の基本的対処方針（令和2年3月31日）」"
+    }
+  ]
 }
