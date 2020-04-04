@@ -6,15 +6,39 @@
     <StaticCard>
       {{
         $t(
-          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、個人が開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県内の個人が開設したものです。'
         )
       }}<br />
-      <br />
-      {{
-        $t(
-          '長野県による公式情報と客観的な数値をわかりやすく伝えることで、長野県にお住まいの方や、長野県内に拠点を持つ企業の方、長野県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
-        )
-      }}
+      <i18n
+        tag="p"
+        path="複製・改変が許されたオープンソースライセンスで公開されている、{covid19-web}の{covid19-github}を利用しています。"
+      >
+        <template v-slot:covid19-web>
+          <a
+            href="https://stopcovid19.metro.tokyo.lg.jp/"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ $t('東京都公式新型コロナウイルス対策サイト') }}
+          </a>
+        </template>
+        <template v-slot:covid19-github>
+          <a
+            href="https://github.com/tokyo-metropolitan-gov/covid19"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ $t('仕組み') }}
+          </a>
+        </template>
+      </i18n>
+      <p>
+        {{
+          $t(
+            '長野県による公式情報と客観的な数値をわかりやすく伝えることで、長野県にお住まいの方や、長野県内に拠点を持つ企業の方、長野県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。'
+          )
+        }}
+      </p>
     </StaticCard>
     <StaticCard>
       <h3>{{ $t('ブラウザ環境について') }}</h3>
@@ -178,7 +202,7 @@
       >
         <template v-slot:catalogWebsite>
           <a
-            href="https://portal.data.metro.tokyo.lg.jp/"
+            href="https://www.pref.nagano.lg.jp/joho/kensei/tokei/johoka/opendata/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -198,7 +222,7 @@
         <i18n path="詳しくは、{githubRepo}をご確認ください。">
           <template v-slot:githubRepo>
             <a
-              href="https://github.com/tokyo-metropolitan-gov/covid19"
+              href="https://github.com/kanai3id/covid19"
               target="_blank"
               rel="noopener noreferrer"
             >
