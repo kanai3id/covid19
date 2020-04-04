@@ -117,7 +117,7 @@ const config: Configuration = {
     }
   },
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID // .env.production などに設定してください。
+    id: 'UA-162797773-1'
   },
   build: {
     plugins: [
