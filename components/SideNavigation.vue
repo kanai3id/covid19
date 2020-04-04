@@ -17,7 +17,7 @@
           />
           <div class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
-              $t('menu/対策サイト')
+              $t('menu/対策サイト(非公式)')
             }}
           </div>
         </nuxt-link>
@@ -34,19 +34,19 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
+        <!--
         <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
             class="SideNavigation-Language"
           >
-            <!--
             <label class="SideNavigation-LanguageLabel" for="LanguageSelector">
               {{ $t('多言語対応選択メニュー') }}
             </label>
             <LanguageSelector />
-            -->
           </div>
         </div>
+        -->
         <MenuList :items="items" @click="$emit('closeNavi', $event)" />
       </nav>
 
@@ -111,7 +111,7 @@
           </a>
           {{ $t('の下に提供されています。') }}
           <br />
-          2020 Tokyo Metropolitan Government
+          長野県非公式 COVID-19 対策サイト
         </small>
       </footer>
     </div>
@@ -184,6 +184,12 @@ export default Vue.extend({
           link:
             'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
 */
+        {
+          icon: 'mdi-domain',
+          title: this.$t('企業の皆様・はたらく皆様へ'),
+          link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
+          divider: true
+        },
         {
           icon: 'mdi-account-multiple',
           title: this.$t('県民の皆様へ'),
