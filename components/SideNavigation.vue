@@ -185,16 +185,16 @@ export default Vue.extend({
             'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
 */
         {
-          icon: 'mdi-domain',
-          title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
-          divider: true
-        },
-        {
           icon: 'mdi-account-multiple',
           title: this.$t('県民の皆様へ'),
           link:
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/kenminnnominasamahe.pdf'
+        },
+        {
+          icon: 'mdi-domain',
+          title: this.$t('企業の皆様・はたらく皆様へ'),
+          link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
+          divider: true
         },
         {
           title: this.$t('知事からのメッセージ'),
