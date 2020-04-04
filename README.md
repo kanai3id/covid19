@@ -2,6 +2,8 @@
 
 ![](https://github.com/tokyo-metropolitan-gov/covid19/workflows/production%20deploy/badge.svg)
 
+[![長野県(非公式) 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/1597074/78426566-b027b200-76ae-11ea-9e3d-a9fc8b42295c.png)](https://covid19-nagano.info/)
+
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
 
