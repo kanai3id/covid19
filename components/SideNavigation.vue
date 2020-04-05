@@ -190,10 +190,6 @@ export default Vue.extend({
           link:
             'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
         },
-        {
-          title: this.$t('長野県主催等 中止又は延期するイベント等'),
-          link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
 */
         {
           icon: 'mdi-account-multiple',
@@ -211,6 +207,11 @@ export default Vue.extend({
           title: this.$t('企業の皆様・はたらく皆様へ'),
           link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
           divider: true
+        },
+        {
+          title: this.$t('中止又は延期するイベント等'),
+          link:
+            'https://twitter.com/search?q=filter%3Averified%20%E9%95%B7%E9%87%8E%20(%E5%BB%B6%E6%9C%9F%20OR%20%E9%A0%86%E5%BB%B6%20OR%20%E7%84%A1%E8%A6%B3%E5%AE%A2%20OR%20%E6%8C%AF%E6%9B%BF)&src=typed_query&f=live'
         },
         {
           title: this.$t('知事からのメッセージ'),
