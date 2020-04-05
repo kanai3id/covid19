@@ -4,15 +4,6 @@
 
 [![長野県(非公式) 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/1597074/78426566-b027b200-76ae-11ea-9e3d-a9fc8b42295c.png)](https://covid19-nagano.info/)
 
-## 貢献の仕方
-Issues にあるいろいろな修正にご協力いただけると嬉しいです。
-
-詳しくは[貢献の仕方](./CONTRIBUTING.md)を御覧ください。
-
-
-## 行動原則
-詳しくは[サイト構築にあたっての行動原則](./CODE_OF_CONDUCT.md)を御覧ください。
-
 ## ライセンス
 本ソフトウェアは、[MITライセンス](./LICENSE.txt)の元提供されています。
 
@@ -30,17 +21,6 @@ $ yarn install
 # serve with hot reload at localhost:3000
 $ yarn dev
 ```
-
-
-**アクセシビリティチェック（vue-axe）を無効にする方法**
-
-- 開発用ローカルサーバが重い場合、以下のようにアクセシビリティチェックを無効にして起動することができます。
-
-```bash
-# serve with hot reload at localhost:3000
-$ yarn dev-no-axe
-```
-
 
 **docker compose を使う場合**
 ```bash
@@ -82,11 +62,3 @@ $ docker-compose run --rm app yarn install
 
 `process.env.GENERATE_ENV` の値が、本番の場合は`'production'`に、それ以外の場合は `'development'` になっています。  
 テスト環境のみで実行したい処理がある場合はこちらの値をご利用ください。
-
-### ステージング・本番環境への反映
-
-### ブランチルール
-
-#### 基本的なブランチ
-
-#### システムで利用しているブランチ
