@@ -88,6 +88,17 @@
           </a>
           -->
           <a
+            href="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-line.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="SideNavigation-SocialLink"
+          >
+            <picture>
+              <source srcset="/line.webp" type="image/webp" />
+              <img src="/line.png" alt="LINE" />
+            </picture>
+          </a>
+          <a
             href="https://github.com/kanai3id/covid19"
             target="_blank"
             rel="noopener noreferrer"
