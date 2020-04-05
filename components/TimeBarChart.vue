@@ -1,7 +1,8 @@
 <template>
   <data-view :title="title" :title-id="titleId" :date="date">
     <template v-slot:description>
-      <slot name="description" />
+      <!--<slot name="description" />-->
+      {{ desc }}
     </template>
     <template v-slot:button>
       <data-selector
@@ -10,6 +11,21 @@
         :style="{ display: canvas ? 'inline-block' : 'none' }"
       />
     </template>
+    <template v-if="showButton === true" v-slot:button>
+      <data-selector
+        v-model="dataKind"
+        :target-id="chartId"
+        :style="{ display: canvas ? 'inline-block' : 'none' }"
+      />
+    </template>
+    <horizontal-bar
+      v-if="horizontal === true"
+      :style="{ display: canvas ? 'block' : 'none' }"
+      :chart-id="chartId"
+      :chart-data="displayData"
+      :options="displayOption"
+      :height="240"
+    />
     <h4 :id="`${titleId}-graph`" class="visually-hidden">
       {{ $t(`{title}のグラフ`, { title }) }}
     </h4>
@@ -115,6 +131,10 @@ type Props = {
   date: string
   unit: string
   url: string
+  desc: string
+  showButton: boolean
+  horizontal: boolean
+  overlap: number
 }
 
 const options: ThisTypedComponentOptionsWithRecordProps<
@@ -160,6 +180,26 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     url: {
       type: String,
       default: ''
+    },
+    desc: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    showButton: {
+      type: Boolean,
+      required: false,
+      default: true
+    },
+    horizontal: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    overlap: {
+      type: Number,
+      required: false,
+      default: 0
     }
   },
   data: () => ({
@@ -180,12 +220,19 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     displayInfo() {
       if (this.dataKind === 'transition') {
         return {
-          lText: `${this.chartData.slice(-1)[0].transition.toLocaleString()}`,
-          sText: `${this.chartData.slice(-1)[0].label} ${this.$t(
-            '実績値'
-          )}（${this.$t('前日比')}: ${this.displayTransitionRatio} ${
-            this.unit
-          }）`,
+          lText: this.showButton
+            ? `${this.chartData.slice(-1)[0].transition.toLocaleString()}`
+            : this.chartData[
+                this.chartData.length - 1
+              ].cumulative.toLocaleString(),
+          sText: this.showButton
+            ? `${this.$t('実績値')}（${this.$t('前日比')}: ${
+                this.displayTransitionRatio
+              } ${this.unit}）`
+            : this.overlap
+            ? `重複者: ${this.chartData[this.chartData.length - 1].cumulative -
+                this.overlap}${this.unit}`
+            : ``,
           unit: this.unit
         }
       }
@@ -270,7 +317,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 fontColor: '#808080',
                 maxRotation: 0,
                 callback: (label: string) => {
-                  return label.split('/')[1]
+                  return this.showButton ? label.split('/')[1] : label
                 }
               }
               // #2384: If you set "type" to "time", make sure that the bars at both ends are not hidden.

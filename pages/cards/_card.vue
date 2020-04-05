@@ -36,6 +36,9 @@
       "
     />
     <agency-card v-else-if="this.$route.params.card == 'agency'" />
+    <patients-by-age-card
+      v-else-if="this.$route.params.card == 'patients-by-age'"
+    />
   </div>
 </template>
 
@@ -108,6 +111,10 @@ export default {
         break
       case 'agency':
         title = this.$t('都庁来庁者数の推移')
+        updatedAt = agencyData.date
+        break
+      case 'patients-by-age':
+        title = this.$t('年代別陽性患者数')
         updatedAt = agencyData.date
         break
     }
