@@ -157,12 +157,12 @@ export default Vue.extend({
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona.html',
           divider: true
         },
+        /*   
         {
           icon: 'ParentIcon',
           title: this.$t('お子様をお持ちの皆様へ'),
           link: this.localePath('/parent')
         },
-        /*   
         {
           icon: 'mdi-account-multiple',
           title: this.$t('都民の皆様へ'),
@@ -189,6 +189,11 @@ export default Vue.extend({
           title: this.$t('県民の皆様へ'),
           link:
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/kenminnnominasamahe.pdf'
+        },
+        {
+          icon: 'ParentIcon',
+          title: this.$t('教育委員会の発表'),
+          link: 'https://www.pref.nagano.lg.jp/kyoiku/kyoiku/corona.html'
         },
         {
           icon: 'mdi-domain',
