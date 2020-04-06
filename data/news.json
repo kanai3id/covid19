@@ -2,6 +2,11 @@
   "newsItems": [
     {
       "date": "2020-04-06",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0406press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について"
+    },
+    {
+      "date": "2020-04-06",
       "url": "https://www.pref.nagano.lg.jp/gikai/gikai/happyou/020406.html",
       "text": "長野県議会新型コロナウイルス感染症対策連絡本部会議を開催します（議会事務局総務課）"
     },
@@ -19,11 +24,6 @@
       "date": "2020-04-03",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-naganoken-taiou.html#kaigihotei",
       "text": "第3回新型コロナウイルス感染症長野県対策本部会議"
-    },
-    {
-      "date": "2020-04-03",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0403press2.html",
-      "text": "新型コロナウイルス感染症患者の発生について"
     }
   ]
 }
