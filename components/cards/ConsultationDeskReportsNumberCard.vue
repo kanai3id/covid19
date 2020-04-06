@@ -8,7 +8,7 @@
       :date="Data.querents.date"
       :unit="$t('件.reports')"
       :url="
-        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien-doko.html'
+        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
     />
     <!-- 件.reports = 窓口相談件数 -->

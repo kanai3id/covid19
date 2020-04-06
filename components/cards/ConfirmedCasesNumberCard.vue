@@ -8,7 +8,7 @@
       :date="Data.patients.date"
       :unit="$t('人')"
       :url="
-        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/bukan-haien-doko.html'
+        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
     />
   </v-col>
