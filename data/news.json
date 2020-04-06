@@ -1,19 +1,29 @@
 {
   "newsItems": [
     {
-      "date": "2020-03-30",
+      "date": "2020-04-05",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0405press.html",
+      "text": "新型コロナウイルス感染症患者の発生について"
+    },
+    {
+      "date": "2020-04-04",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0404press.html",
+      "text": "新型コロナウイルス感染症患者の発生について"
+    },
+    {
+      "date": "2020-04-03",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-naganoken-taiou.html#kaigihotei",
       "text": "第3回新型コロナウイルス感染症長野県対策本部会議"
     },
     {
-      "date": "2020-04-06",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html#haikibutu",
-      "text": "新型コロナウイルスに係る廃棄物の処理について"
+      "date": "2020-04-03",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0403press2.html",
+      "text": "新型コロナウイルス感染症患者の発生について"
     },
     {
-      "date": "2020-04-06",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-naganoken-taiou.html#kihontekitaisyohoshin",
-      "text": "新型コロナウイルス感染症対策・長野県の基本的対処方針（令和2年3月31日）"
+      "date": "2020-04-02",
+      "url": "https://www.pref.nagano.lg.jp/iryo/happyou/press20200402.html",
+      "text": "第1回長野県新型コロナウイルス感染症患者受入調整本部会議を開催します(健康福祉部医療政策課)"
     }
   ]
 }
