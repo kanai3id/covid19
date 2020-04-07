@@ -18,7 +18,7 @@
           <div class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
               $t('menu/対策サイト')
-            }}(非公式)
+            }}{{ $t('(非公式)') }}
           </div>
         </nuxt-link>
       </h1>
@@ -34,7 +34,6 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-        <!--
         <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
@@ -46,7 +45,6 @@
             <LanguageSelector />
           </div>
         </div>
-        -->
         <MenuList :items="items" @click="$emit('closeNavi', $event)" />
       </nav>
 
@@ -132,7 +130,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
-// import LanguageSelector from '@/components/LanguageSelector.vue'
+import LanguageSelector from '@/components/LanguageSelector.vue'
 import MenuList from '@/components/MenuList.vue'
 
 type Item = {
@@ -144,7 +142,7 @@ type Item = {
 
 export default Vue.extend({
   components: {
-    // LanguageSelector,
+    LanguageSelector,
     MenuList
   },
   props: {
@@ -223,7 +221,7 @@ export default Vue.extend({
           link: this.localePath('/about')
         },
         {
-          title: this.$t('長野県/県内相談窓口'),
+          title: this.$t('県内相談窓口'),
           link:
             'https://www.pref.nagano.lg.jp/hoken-shippei/happyou/20200206sodan.html'
         },
