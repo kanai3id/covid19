@@ -124,7 +124,7 @@ export default Vue.extend({
             convertDateToSimpleFormat(Data.lastUpdate) +
             ' 更新：　' +
             this.$tc(
-              '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、個人が開設したものです。'
+              '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、個人が長野県非公式で開設したものです。'
             )
         },
         {
@@ -135,7 +135,7 @@ export default Vue.extend({
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             ' ' +
-            this.$t('対策サイト(個人)')
+            this.$t('対策サイト(非公式)')
         },
         {
           hid: 'og:url',
