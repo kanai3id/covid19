@@ -2,6 +2,11 @@
   "newsItems": [
     {
       "date": "04/07",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/press20200407.html",
+      "text": "新型コロナウイルス感染症感染者（14例目）の続報について"
+    },
+    {
+      "date": "04/07",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200407kondankaipress.html",
       "text": "第7回新型コロナウイルス感染症対策専門家懇談会の開催について（新型コロナウイルス感染症対策室）"
     },
@@ -13,6 +18,11 @@
     {
       "date": "04/06",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/press20200406.html",
+      "text": "新型コロナウイルス感染症感染者の発生について"
+    },
+    {
+      "date": "04/06",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0406press.html",
       "text": "新型コロナウイルス感染症感染者の発生について"
     }
   ]
