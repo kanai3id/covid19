@@ -2,8 +2,18 @@
   "newsItems": [
     {
       "date": "04/07",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200407ASI000002000.php",
+      "text": "７都府県と往来控えて 知事がお願い(信濃毎日新聞)"
+    },
+    {
+      "date": "04/07",
       "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406FTI090028000.php",
       "text": "新型コロナ 緊急事態に身構え(信濃毎日新聞)"
+    },
+    {
+      "date": "04/07",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406FTI090021000.php",
+      "text": "休校延長求め署名活動 安曇野の女性 ネットで賛同１３００人超(信濃毎日新聞)"
     },
     {
       "date": "04/07",
