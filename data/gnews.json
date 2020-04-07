@@ -2,8 +2,18 @@
   "newsItems": [
     {
       "date": "04/07",
+      "url": "https://www.nikkei.com/article/DGXMZO57786940X00C20A4L21000/",
+      "text": "長野県松本市、小中学校を再休校 転入者は自宅待機を(日本経済新聞)"
+    },
+    {
+      "date": "04/07",
       "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200407ASI000002000.php",
       "text": "７都府県と往来控えて 知事がお願い(信濃毎日新聞)"
+    },
+    {
+      "date": "04/07",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406ETI090007000.php",
+      "text": "社説 コロナ疎開 排除や対立招かぬように(信濃毎日新聞)"
     },
     {
       "date": "04/07",
@@ -14,16 +24,6 @@
       "date": "04/07",
       "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406FTI090021000.php",
       "text": "休校延長求め署名活動 安曇野の女性 ネットで賛同１３００人超(信濃毎日新聞)"
-    },
-    {
-      "date": "04/07",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406FTI090017000.php",
-      "text": "岡谷の小中学校 きょうから休校(信濃毎日新聞)"
-    },
-    {
-      "date": "04/07",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406ETI090007000.php",
-      "text": "社説 コロナ疎開 排除や対立招かぬように(信濃毎日新聞)"
     }
   ]
 }
