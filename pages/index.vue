@@ -15,7 +15,16 @@
         <span>{{ $t('注釈') }} </span>
       </div>
     </div>
+    <span>
+      <v-icon size="18" class="UpdatedAt">mdi-information</v-icon>
+      {{ $t('長野県からのお知らせ') }}
+    </span>
     <whats-new class="mb-4" :items="newsItems" />
+    <span>
+      <v-icon size="18" class="UpdatedAt">mdi-information</v-icon>
+      {{ $t('県内のニュース') }}
+    </span>
+    <whats-new class="mb-4" :items="gnewsItems" />
     <static-info
       class="mb-4"
       :url="
@@ -49,6 +58,7 @@ import WhatsNew from '@/components/WhatsNew.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
+import GNews from '@/data/gnews.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
@@ -86,7 +96,8 @@ export default Vue.extend({
         icon: 'mdi-chart-timeline-variant',
         title: this.$t('県内の最新感染動向')
       },
-      newsItems: News.newsItems
+      newsItems: News.newsItems,
+      gnewsItems: GNews.newsItems
     }
     return data
   },
