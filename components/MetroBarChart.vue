@@ -29,6 +29,12 @@
       class="cardTable"
       item-key="name"
     />
+    <template v-slot:footer>
+      <external-link
+        :url="'https://smooth-biz.metro.tokyo.lg.jp/archive/date.pdf'"
+        :label="$t('鉄道利用者数の推移（新宿、東京、渋谷、各駅エリア）')"
+      />
+    </template>
   </data-view>
 </template>
 
@@ -49,7 +55,8 @@ import { TranslateResult } from 'vue-i18n'
 import { ChartOptions, ChartData } from 'chart.js'
 import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
 import DataView from '@/components/DataView.vue'
-import { triple as colors } from '@/utils/colors'
+import { getGraphSeriesStyle } from '@/utils/colors'
+import ExternalLink from '@/components/ExternalLink.vue'
 
 interface HTMLElementEvent<T extends HTMLElement> extends Event {
   currentTarget: T
@@ -66,6 +73,7 @@ type Computed = {
       label: string
       data: number[]
       backgroundColor: string
+      borderColor: string
       borderWidth: number
     }[]
   }
@@ -121,7 +129,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
   created() {
     this.canvas = process.browser
   },
-  components: { DataView },
+  components: { DataView, ExternalLink },
   props: {
     title: {
       type: String,
@@ -161,12 +169,14 @@ const options: ThisTypedComponentOptionsWithRecordProps<
   }),
   computed: {
     displayData() {
+      const graphSeries = getGraphSeriesStyle(this.chartData.labels!.length)
       const datasets = this.chartData.labels!.map((label, i) => {
         return {
           label: label as string,
           data: this.chartData.datasets!.map(d => d.data![i]) as number[],
-          backgroundColor: colors[i],
-          borderWidth: 0
+          backgroundColor: graphSeries[i].fillColor,
+          borderColor: graphSeries[i].strokeColor,
+          borderWidth: 1
         }
       })
       return {
