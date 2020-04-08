@@ -39,6 +39,12 @@
     <patients-by-age-card
       v-else-if="this.$route.params.card == 'patients-by-age'"
     />
+    <hospitalization-card
+      v-else-if="this.$route.params.card == 'hospitalization'"
+    />
+    <stay-card
+      v-else-if="this.$route.params.card == 'stay'"
+    />
   </div>
 </template>
 

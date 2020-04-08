@@ -1,12 +1,12 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('入退院数')"
+      :title="$t('陽性者の状況グラフ')"
       :title-id="'hospitalization'"
       :chart-id="'time-bar-chart-hospitalization'"
       :chart-data="hospitalizationGraph"
       :date="hospitalization.last_update"
-      :unit="'人'"
+      :unit="$t('人')"
       :url="
         'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
