@@ -33,12 +33,12 @@ const config: Configuration = {
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@BosaiNaganoPref'
+        content: '@Nagano_Corona'
       },
       {
         hid: 'twitter:creator',
         name: 'twitter:creator',
-        content: '@BosaiNaganoPref'
+        content: '@Nagano_Corona'
       },
       {
         hid: 'fb:app_id',
@@ -169,7 +169,7 @@ const config: Configuration = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['ja', 'en' ]
+      const locales = ['ja', 'en']
       const pages = [
         '/cards/details-of-confirmed-cases',
         '/cards/details-of-tested-cases',
