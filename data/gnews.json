@@ -1,6 +1,21 @@
 {
   "newsItems": [
     {
+      "date": "04/08",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200407ATI090034000.php",
+      "text": "県立校、２週間休校検討 松本・塩尻・佐久でも動き(信濃毎日新聞)"
+    },
+    {
+      "date": "04/08",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200407ATI090032000.php",
+      "text": "新型コロナの県専門家懇 レベル２リスク高まる(信濃毎日新聞)"
+    },
+    {
+      "date": "04/08",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200408/mm20200408084645.php",
+      "text": "緊急事態宣言 県内へコロナ疎開も 首長は慎重な行動呼び掛け(信濃毎日新聞)"
+    },
+    {
       "date": "04/07",
       "url": "https://www.nikkei.com/article/DGXMZO57786940X00C20A4L21000/",
       "text": "長野県松本市、小中学校を再休校 転入者は自宅待機を(日本経済新聞)"
@@ -9,21 +24,6 @@
       "date": "04/07",
       "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200407ASI000002000.php",
       "text": "７都府県と往来控えて 知事がお願い(信濃毎日新聞)"
-    },
-    {
-      "date": "04/07",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406ETI090007000.php",
-      "text": "社説 コロナ疎開 排除や対立招かぬように(信濃毎日新聞)"
-    },
-    {
-      "date": "04/07",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406FTI090028000.php",
-      "text": "新型コロナ 緊急事態に身構え(信濃毎日新聞)"
-    },
-    {
-      "date": "04/07",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406FTI090021000.php",
-      "text": "休校延長求め署名活動 安曇野の女性 ネットで賛同１３００人超(信濃毎日新聞)"
     }
   ]
 }
