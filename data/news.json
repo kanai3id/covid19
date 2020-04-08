@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "04/08",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-naganoken-taiou.html#kaigihotei",
+      "text": "第4回新型コロナウイルス感染症長野県対策本部会議"
+    },
+    {
       "date": "04/07",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/press20200407.html",
       "text": "新型コロナウイルス感染症感染者（14例目）の続報について"
