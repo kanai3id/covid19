@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "04/09",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/press20200409.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（20,21例）"
+    },
+    {
       "date": "04/08",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html#tijimesse",
       "text": "県外を対象とする緊急事態宣言がなされたことを受けた知事メッセージ"
