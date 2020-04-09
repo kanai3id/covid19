@@ -39,7 +39,8 @@
       <confirmed-cases-attributes-card />
       <confirmed-cases-number-card />
       <patients-by-age-card />
-      <hospitalization-card />
+      <hoken-card />
+      <!-- <hospitalization-card /> -->
       <stay-card />
       <inspection-persons-number-card />
       <!-- <tested-number-card /> -->
@@ -61,11 +62,13 @@ import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
 import GNews from '@/data/gnews.json'
+import Hoken from '@/data/Hoken.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import PatientsByAgeCard from '@/components/cards/PatientsByAgeCard.vue'
-import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
+// import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
+import HokenCard from '@/components/cards/HokenCard.vue'
 import StayCard from '@/components/cards/StayCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 // import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
@@ -86,7 +89,8 @@ export default Vue.extend({
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
     PatientsByAgeCard,
-    HospitalizationCard,
+    // HospitalizationCard,
+    HokenCard,
     StayCard,
     // TestedNumberCard,
     InspectionPersonsNumberCard,
