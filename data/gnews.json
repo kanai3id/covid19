@@ -1,9 +1,14 @@
 {
   "newsItems": [
     {
-      "date": "04/08",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200408ASI000004000.php",
-      "text": "新型コロナ 少なくとも３人感染 県内複数の保健所管内(信濃毎日新聞)"
+      "date": "04/09",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200409/KT200408ATI090053000.php",
+      "text": "新型コロナ 県内感染対策強化期間 きょうから２週間(信濃毎日新聞)"
+    },
+    {
+      "date": "04/09",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200409/KT200408ATI090084000.php",
+      "text": "新型コロナ 県内新たに感染者５人 １日で最多(信濃毎日新聞)"
     },
     {
       "date": "04/08",
@@ -19,11 +24,6 @@
       "date": "04/08",
       "url": "https://www.shinmai.co.jp/news/nagano/20200408/mm20200408084645.php",
       "text": "緊急事態宣言 県内へコロナ疎開も 首長は慎重な行動呼び掛け(信濃毎日新聞)"
-    },
-    {
-      "date": "04/08",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200407FTI090045000.php",
-      "text": "上伊那の感染２０代男性は信大生と公表 塩尻の携帯ショップで接客(信濃毎日新聞)"
     }
   ]
 }
