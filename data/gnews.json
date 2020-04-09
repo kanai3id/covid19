@@ -2,6 +2,11 @@
   "newsItems": [
     {
       "date": "04/09",
+      "url": "https://www.nikkei.com/article/DGXMZO57854120Z00C20A4L83000/",
+      "text": "別荘地にコロナ疎開？ 栃木・那須、長野・軽井沢で滞在者が増加(日本経済新聞)"
+    },
+    {
+      "date": "04/09",
       "url": "https://www.shinmai.co.jp/news/nagano/20200409/KT200408ATI090053000.php",
       "text": "新型コロナ 県内感染対策強化期間 きょうから２週間(信濃毎日新聞)"
     },
@@ -19,11 +24,6 @@
       "date": "04/08",
       "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200407ATI090032000.php",
       "text": "新型コロナの県専門家懇 レベル２リスク高まる(信濃毎日新聞)"
-    },
-    {
-      "date": "04/08",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200408/mm20200408084645.php",
-      "text": "緊急事態宣言 県内へコロナ疎開も 首長は慎重な行動呼び掛け(信濃毎日新聞)"
     }
   ]
 }
