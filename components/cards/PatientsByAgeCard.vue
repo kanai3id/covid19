@@ -2,11 +2,11 @@
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
       :title="$t('年代別陽性患者数')"
-      :title-id="'patients-by-age'"
-      :chart-id="'time-bar-chart-patients-by-age'"
+      :title-id="'patients-by-age-card'"
+      :chart-id="'time-bar-chart-patients-by-age-card'"
       :chart-data="ageGraph"
       :date="age.last_update"
-      :unit="'人'"
+      :unit="$t('人')"
       :url="
         'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "

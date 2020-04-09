@@ -2,8 +2,8 @@
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
       :title="$t('陽性者の状況グラフ')"
-      :title-id="'hospitalization'"
-      :chart-id="'time-bar-chart-hospitalization'"
+      :title-id="'hospitalization-card'"
+      :chart-id="'time-bar-chart-hospitalization-card'"
       :chart-data="hospitalizationGraph"
       :date="hospitalization.last_update"
       :unit="$t('人')"

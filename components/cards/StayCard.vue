@@ -2,8 +2,8 @@
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
       :title="$t('入院患者日数')"
-      :title-id="'stay'"
-      :chart-id="'time-bar-chart-stay'"
+      :title-id="'stay-card'"
+      :chart-id="'time-bar-chart-stay-card'"
       :chart-data="stayGraph"
       :date="stay.last_update"
       :unit="$t('人')"
