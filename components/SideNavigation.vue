@@ -209,7 +209,7 @@ export default Vue.extend({
         {
           title: this.$t('中止又は延期するイベント等'),
           link:
-            'https://twitter.com/search?q=filter%3Averified%20%E9%95%B7%E9%87%8E%20(%E5%BB%B6%E6%9C%9F%20OR%20%E9%A0%86%E5%BB%B6%20OR%20%E7%84%A1%E8%A6%B3%E5%AE%A2%20OR%20%E6%8C%AF%E6%9B%BF)&src=typed_query&f=live'
+            'https://twitter.com/search?q=filter%3Averified%20%E9%95%B7%E9%87%8E%E7%9C%8C%20(%E5%BB%B6%E6%9C%9F%20OR%20%E9%A0%86%E5%BB%B6%20OR%20%E7%84%A1%E8%A6%B3%E5%AE%A2%20OR%20%E6%8C%AF%E6%9B%BF)&src=typed_query&f=live'
         },
         {
           title: this.$t('知事からのメッセージ'),
