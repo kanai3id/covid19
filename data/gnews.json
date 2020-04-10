@@ -1,29 +1,29 @@
 {
   "newsItems": [
     {
+      "date": "04/10",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200410/KT200409FTI090061000.php",
+      "text": "新型コロナ 県内新たに感染者２人 計２１人に(信濃毎日新聞)"
+    },
+    {
       "date": "04/09",
       "url": "https://www.nikkei.com/article/DGXMZO57854120Z00C20A4L83000/",
       "text": "別荘地にコロナ疎開？ 那須、軽井沢で滞在者増(日本経済新聞)"
     },
     {
       "date": "04/09",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200409/KT200408ATI090094000.php",
-      "text": "県内５９市町村、再び休校 県立中高は１０日から(信濃毎日新聞)"
-    },
-    {
-      "date": "04/09",
       "url": "https://www.shinmai.co.jp/news/nagano/20200409/KT200408ATI090053000.php",
-      "text": "新型コロナ 県内感染対策強化期間 きょうから２週間(信濃毎日新聞)"
+      "text": "新型コロナ 県内感染対策強化期間 ９日から２週間(信濃毎日新聞)"
     },
     {
       "date": "04/08",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200408ASI000002000.php",
-      "text": "７都府県 緊急事態宣言一夜明け 始まった非日常(信濃毎日新聞)"
+      "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200407ATI090032000.php",
+      "text": "新型コロナの県専門家懇 レベル２リスク高まる(信濃毎日新聞)"
     },
     {
       "date": "04/08",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200408/KT200407ATI090034000.php",
-      "text": "県立校、２週間休校検討 松本・塩尻・佐久でも動き(信濃毎日新聞)"
+      "url": "https://www.shinmai.co.jp/news/nagano/20200408/mm20200408084645.php",
+      "text": "緊急事態宣言 県内へコロナ疎開も 首長は慎重な行動呼び掛け(信濃毎日新聞)"
     }
   ]
 }
