@@ -223,7 +223,7 @@ export default Vue.extend({
         {
           title: this.$t('県内相談窓口'),
           link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/happyou/20200206sodan.html'
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html'
         },
         {
           title: this.$t('長野県公式ホームページ'),
