@@ -1,19 +1,19 @@
 {
   "newsItems": [
     {
+      "date": "04/12",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406ETI090007000.php",
+      "text": "社説 コロナ疎開 排除や対立招かぬように(信濃毎日新聞)"
+    },
+    {
       "date": "04/11",
-      "url": "https://www3.nhk.or.jp/news/html/20200410/k10012379151000.html",
-      "text": "国内感染6000人超(クルーズ船除く）新型コロナウイルス(NHK NEWS WEB)"
+      "url": "https://www.shinmai.co.jp/news/nagano/20200411/KT200410BSI090002000.php",
+      "text": "新型コロナ外出控え 飲食店がテークアウトに力(信濃毎日新聞)"
     },
     {
-      "date": "04/10",
-      "url": "https://www3.nhk.or.jp/news/html/20200410/k10012381121000.html",
-      "text": "長野市 新たに２人感染確認 新型コロナウイルス(NHK NEWS WEB)"
-    },
-    {
-      "date": "04/10",
-      "url": "https://www3.nhk.or.jp/news/html/20200410/k10012380591000.html",
-      "text": "長野県 新たに５人感染確認 県内26人に 新型コロナウイルス(NHK NEWS WEB)"
+      "date": "04/11",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200411/KT200410ATI090030000.php",
+      "text": "県感染５００人入院・療養対応 新型コロナ 月内に態勢拡充(信濃毎日新聞)"
     }
   ]
 }
