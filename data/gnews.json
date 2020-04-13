@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "04/13",
+      "url": "https://www.shinmai.co.jp/news/nagano/20200407/KT200406ETI090007000.php",
+      "text": "社説 コロナ疎開 排除や対立招かぬように(信濃毎日新聞)"
+    },
+    {
       "date": "04/12",
       "url": "https://www.shinmai.co.jp/news/nagano/20200412/KT200412SEI090001000.php",
       "text": "【速報】新型コロナ 伊那保健所管内で３０代男性感染確認(信濃毎日新聞)"
@@ -9,11 +14,6 @@
       "date": "04/12",
       "url": "https://www.shinmai.co.jp/news/nagano/20200412/KT200411GVI090002000.php",
       "text": "新型コロナの不安解消願い 桜と鯉のぼり今年も(信濃毎日新聞)"
-    },
-    {
-      "date": "04/12",
-      "url": "https://www.shinmai.co.jp/news/nagano/20200412/KT200411FTI090032000.php",
-      "text": "新型コロナ 濃厚接触少なくとも２２人 １０日に感染確認の長野の３０代男性(信濃毎日新聞)"
     }
   ]
 }
