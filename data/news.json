@@ -2,6 +2,16 @@
   "newsItems": [
     {
       "date": "04/14",
+      "url": "https://www.pref.nagano.lg.jphttps://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html",
+      "text": "医療関係者、県民へのメッセージ"
+    },
+    {
+      "date": "04/14",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-naganoken-taiou.html#kaigihotei",
+      "text": "第5回新型コロナウイルス感染症長野県対策本部会議"
+    },
+    {
+      "date": "04/14",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200414.html",
       "text": "新型コロナウイルス感染症感染者の発生について（37例）"
     },
@@ -12,13 +22,8 @@
     },
     {
       "date": "04/13",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/2press20200413.html",
-      "text": "【訂正版】新型コロナウイルス感染症感染者の発生について（30~34例）"
-    },
-    {
-      "date": "04/12",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press0412.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（29例）"
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200413.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（30~34例）"
     }
   ]
 }
