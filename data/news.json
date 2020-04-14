@@ -3,7 +3,12 @@
     {
       "date": "04/14",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html#keikaisengen",
-      "text": "長野圏域及び松本圏域に対し「新型コロナウイルス警戒宣言」を発令します"
+      "text": "長野圏域及び松本圏域に対し新型コロナウイルス警戒宣言を発令します"
+    },
+    {
+      "date": "04/14",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html#iryomesse",
+      "text": "医療関係者、県民へのメッセージ"
     },
     {
       "date": "04/14",
@@ -19,11 +24,6 @@
       "date": "04/13",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html",
       "text": "新型コロナウイルス感染症感染対策強化期間中（4月22日まで）"
-    },
-    {
-      "date": "04/13",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200413.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（30~34例）"
     }
   ]
 }
