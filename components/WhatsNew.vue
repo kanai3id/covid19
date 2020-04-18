@@ -124,13 +124,12 @@ export default Vue.extend({
     }
   }
 
-  .WhatsNew .WhatsNew-list {
+  .WhatsNew-list {
     padding-left: 0;
     list-style-type: none;
 
     &-item {
       &-anchor {
-        display: inline-block;
         text-decoration: none;
         margin: 5px;
         font-size: 14px;
