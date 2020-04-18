@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <data-table
-      :title="$t('管轄保健所の状況')"
+      :title="$t('居住地の状況')"
       :title-id="'hoken-card'"
       :chart-data="hokenTable"
       :chart-option="{}"

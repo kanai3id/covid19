@@ -132,7 +132,7 @@ export default {
         updatedAt = age.last_update
         break
       case 'hoken-card':
-        title = this.$t('管轄保健所の状況')
+        title = this.$t('居住地の状況')
         updatedAt = hoken.date
         break
       case 'hospitalization-card':
