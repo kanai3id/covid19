@@ -50,7 +50,6 @@ import MetroData from '@/data/metro.json'
 import agencyData from '@/data/agency.json'
 import age from '@/data/age.json'
 import hoken from '@/data/hoken.json'
-import hospitalization from '@/data/hospitalization.json'
 import stay from '@/data/stay.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
@@ -134,10 +133,6 @@ export default {
       case 'hoken-card':
         title = this.$t('居住地の状況')
         updatedAt = hoken.date
-        break
-      case 'hospitalization-card':
-        title = this.$t('陽性者の状況グラフ')
-        updatedAt = hospitalization.last_update
         break
       case 'stay-card':
         title = this.$t('入院患者日数')
