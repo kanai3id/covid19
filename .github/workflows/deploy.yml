@@ -34,3 +34,27 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: production
+<<<<<<< HEAD
+=======
+          
+      - name: Enable "include administrators" branch protection
+        uses: benjefferies/branch-protection-bot@master
+        if: always()  # Force to always run this step to ensure "include administrators" is always turned back on
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          owner: tokyo-metropolitan-gov
+          repo: covid19
+          branch: production
+      - name: Create GitHub release
+        uses: rymndhng/release-on-push-action@master
+        with:
+          bump_version_scheme: patch
+
+      - name: run delete_fbcache.sh
+        run: |
+          echo "FB_ACCESS_TOKEN=${FACEBOOK_ACCESS_TOKEN}" > .env
+          cd ui-test
+          ./delete_fbcache.sh
+        env:
+          FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+>>>>>>> fork_master_development

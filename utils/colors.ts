@@ -5,12 +5,12 @@ export type SurfaceStyle = {
 
 const surfaceStyleA: SurfaceStyle = {
   strokeColor: '#5a8055',
-  fillColor: '#1b4d30'
+  fillColor: '#007700'
 }
 
 const surfaceStyleB: SurfaceStyle = {
   strokeColor: '#5a8055',
-  fillColor: '#00a040'
+  fillColor: '#00CC00'
 }
 
 const surfaceStyleC: SurfaceStyle = {

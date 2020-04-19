@@ -7,10 +7,9 @@
       :chart-data="patientsGraph"
       :date="Data.patients.date"
       :unit="$t('人')"
-      :url="
-        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
-      "
-    />
+      :url="'https://www.pref.nagano.lg.jp/joho/kensei/tokei/johoka/opendata/'"
+    >
+    </time-bar-chart>
   </v-col>
 </template>
 

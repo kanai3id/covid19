@@ -1,38 +1,28 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
-    <time-bar-chart
+    <stay-bar-chart
       :title="$t('入院患者日数')"
       :title-id="'stay-card'"
-      :chart-id="'time-bar-chart-stay-card'"
-      :chart-data="stayGraph"
-      :date="stay.last_update"
+      :chart-id="'chart-stay-card'"
+      :chart-data="stayData"
+      :date="stayData.date"
       :unit="$t('人')"
-      :url="
-        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
-      "
-      :show-button="false"
-    />
+    >
+    </stay-bar-chart>
   </v-col>
 </template>
 
 <script>
-import stay from '@/data/stay.json'
-import TimeBarChart from '@/components/TimeBarChart.vue'
-import formatVariableGraph from '@/utils/formatVariableGraph'
-
+import stayData from '@/data/stay.json'
+import StayBarChart from '@/components/StayBarChart.vue'
 export default {
   components: {
-    TimeBarChart
+    StayBarChart
   },
   data() {
-    // 入退日数
-    const stayGraph = formatVariableGraph(stay.data)
-
-    const data = {
-      stay,
-      stayGraph
+    return {
+      stayData
     }
-    return data
   }
 }
 </script>
