@@ -6,9 +6,9 @@
       :chart-id="'chart-stay-card'"
       :chart-data="stayData"
       :date="stayData.date"
+      :options="displayOption"
       :unit="$t('人')"
-    >
-    </stay-bar-chart>
+    />
   </v-col>
 </template>
 

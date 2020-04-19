@@ -6,16 +6,9 @@
       :chart-id="'chart-age-card'"
       :chart-data="ageData"
       :date="ageData.date"
+      :options="displayOption"
       :unit="$t('人')"
-    >
-      <template v-slot:description>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </template>
-    </age-bar-chart>
+    />
   </v-col>
 </template>
 

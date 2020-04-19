@@ -156,7 +156,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
           callbacks: {
             title(tooltipItem) {
               const dateString = tooltipItem[0].label
-              return self.$t('期間: {duration}', {
+              return self.$t('年代: {duration}', {
                 duration: dateString!
               }) as string
             },
