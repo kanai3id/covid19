@@ -6,7 +6,6 @@
       :chart-id="'chart-age-card'"
       :chart-data="ageData"
       :date="ageData.date"
-      :options="displayOption"
       :unit="$t('人')"
     />
   </v-col>

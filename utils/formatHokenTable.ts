@@ -3,20 +3,26 @@
 const headers = [
   { text: '更新日', value: '更新日' },
   { text: '居住地', value: '居住地' },
-  { text: '人数', value: '人数' },
+  { text: '陽性者数', value: '陽性者数', align: 'center' },
+  { text: '滞在歴', value: '滞在歴' },
+  { text: '帰省者', value: '帰省者' }
 ]
 
 type DataType = {
   更新日: string
   居住地: string
-  人数: number
+  陽性者数: number
+  滞在歴: number
+  帰省者: number
   [key: string]: any
 }
 
 type TableDataType = {
   更新日: string
   居住地: DataType['居住地']
-  人数: DataType['人数']
+  陽性者数: DataType['陽性者数']
+  滞在歴: DataType['滞在歴']
+  帰省者: DataType['帰省者']
 }
 
 type TableDateType = {
@@ -38,12 +44,14 @@ export default (data: DataType[]) => {
     const TableRow: TableDataType = {
       更新日: d['更新日'],
       居住地: d['居住地'] ?? '調査中',
-      人数: d['人数']
+      陽性者数: d['陽性者数'],
+      滞在歴: d['滞在歴'],
+      帰省者: d['帰省者']
     }
     tableDate.datasets.push(TableRow)
   })
   tableDate.datasets.sort((a, b) =>
-    a.人数 === b.人数 ? 0 : a.人数 < b.人数 ? 1 : -1
+    a.陽性者数 === b.陽性者数 ? 0 : a.陽性者数 < b.陽性者数 ? 1 : -1
   )
   return tableDate
 }
