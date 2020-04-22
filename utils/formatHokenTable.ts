@@ -5,7 +5,7 @@ const headers = [
   { text: '居住地', value: '居住地' },
   { text: '陽性者数', value: '陽性者数', align: 'center' },
   { text: '滞在歴', value: '滞在歴' },
-  { text: '帰省', value: '帰省' }
+  { text: '帰省者', value: '帰省者' }
 ]
 
 type DataType = {
@@ -13,7 +13,7 @@ type DataType = {
   居住地: string
   陽性者数: number
   滞在歴: number
-  帰省: number
+  帰省者: number
   [key: string]: any
 }
 
@@ -22,7 +22,7 @@ type TableDataType = {
   居住地: DataType['居住地']
   陽性者数: DataType['陽性者数']
   滞在歴: DataType['滞在歴']
-  帰省: DataType['帰省']
+  帰省者: DataType['帰省者']
 }
 
 type TableDateType = {
@@ -46,7 +46,7 @@ export default (data: DataType[]) => {
       居住地: d['居住地'] ?? '調査中',
       陽性者数: d['陽性者数'],
       滞在歴: d['滞在歴'],
-      帰省: d['帰省']
+      帰省者: d['帰省者']
     }
     tableDate.datasets.push(TableRow)
   })
