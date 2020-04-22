@@ -12,9 +12,9 @@
           mdi-bullhorn
         </v-icon>
         <external-link
-          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html#kinkyujitai"
+          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-onegai.html#kinkyujitai2"
         >
-          {{ $t('長野県の緊急事態措置等') }}
+          {{ $t('長野県の緊急事態措置等') }}(2020-04-21)
         </external-link>
       </span>
     </div>
