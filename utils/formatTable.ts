@@ -5,7 +5,7 @@ const headers = [
   { text: '居住地', value: '居住地' },
   { text: '年代', value: '年代' },
   { text: '性別', value: '性別' },
-  { text: '状況', value: '状況', align: 'center' },
+  { text: '状況', value: '状況' },
   { text: '滞在歴等', value: '滞在歴等' }
 ]
 
