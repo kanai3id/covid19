@@ -20,7 +20,7 @@
         'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html'
       "
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
-      :btn-text="$t('相談の手順を見る')"
+      :btn-text="$t('24時間対応')"
     />
     <card-row class="DataBlock">
       <!-- 検査陽性者の状況 -->
