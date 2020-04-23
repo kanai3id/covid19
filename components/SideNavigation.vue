@@ -217,17 +217,22 @@ export default Vue.extend({
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/onegai0329.pdf'
         },
         {
-          title: this.$t('当サイトについて'),
-          link: this.localePath('/about')
-        },
-        {
           title: this.$t('県内相談窓口'),
           link:
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html'
         },
         {
           title: this.$t('長野県公式ホームページ'),
-          link: 'https://www.pref.nagano.lg.jp/'
+          link: 'https://www.pref.nagano.lg.jp/',
+          divider: true
+        },
+        {
+          title: this.$t('当サイトについて'),
+          link: this.localePath('/about')
+        },
+        {
+          title: this.$t('利用データについて'),
+          link: this.localePath('/about#data')
         }
       ]
     }

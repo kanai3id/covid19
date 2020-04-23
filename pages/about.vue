@@ -6,7 +6,7 @@
     <static-card>
       {{
         $t(
-          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県内の個人(ITエンジニア)が長野県非公式で開設したものです。'
+          '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県出身の個人(ITエンジニア)が長野県非公式で開設したものです。'
         )
       }}<br />
       <i18n
@@ -65,6 +65,56 @@
         </span>
       </p>
     </static-card>
+
+    <a id="data" name="data" />
+    <static-card>
+      <h3>{{ $t('データについて') }}</h3>
+      {{
+        $t(
+          '当サイトのデータは、長野県のオープンデータサイトからデータを取得することで情報を更新しています。'
+        )
+      }}
+      {{ $t('現在利用しているデータは以下の通りです。') }}
+      <ul>
+        <li>
+          <a
+            href="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ $t('長野県内における新型コロナウイルス感染症の動向') }}
+          </a>
+        </li>
+        <ul>
+          <li>
+            {{ $t('感染者の発生状況') }}
+          </li>
+          <li>
+            {{ $t('検査実施数') }}
+          </li>
+          <li>
+            {{ $t('相談状況') }}
+          </li>
+        </ul>
+      </ul>
+      <p class="StaticCard-Note">
+        <span>
+        {{ $t('行政の皆さまのご協力に感謝します。') }}<br />
+        <a
+          href="https://creativecommons.org/licenses/by/4.0/deed.ja"
+          target="_blank"
+          rel="noopener"
+        >
+          {{
+            $t(
+              'このサイトのすべてのデータは「クリエイティブ・コモンズ 表示 4.0 日本」にて提供されています。'
+            )
+          }}
+        </a>
+        </span>
+      </p>
+    </static-card>
+
     <static-card>
       <h3>{{ $t('当サイトへのリンクについて') }}</h3>
       <p>{{ $t('当サイトへのリンクは自由です。') }}</p>
@@ -209,22 +259,6 @@
           )
         }}
       </p>
-    </static-card>
-    <static-card>
-      <h3>{{ $t('データについて') }}</h3>
-      <i18n
-        tag="p"
-        path="本サイトで公表しているデータは、{catalogWebsite}より誰でも自由にダウンロードが可能です。（データは順次追加予定です）"
-      >
-        <template v-slot:catalogWebsite>
-          <external-link
-            url="https://www.pref.nagano.lg.jp/joho/kensei/tokei/johoka/opendata/"
-            :icon-size="16"
-          >
-            {{ $t('長野県オープンデータカタログサイト') }}
-          </external-link>
-        </template>
-      </i18n>
     </static-card>
     <static-card>
       <h3>{{ $t('ソースコードについて') }}</h3>

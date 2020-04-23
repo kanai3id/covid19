@@ -8,7 +8,7 @@
       :date="Data.date"
       :info="sumInfoOfPatients"
       :url="
-        'https://www.pref.nagano.lg.jp/joho/kensei/tokei/johoka/opendata/'
+        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
       :source="$t('オープンデータを入手')"
     />
@@ -27,7 +27,6 @@ export default {
     DataTable
   },
   data() {
-
     // 感染者数グラフ
     const patientsGraph = formatGraph(Data_.patients_summary.data)
 

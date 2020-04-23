@@ -80,7 +80,7 @@
   "新しいワークスタイルや企業活動の長野モデル「スムーズビズ」": "Smooth Biz: The Tokyo model for new work styles and corporate activities",
   "テレワーク・時差出勤などスムーズビズの取組は、新型コロナウイルス感染症の対策としても効果的です。感染症対策として、長野2020大会時の交通混雑緩和に向けた取組の前倒しをお願いします。": "Smooth Biz initiatives such as telecommuting and staggered work hours are also effective against COVID-19. To help prevent the spread of infection, your cooperation is requested in moving ahead measures that were to be implemented during the Tokyo 2020 Games to address traffic congestion.",
   "当サイトについて": "About this site",
-  "当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県内の個人(ITエンジニア)が長野県非公式で開設したものです。": "This website was opened by the IT engineer living in Nagano to provide the latest information on the novel coronavirus disease (COVID-19). This site is unofficial in Nagano Prefecture.",
+  "当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県出身の個人(ITエンジニア)が長野県非公式で開設したものです。": "This site was opened by an individual (IT engineer) in a home town of Nagano prefecture (IT engineer) to provide the latest information on the new coronavirus infection (COVID-19).",
   "長野県による公式情報と客観的な数値をわかりやすく伝えることで、長野県にお住まいの方や、長野県内に拠点を持つ企業の方、長野県を訪れる方が、現状を把握して適切な対策を取れるようにすることを目的としています。": "By conveying official information of the Tokyo Metropolitan Government and objective data in an easy-to-understand way, this site aims to allow Tokyo residents, companies with offices in Tokyo, and visitors to Tokyo to grasp the current situation and take measures and precautions accordingly. ",
   "ブラウザ環境について": "Browser compatibility",
   "当サイトは以下の環境でご覧いただくことを推奨いたします。": "The following browsers are recommended for viewing this site.",
@@ -382,5 +382,14 @@
   "東京都": "Tokyo",
   "陽性者の状況グラフ": "Positive person situation graph",
   "入院患者日数": "Number of days hospitalized patients stay",
-  "入院日数": "Hospital stay days"
+  "入院日数": "Hospital stay days",
+  "利用データについて": "About the data used",
+  "当サイトのデータは、長野県のオープンデータサイトからデータを取得することで情報を更新しています。": "The data on this site is updated by acquiring the data from the open data site in Nagano Prefecture.",
+  "現在利用しているデータは以下の通りです。": "The data currently used are as follows.",
+  "長野県内における新型コロナウイルス感染症の動向": "Trend of New Coronavirus Infection in Nagano Prefecture",
+  "感染者の発生状況": "Outbreak situation of infected persona",
+  "検査実施数": "Number of inspections",
+  "相談状況": "Consultation status",
+  "行政の皆さまのご協力に感謝します。": "Thank you for the cooperation of Nagano Prefecture administration",
+  "このサイトのすべてのデータは「クリエイティブ・コモンズ 表示 4.0 日本」にて提供されています。": "All data on this site is provided by \"Creative Commons Indication 4.0 Japan\"."
 }

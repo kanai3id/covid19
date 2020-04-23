@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "04/23",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200423.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（60,61,62例）"
+    },
+    {
       "date": "04/22",
       "url": "https://www.pref.nagano.lg.jp/sansei/sangyo/shokogyo/covid19kyoryoku.html",
       "text": "県・市町村連携新型コロナウイルス拡大防止協力企業等特別支援事業（予定）について"
@@ -9,11 +14,6 @@
       "date": "04/22",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona_kyuugyo.html",
       "text": "施設の使用停止等の要請・休業依頼について"
-    },
-    {
-      "date": "04/22",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200422.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（58,59例）"
     }
   ]
 }
