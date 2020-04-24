@@ -117,7 +117,7 @@ export default Vue.extend({
 
 <style lang="scss" module>
 $default-bdw: 3px;
-$default-boxh: 200px;
+$default-boxh: 150px;
 $default-boxdiff: 35px;
 
 // .container > .box > (.group > .box > ...) .pillar > .content
