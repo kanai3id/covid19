@@ -5,7 +5,6 @@
       :title-id="'details-of-confirmed-cases'"
       :date="updatedAt"
     >
-      <!--
       <template v-slot:description>
         <ul>
           <li>
@@ -13,6 +12,7 @@
               $t('（注）チャーター機帰国者、クルーズ船乗客等は含まれていない')
             }}
           </li>
+          <!--
           <li>
             {{
               $t('（注）「入院中」には、入院調整中・宿泊療養に移行した方を含む')
@@ -25,9 +25,9 @@
               )
             }}
           </li>
+-->
         </ul>
       </template>
--->
       <br />
       <br />
       <br />
