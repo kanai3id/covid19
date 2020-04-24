@@ -39,9 +39,7 @@
         <li :class="[$style.box, $style.recovered]">
           <div :class="$style.pillar">
             <div :class="$style.content">
-              <span
-                >{{ $t('退院') }}<br />{{ $t('（療養期間経過を含む）') }}</span
-              >
+              <span>{{ $t('退院') }}</span>
               <span>
                 <strong>{{ 退院 }}</strong>
                 <span :class="$style.unit">{{ $t('人') }}</span>
@@ -119,7 +117,7 @@ export default Vue.extend({
 
 <style lang="scss" module>
 $default-bdw: 3px;
-$default-boxh: 150px;
+$default-boxh: 200px;
 $default-boxdiff: 35px;
 
 // .container > .box > (.group > .box > ...) .pillar > .content
