@@ -14,7 +14,7 @@
         </div>
       </div>
       <ul :class="$style.group">
-        <li :class="[$style.box, $style.deceased]">
+        <li :class="[$style.box, $style.parent, $style.hospitalized]">
           <div :class="$style.pillar">
             <div :class="$style.content">
               <span>{{ $t('入院中') }}</span>
@@ -24,6 +24,32 @@
               </span>
             </div>
           </div>
+          <ul :class="$style.group">
+            <li :class="[$style.box, $style.short, $style.minor]">
+              <div :class="$style.pillar">
+                <div :class="$style.content">
+                  <!-- eslint-disable vue/no-v-html-->
+                  <span v-html="$t('患者・<br />調査中')" />
+                  <!-- eslint-enable vue/no-v-html-->
+                  <span>
+                    <strong>{{ 患者調査中 }}</strong>
+                    <span :class="$style.unit">{{ $t('人') }}</span>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li :class="[$style.box, $style.short, $style.severe]">
+              <div :class="$style.pillar">
+                <div :class="$style.content">
+                  <span>{{ $t('無症状病原体保有者') }}</span>
+                  <span>
+                    <strong>{{ 無症状病原体保有者 }}</strong>
+                    <span :class="$style.unit">{{ $t('人') }}</span>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </li>
         <li :class="[$style.box, $style.deceased]">
           <div :class="$style.pillar">
@@ -70,16 +96,14 @@ export default Vue.extend({
       type: Number,
       required: true
     },
-    /*
-    軽症中等症: {
+    患者調査中: {
       type: Number,
       required: true
     },
-    重症: {
+    無症状病原体保有者: {
       type: Number,
       required: true
     },
-*/
     死亡: {
       type: Number,
       required: true
@@ -314,13 +338,13 @@ $default-boxdiff: 35px;
     &.confirmed {
       > .pillar {
         width: calc(
-          (100% + #{px2vw($bdw, $vw)} * 2) / 4 - #{px2vw($bdw, $vw)} * 3
+          (100% + #{px2vw($bdw, $vw)} * 2) / 6 - #{px2vw($bdw, $vw)} * 3
         );
       }
 
       > .group {
         width: calc(
-          (100% + #{px2vw($bdw, $vw)} * 2) / 4 * 3 + #{px2vw($bdw, $vw)}
+          (100% + #{px2vw($bdw, $vw)} * 2) / 6 * 5 + #{px2vw($bdw, $vw)}
         );
       }
     }
@@ -351,7 +375,7 @@ $default-boxdiff: 35px;
     &.deceased,
     &.recovered {
       margin-left: px2vw($bdw, $vw);
-      width: calc(100% / 3 - #{px2vw($bdw, $vw)});
+      width: calc(100% / 5 - #{px2vw($bdw, $vw)});
     }
   }
 }
