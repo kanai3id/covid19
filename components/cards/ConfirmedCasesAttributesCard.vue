@@ -55,6 +55,7 @@ export default {
       row['性別'] = this.getTranslatedWording(row['性別'])
       row['退院'] = this.getTranslatedWording(row['退院'])
       row['状況'] = this.getTranslatedWording(row['状況'])
+      row['診断'] = this.getTranslatedWording(row['診断'])
 
       if (row['年代'].substr(-1, 1) === '代') {
         const age = row['年代'].substring(0, 2)
