@@ -384,6 +384,7 @@
   "調査中": "Investigating",
   "患者": "Patient",
   "無症状病原体保有者": "Asymptomatic",
+  "患者・<br />調査中": "Patient or investigating",
   "陽性者の状況グラフ": "Positive person situation graph",
   "入院患者日数": "Number of days hospitalized patients stay",
   "入院日数": "Hospital stay days",

@@ -30,7 +30,6 @@
       </template>
       <br />
       <br />
-      <br />
       <confirmed-cases-details-table
         :aria-label="$t('検査陽性者の状況')"
         v-bind="confirmedCases"
