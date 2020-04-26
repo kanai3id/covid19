@@ -16,6 +16,15 @@
       :options="displayOption"
       :height="240"
     />
+    <template v-slot:description>
+      <ul>
+        <li>
+          {{
+            $t('（注）退院した方は含まれていない')
+          }}
+        </li>
+      </ul>
+    </template>
     <template v-slot:dataTable>
       <v-data-table
         :headers="tableHeaders"
@@ -156,7 +165,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
           callbacks: {
             title(tooltipItem) {
               const dateString = tooltipItem[0].label
-              return self.$t('期間: {duration}', {
+              return self.$t('入院日数: {duration}', {
                 duration: dateString!
               }) as string
             },
@@ -226,22 +235,21 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       ]
     },
     tableData() {
-      return this.displayData.datasets[0].data
-        .map((_, i) => {
-          return Object.assign(
-            { text: this.displayData.labels![i] },
-            ...this.displayData.datasets!.map((_, j) => {
-              return {
-                [j]: this.displayData.datasets[j].data[i].toLocaleString()
-              }
-            })
-          )
-        })
-        .sort((a, b) => {
-          const aDate = a.text.split('~')[0]
-          const bDate = b.text.split('~')[0]
-          return aDate > bDate ? -1 : 1
-        })
+      return this.displayData.datasets[0].data.map((_, i) => {
+        return Object.assign(
+          { text: this.displayData.labels![i] },
+          ...this.displayData.datasets!.map((_, j) => {
+            return {
+              [j]: this.displayData.datasets[j].data[i].toLocaleString()
+            }
+          })
+        )
+      })
+      //        .sort((a, b) => {
+      //          const aDate = a.text.split('~')[0]
+      //          const bDate = b.text.split('~')[0]
+      //          return aDate > bDate ? -1 : 1
+      //      })
     }
   },
   mounted() {

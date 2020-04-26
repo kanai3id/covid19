@@ -16,8 +16,7 @@
             :alt="$t('長野県')"
           />
           <div class="SideNavigation-HeaderText">
-            {{ $t('新型コロナウイルス感染症') }}<br />{{
-              $t('対策サイト')
+            {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト')
             }}{{ $t('(非公式)') }}
           </div>
         </nuxt-link>
@@ -204,6 +203,31 @@ export default Vue.extend({
           icon: 'mdi-domain',
           title: this.$t('企業の皆様・はたらく皆様へ'),
           link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
+          divider: true
+        },
+        {
+          icon: 'mdi-information',
+          title: this.$t('信州の観光はお休み中キャンペーン'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424oyasumi.pdf'
+        },
+        {
+          icon: 'mdi-information',
+          title: this.$t('入院医療体制の充実'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424nyuin.pdf'
+        },
+        {
+          icon: 'mdi-information',
+          title: this.$t('事業者や家計への経済的支援'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424keizai.pdf'
+        },
+        {
+          icon: 'mdi-information',
+          title: this.$t('お買い物時のお願い'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424okaimono.pdf',
           divider: true
         },
         {
