@@ -16,6 +16,15 @@
       :options="displayOption"
       :height="240"
     />
+    <template v-slot:description>
+      <ul>
+        <li>
+          {{
+            $t('（注）退院した方は含まれていない')
+          }}
+        </li>
+      </ul>
+    </template>
     <template v-slot:dataTable>
       <v-data-table
         :headers="tableHeaders"
