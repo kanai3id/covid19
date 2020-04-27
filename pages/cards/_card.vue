@@ -54,13 +54,15 @@
     <age-card v-else-if="this.$route.params.card == 'age-card'" />
     <hoken-card v-else-if="this.$route.params.card == 'hoken-card'" />
     <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
+    <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
+    <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
   </div>
 </template>
 
 <script>
 import Data from '@/data/data.json'
-import MetroData from '@/data/metro.json'
-import agencyData from '@/data/agency.json'
+// import MetroData from '@/data/metro.json'
+// import agencyData from '@/data/agency.json'
 import age from '@/data/age.json'
 import hoken from '@/data/hoken.json'
 import stay from '@/data/stay.json'
@@ -79,6 +81,8 @@ import AgeCard from '@/components/cards/AgeCard.vue'
 import HokenCard from '@/components/cards/HokenCard.vue'
 // import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
 import StayCard from '@/components/cards/StayCard.vue'
+import BedsCard from '@/components/cards/BedsCard.vue'
+import GenderCard from '@/components/cards/GenderCard.vue'
 
 export default {
   components: {
@@ -96,7 +100,9 @@ export default {
     AgeCard,
     HokenCard,
     // HospitalizationCard,
-    StayCard
+    StayCard,
+    BedsCard,
+    GenderCard
   },
   data() {
     let title, updatedAt
@@ -156,6 +162,12 @@ export default {
       case 'stay-card':
         title = this.$t('入院患者日数')
         updatedAt = stay.last_update
+        break
+      case 'beds-card':
+        title = this.$t('入院患者数と病床数')
+        break
+      case 'gender-card':
+        title = this.$t('性別陽性患者数')
         break
     }
 

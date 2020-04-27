@@ -31,6 +31,8 @@
       <hoken-card />
       <age-card />
       <stay-card />
+      <beds-card />
+      <gender-card />
       <inspection-persons-number-card />
       <!-- <tested-number-card /> -->
       <!-- <telephone-advisory-reports-number-card /> -->
@@ -66,6 +68,8 @@ import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNum
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
 // import MetroCard from '@/components/cards/MetroCard.vue'
 // import AgencyCard from '@/components/cards/AgencyCard.vue'
+import BedsCard from '@/components/cards/BedsCard.vue'
+import GenderCard from '@/components/cards/GenderCard.vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
 
 export default Vue.extend({
@@ -84,9 +88,11 @@ export default Vue.extend({
     // TestedNumberCard,
     InspectionPersonsNumberCard,
     // TelephoneAdvisoryReportsNumberCard
-    ConsultationDeskReportsNumberCard
+    ConsultationDeskReportsNumberCard,
     // MetroCard,
     // AgencyCard
+    BedsCard,
+    GenderCard
   },
   data() {
     const data = {

@@ -181,7 +181,9 @@ const config: Configuration = {
         '/cards/agency',
         '/cards/age-card',
         '/cards/hoken-card',
-        '/cards/stay-card'
+        '/cards/stay-card',
+        '/cards/beds-card',
+        '/cards/gender-card',
       ]
 
       const routes: string[] = []
