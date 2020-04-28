@@ -19,6 +19,7 @@
       <div class="DataView-CardText">
         <slot />
       </div>
+      <!--
       <div v-if="this.$slots.dataTable" class="DataView-Details">
         <v-expansion-panels v-if="showDetails" flat>
           <v-expansion-panel>
@@ -45,6 +46,7 @@
           <slot name="dataTable" />
         </template>
       </div>
+-->
       <div class="DataView-Description">
         <slot name="footer-description" />
       </div>
