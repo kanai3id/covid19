@@ -56,6 +56,11 @@
     <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
+    <adjacent-prefecture-card
+       v-else-if="
+         this.$route.params.card == 'adjacent-prefecture-card'
+       "
+    />
   </div>
 </template>
 
@@ -66,6 +71,7 @@ import Data from '@/data/data.json'
 import age from '@/data/age.json'
 import hoken from '@/data/hoken.json'
 import stay from '@/data/stay.json'
+import adjacentprefecture from '@/data/adjacent-prefecture.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
@@ -83,6 +89,7 @@ import HokenCard from '@/components/cards/HokenCard.vue'
 import StayCard from '@/components/cards/StayCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
 import GenderCard from '@/components/cards/GenderCard.vue'
+import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
 
 export default {
   components: {
@@ -102,7 +109,8 @@ export default {
     // HospitalizationCard,
     StayCard,
     BedsCard,
-    GenderCard
+    GenderCard,
+    AdjacentPrefectureCard
   },
   data() {
     let title, updatedAt
@@ -168,6 +176,10 @@ export default {
         break
       case 'gender-card':
         title = this.$t('性別陽性患者数')
+        break
+      case 'adjacent-prefecture-card':
+        title = this.$t('隣接県の状況')
+        updatedAt = adjacentprefecture.date
         break
     }
 

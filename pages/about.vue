@@ -71,10 +71,10 @@
       <h3>{{ $t('データについて') }}</h3>
       {{
         $t(
-          '当サイトのデータは、長野県のオープンデータサイトからデータを取得することで情報を更新しています。'
+          '当サイトのデータは、長野県のオープンデータサイトからデータを取得、及びニュース記事についてはWebページをスクレイピングして取得し情報を更新しています。'
         )
       }}
-      {{ $t('現在利用しているデータは以下の通りです。') }}
+      {{ $t('現在利用しているオープンデータは以下の通りです。') }}
       <ul>
         <li>
           <a
@@ -101,13 +101,43 @@
         <span>
         {{ $t('行政の皆さまのご協力に感謝します。') }}<br />
         <a
+          href="https://www.pref.nagano.lg.jp/joho/kensei/tokei/johoka/opendata/documents/terms-of-use_r2.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          {{
+            $t(
+              '長野県オープンデータ利用規約'
+            )
+          }}
+        </a>
+        </span>
+      </p>
+      <span><p></p></span>
+      <p class="StaticCard-Note">
+        <span>
+        {{ $t('隣接県の状況のみ、COVID-19 Japan様のデータを利用しています。') }}<br />
+        {{ $t('このようなソリューションの提供に感謝します。') }}<br />
+        <a
+          href="https://www.stopcovid19.jp/"
+          target="_blank"
+          rel="noopener"
+        >
+          {{
+            $t(
+              'COVID-19 Japan様'
+            )
+          }}
+        </a>
+        <br />
+        <a
           href="https://creativecommons.org/licenses/by/4.0/deed.ja"
           target="_blank"
           rel="noopener"
         >
           {{
             $t(
-              'このサイトのすべてのデータは「クリエイティブ・コモンズ 表示 4.0 日本」にて提供されています。'
+              'クリエイティブ・コモンズ 4.0'
             )
           }}
         </a>

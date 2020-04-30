@@ -39,6 +39,7 @@
       <consultation-desk-reports-number-card />
       <!-- <metro-card /> -->
       <!-- <agency-card /> -->
+      <adjacent-prefecture-card />
     </card-row>
     <v-divider />
   </div>
@@ -70,6 +71,7 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 // import AgencyCard from '@/components/cards/AgencyCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
 import GenderCard from '@/components/cards/GenderCard.vue'
+import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
 
 export default Vue.extend({
@@ -92,7 +94,8 @@ export default Vue.extend({
     // MetroCard,
     // AgencyCard
     BedsCard,
-    GenderCard
+    GenderCard,
+    AdjacentPrefectureCard
   },
   data() {
     const data = {
