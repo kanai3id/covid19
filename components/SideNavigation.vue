@@ -205,34 +205,14 @@ export default Vue.extend({
           link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
         },
         {
-          icon: 'mdi-pine-tree',
+          icon: 'mdi-food-apple',
           title: this.$t('農業農村支援センター'),
           link: 'https://www.pref.nagano.lg.jp/nogi/happyou/20200430nogipress.html',
-          divider: true
         },
         {
-          icon: 'mdi-information',
-          title: this.$t('信州の観光はお休み中キャンペーン'),
-          link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424oyasumi.pdf'
-        },
-        {
-          icon: 'mdi-information',
-          title: this.$t('入院医療体制の充実'),
-          link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424nyuin.pdf'
-        },
-        {
-          icon: 'mdi-information',
-          title: this.$t('事業者や家計への経済的支援'),
-          link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424keizai.pdf'
-        },
-        {
-          icon: 'mdi-information',
-          title: this.$t('お買い物時のお願い'),
-          link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424okaimono.pdf',
+          icon: 'mdi-food',
+          title: this.$t('飲食・サービス業等応援事業'),
+          link: 'https://www.pref.nagano.lg.jp/eigyo/ouenhojokin.html',
           divider: true
         },
         {
