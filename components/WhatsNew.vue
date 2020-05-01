@@ -14,7 +14,7 @@
         <external-link
           url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-sengen.html"
         >
-          {{ $t('新型コロナウイルス警戒宣言') }}(2020-04-23)
+          {{ $t('新型コロナウイルス警戒宣言') }}
         </external-link>
       </span>
     </div>
