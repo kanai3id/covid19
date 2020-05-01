@@ -203,6 +203,11 @@ export default Vue.extend({
           icon: 'mdi-domain',
           title: this.$t('企業の皆様・はたらく皆様へ'),
           link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
+        },
+        {
+          icon: 'mdi-pine-tree',
+          title: this.$t('農業農村支援センター'),
+          link: 'https://www.pref.nagano.lg.jp/nogi/happyou/20200430nogipress.html',
           divider: true
         },
         {
