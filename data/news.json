@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "05/05",
+      "url": "https://www.pref.nagano.lg.jp/koho/happyou/20200505press.html",
+      "text": "新型コロナウイルスお困りごと相談センター"
+    },
+    {
       "date": "05/01",
       "url": "https://www.pref.nagano.lg.jp/eigyo/ouenhojokin.html",
       "text": "飲食・サービス業等新型コロナウイルス対策応援事業"
