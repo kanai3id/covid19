@@ -7,10 +7,9 @@
       :chart-option="{}"
       :date="Data.date"
       :info="info"
-      :url="
-        'https://www.stopcovid19.jp/'
-      "
+      :url="'https://www.stopcovid19.jp/'"
       :source="$t('オープンデータを入手')"
+      :custom-sort="customSort"
     />
   </v-col>
 </template>
@@ -37,7 +36,7 @@ export default {
     }
 
     const info = {
-      sText: this.$t('COVID-19 Japan様のデータを利用','')
+      sText: this.$t('COVID-19 Japan様のデータを利用', '')
     }
 
     const data = {
@@ -58,6 +57,9 @@ export default {
       }
 
       return this.$t(value)
+    },
+    customSort(items) {
+      return items
     }
   }
 }

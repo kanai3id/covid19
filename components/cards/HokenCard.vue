@@ -11,6 +11,7 @@
         'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
       :source="$t('オープンデータを入手')"
+      :custom-sort="customSort"
     />
   </v-col>
 </template>
@@ -72,6 +73,9 @@ export default {
       }
 
       return this.$t(value)
+    },
+    customSort(items) {
+      return items
     }
   }
 }
