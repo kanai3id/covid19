@@ -195,6 +195,11 @@ export default Vue.extend({
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/kenminnnominasamahe.pdf'
         },
         {
+          icon: 'mdi-phone',
+          title: this.$t('お困りごと相談センター'),
+          link: 'https://www.pref.nagano.lg.jp/koho/happyou/20200505press.html'
+        },
+        {
           icon: 'ParentIcon',
           title: this.$t('教育委員会の発表'),
           link: 'https://www.pref.nagano.lg.jp/kyoiku/kyoiku/corona.html'
@@ -215,11 +220,13 @@ export default Vue.extend({
           link: 'https://www.pref.nagano.lg.jp/eigyo/ouenhojokin.html',
           divider: true
         },
+/** 
         {
           title: this.$t('中止又は延期するイベント等'),
           link:
             'https://twitter.com/search?q=filter%3Averified%20%E9%95%B7%E9%87%8E%E7%9C%8C%20(%E5%BB%B6%E6%9C%9F%20OR%20%E9%A0%86%E5%BB%B6%20OR%20%E7%84%A1%E8%A6%B3%E5%AE%A2%20OR%20%E6%8C%AF%E6%9B%BF)&src=typed_query&f=live'
         },
+*/
         {
           title: this.$t('知事からのメッセージ'),
           link:
