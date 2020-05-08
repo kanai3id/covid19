@@ -3,7 +3,7 @@
     <confirmed-cases-details-card
       v-if="this.$route.params.card == 'details-of-confirmed-cases'"
     />
-<!--
+    <!--
     <tested-cases-details-card
       v-else-if="this.$route.params.card == 'details-of-tested-cases'"
     />
@@ -11,7 +11,7 @@
     <confirmed-cases-number-card
       v-else-if="this.$route.params.card == 'number-of-confirmed-cases'"
     />
-<!--
+    <!--
     <confirmed-cases-by-municipalities-card
       v-else-if="
         this.$route.params.card == 'number-of-confirmed-cases-by-municipalities'
@@ -21,7 +21,7 @@
     <confirmed-cases-attributes-card
       v-else-if="this.$route.params.card == 'attributes-of-confirmed-cases'"
     />
-<!--
+    <!--
     <tested-number-card
       v-else-if="this.$route.params.card == 'number-of-tested'"
     />
@@ -29,7 +29,7 @@
     <inspection-persons-number-card
       v-else-if="this.$route.params.card == 'number-of-inspection-persons'"
     />
-<!--
+    <!--
     <telephone-advisory-reports-number-card
       v-else-if="
         this.$route.params.card ==
@@ -43,7 +43,7 @@
           'number-of-reports-to-covid19-consultation-desk'
       "
     />
-<!--
+    <!--
     <metro-card
       v-else-if="
         this.$route.params.card == 'predicted-number-of-toei-subway-passengers'
@@ -57,9 +57,7 @@
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
     <adjacent-prefecture-card
-       v-else-if="
-         this.$route.params.card == 'adjacent-prefecture-card'
-       "
+      v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
     />
   </div>
 </template>
@@ -94,16 +92,16 @@ import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vu
 export default {
   components: {
     ConfirmedCasesDetailsCard,
-//    TestedCasesDetailsCard,
+    //    TestedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-//    ConfirmedCasesByMunicipalitiesCard,
-//    TestedNumberCard,
+    //    ConfirmedCasesByMunicipalitiesCard,
+    //    TestedNumberCard,
     InspectionPersonsNumberCard,
-//    TelephoneAdvisoryReportsNumberCard,
+    //    TelephoneAdvisoryReportsNumberCard,
     ConsultationDeskReportsNumberCard,
-//    MetroCard,
-//    AgencyCard,
+    //    MetroCard,
+    //    AgencyCard,
     AgeCard,
     HokenCard,
     // HospitalizationCard,
@@ -119,46 +117,46 @@ export default {
         title = this.$t('検査陽性者の状況')
         updatedAt = Data.inspections_summary.date
         break
-//      case 'details-of-tested-cases':
-//        title = this.$t('検査実施状況')
-//        updatedAt = Data.inspection_status_summary.date
-//        break
+      //      case 'details-of-tested-cases':
+      //        title = this.$t('検査実施状況')
+      //        updatedAt = Data.inspection_status_summary.date
+      //        break
       case 'number-of-confirmed-cases':
         title = this.$t('陽性患者数')
         updatedAt = Data.patients.date
         break
-//      case 'number-of-confirmed-cases-by-municipalities':
-//        title = this.$t('陽性患者数（区市町村別）')
-//        updatedAt = patientData.date
-//        break
+      //      case 'number-of-confirmed-cases-by-municipalities':
+      //        title = this.$t('陽性患者数（区市町村別）')
+      //        updatedAt = patientData.date
+      //        break
       case 'attributes-of-confirmed-cases':
         title = this.$t('陽性患者の属性')
         updatedAt = Data.patients.date
         break
-//      case 'number-of-tested':
-//        title = this.$t('検査実施件数')
-//        updatedAt = Data.inspections_summary.date
-//        break
+      //      case 'number-of-tested':
+      //        title = this.$t('検査実施件数')
+      //        updatedAt = Data.inspections_summary.date
+      //        break
       case 'number-of-inspection-persons':
         title = this.$t('検査実施人数')
         updatedAt = Data.inspection_persons.date
         break
-//      case 'number-of-reports-to-covid19-telephone-advisory-center':
-//        title = this.$t('新型コロナコールセンター相談件数')
-//        updatedAt = Data.contacts.date
-//        break
+      //      case 'number-of-reports-to-covid19-telephone-advisory-center':
+      //        title = this.$t('新型コロナコールセンター相談件数')
+      //        updatedAt = Data.contacts.date
+      //        break
       case 'number-of-reports-to-covid19-consultation-desk':
         title = this.$t('新型コロナ受診相談窓口相談件数')
         updatedAt = Data.querents.date
         break
-//      case 'predicted-number-of-toei-subway-passengers':
-//        title = this.$t('都営地下鉄の利用者数の推移')
-//        updatedAt = MetroData.date
-//        break
-//      case 'agency':
-//        title = this.$t('都庁来庁者数の推移')
-//        updatedAt = agencyData.date
-//        break
+      //      case 'predicted-number-of-toei-subway-passengers':
+      //        title = this.$t('都営地下鉄の利用者数の推移')
+      //        updatedAt = MetroData.date
+      //        break
+      //      case 'agency':
+      //        title = this.$t('都庁来庁者数の推移')
+      //        updatedAt = agencyData.date
+      //        break
       case 'card':
         title = this.$t('年代別陽性患者数')
         updatedAt = age.last_update
@@ -190,14 +188,14 @@ export default {
     return data
   },
   head() {
-    const url = 'https://stopcovid19.metro.tokyo.lg.jp'
+    const url = 'https://covid19-nagano.info'
     const timestamp = new Date().getTime()
     const ogpImage =
       this.$i18n.locale === 'ja'
         ? `${url}/ogp/${this.$route.params.card}.png?t=${timestamp}`
         : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}`
     const description = `${this.updatedAt} | ${this.$t(
-      '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県内の個人が長野県非公式で開設したものです。'
+      '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県出身の個人(ITエンジニア)が長野県非公式で開設したものです。'
     )}`
 
     return {
