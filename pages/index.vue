@@ -28,7 +28,7 @@
       <!-- <tested-cases-details-card /> -->
       <confirmed-cases-attributes-card />
       <confirmed-cases-number-card />
-      <hoken-card />
+      <residential-area-card />
       <age-card />
       <stay-card />
       <beds-card />
@@ -58,7 +58,7 @@ import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsC
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import AgeCard from '@/components/cards/AgeCard.vue'
-import HokenCard from '@/components/cards/HokenCard.vue'
+import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
 import StayCard from '@/components/cards/StayCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 // import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
@@ -85,7 +85,7 @@ export default Vue.extend({
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
     AgeCard,
-    HokenCard,
+    ResidentialAreaCard,
     StayCard,
     // TestedNumberCard,
     InspectionPersonsNumberCard,

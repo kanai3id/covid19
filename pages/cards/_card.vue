@@ -52,7 +52,9 @@
     <agency-card v-else-if="this.$route.params.card == 'agency'" />
 -->
     <age-card v-else-if="this.$route.params.card == 'age-card'" />
-    <hoken-card v-else-if="this.$route.params.card == 'hoken-card'" />
+    <residential-area-card
+      v-else-if="this.$route.params.card == 'residential-area-card'"
+    />
     <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
@@ -67,7 +69,7 @@ import Data from '@/data/data.json'
 // import MetroData from '@/data/metro.json'
 // import agencyData from '@/data/agency.json'
 import age from '@/data/age.json'
-import hoken from '@/data/hoken.json'
+import residentialarea from '@/data/residential-area.json'
 import stay from '@/data/stay.json'
 import adjacentprefecture from '@/data/adjacent-prefecture.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
@@ -82,7 +84,7 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 // import MetroCard from '@/components/cards/MetroCard.vue'
 // import AgencyCard from '@/components/cards/AgencyCard.vue'
 import AgeCard from '@/components/cards/AgeCard.vue'
-import HokenCard from '@/components/cards/HokenCard.vue'
+import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
 // import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
 import StayCard from '@/components/cards/StayCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
@@ -103,7 +105,7 @@ export default {
     //    MetroCard,
     //    AgencyCard,
     AgeCard,
-    HokenCard,
+    ResidentialAreaCard,
     // HospitalizationCard,
     StayCard,
     BedsCard,
@@ -115,7 +117,7 @@ export default {
     switch (this.$route.params.card) {
       case 'details-of-confirmed-cases':
         title = this.$t('検査陽性者の状況')
-        updatedAt = Data.inspections_summary.date
+        updatedAt = Data.patients.date
         break
       //      case 'details-of-tested-cases':
       //        title = this.$t('検査実施状況')
@@ -161,9 +163,9 @@ export default {
         title = this.$t('年代別陽性患者数')
         updatedAt = age.last_update
         break
-      case 'hoken-card':
+      case 'residential-area-card':
         title = this.$t('居住地の状況')
-        updatedAt = hoken.date
+        updatedAt = residentialarea.date
         break
       case 'stay-card':
         title = this.$t('入院患者日数')
