@@ -180,7 +180,7 @@ const config: Configuration = {
         '/cards/predicted-number-of-toei-subway-passengers',
         '/cards/agency',
         '/cards/age-card',
-        '/cards/hoken-card',
+        '/cards/residential-area-card',
         '/cards/stay-card',
         '/cards/beds-card',
         '/cards/gender-card',

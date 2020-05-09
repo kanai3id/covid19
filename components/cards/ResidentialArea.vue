@@ -2,13 +2,13 @@
   <v-col cols="12" md="6" class="DataCard">
     <data-table
       :title="$t('居住地の状況')"
-      :title-id="'hoken-card'"
-      :chart-data="hokenTable"
+      :title-id="'residential-area-card'"
+      :chart-data="residentialAreaTable"
       :chart-option="{}"
       :date="Data.date"
       :info="sumInfoOfPatients"
       :url="
-        'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
+        'https://www.pref.nagano.lg.jp/residential-area-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
       :source="$t('オープンデータを入手')"
       :custom-sort="customSort"
@@ -18,9 +18,9 @@
 
 <script>
 import Data_ from '@/data/data.json'
-import Data from '@/data/hoken.json'
+import Data from '@/data/residential-area.json'
 import formatGraph from '@/utils/formatGraph'
-import formatTable from '@/utils/formatHokenTable'
+import formatTable from '@/utils/formatResidentialArea'
 import DataTable from '@/components/DataTable.vue'
 
 export default {
@@ -31,7 +31,7 @@ export default {
     // 感染者数グラフ
     const patientsGraph = formatGraph(Data_.patients_summary.data)
 
-    const hokenTable = formatTable(Data.data)
+    const residentialAreaTable = formatTable(Data.data)
 
     const sumInfoOfPatients = {
       lText: patientsGraph[
@@ -44,12 +44,12 @@ export default {
     }
 
     // 陽性患者の属性 ヘッダー翻訳
-    for (const header of hokenTable.headers) {
+    for (const header of residentialAreaTable.headers) {
       header.text =
         header.value === '退院' ? this.$t('退院※') : this.$t(header.value)
     }
     // 陽性患者の属性 中身の翻訳
-    for (const row of hokenTable.datasets) {
+    for (const row of residentialAreaTable.datasets) {
       row['更新日'] = this.getTranslatedWording(row['更新日'])
       row['居住地'] = this.getTranslatedWording(row['居住地'])
       row['陽性患者数'] = this.getTranslatedWording(row['陽性患者数'])
@@ -57,7 +57,7 @@ export default {
 
     const data = {
       Data,
-      hokenTable,
+      residentialAreaTable,
       sumInfoOfPatients
     }
     return data

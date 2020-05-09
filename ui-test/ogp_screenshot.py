@@ -11,7 +11,7 @@ PATHS = {
     "/cards/details-of-confirmed-cases": (959, 500),
     "/cards/attributes-of-confirmed-cases": (959, 480),
     "/cards/number-of-confirmed-cases": (959, 500),
-    "/cards/hoken-card": (959, 480),
+    "/cards/residential-area-card": (959, 480),
     "/cards/age-card": (959, 600),
     "/cards/stay-card": (959, 600),
     "/cards/beds-card": (959, 600),
