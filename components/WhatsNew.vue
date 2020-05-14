@@ -12,9 +12,9 @@
           mdi-bullhorn
         </v-icon>
         <external-link
-          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-sengen.html"
+          url="https://www.pref.nagano.lg.jp/eigyo/corona-stayhome.html"
         >
-          {{ $t('新型コロナウイルス警戒宣言') }}
+          {{ $t('信州ステイホームアクション') }}
         </external-link>
       </span>
     </div>
