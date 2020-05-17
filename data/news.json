@@ -1,14 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "05/17",
-      "url": "https://www.pref.nagano.lg.jp/koho/happyou/20200505press.html",
-      "text": "新型コロナウイルスお困りごと相談センター"
+      "date": "05/15",
+      "url": "https://www.pref.nagano.lg.jp/service/happyou/200515press_corona_taisakusengen.html",
+      "text": "新型コロナ対策推進宣言の店がスタートします！（産業労働部 産業立地・経営支援課 創業・サービス産業振興室）"
     },
     {
-      "date": "05/17",
-      "url": "https://www.pref.nagano.lg.jp/eigyo/ouenhojokin.html",
-      "text": "飲食・サービス業等新型コロナウイルス対策応援事業"
+      "date": "05/15",
+      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/200515press.html",
+      "text": "県・市町村連携 新型コロナウイルス感染拡大防止協力金等の申請受付期間を延長します(産業労働部産業政策課)"
+    },
+    {
+      "date": "05/15",
+      "url": "https://www.pref.nagano.lg.jp/kankoshin/happyou/200515press.html",
+      "text": "ＳＴＡＹ信州地域支えあいキャンペーン観光事業者の営業再開の取組を支援します（観光誘客課）"
+    },
+    {
+      "date": "05/15",
+      "url": "https://www.pref.nagano.lg.jp/gikai/gikai/happyou/010515.html",
+      "text": "長野県議会新型コロナウイルス感染症対策連絡本部会議を開催します（議会事務局総務課）"
     }
   ]
 }
