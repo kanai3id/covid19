@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "05/21",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200521senmonkapress.html",
+      "text": "第13回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "05/20",
       "url": "https://www.pref.nagano.lg.jp/kikaku/happyou/200520press.html",
       "text": "中央日本四県（新潟・長野・山梨・静岡）の知事が新型コロナウイルス感染症対策について西村内閣府特命担当大臣と意見交換を行います（企画振興部総合政策課）"
@@ -9,11 +14,6 @@
       "date": "05/20",
       "url": "https://www.pref.nagano.lg.jp/kikaku/happyou/020519press.html",
       "text": "県と市町村が共同で新型コロナウイルス感染症対策に係る緊急要望を行いました（企画振興部総合政策課）"
-    },
-    {
-      "date": "05/15",
-      "url": "https://www.pref.nagano.lg.jp/kankoshin/happyou/200515press.html",
-      "text": "ＳＴＡＹ信州地域支えあいキャンペーン観光事業者の営業再開の取組を支援します（観光誘客課）"
     }
   ]
 }
