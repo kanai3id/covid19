@@ -2,6 +2,11 @@
   "newsItems": [
     {
       "date": "05/28",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200528yuushikishapress.html",
+      "text": "第3回生活経済対策有識者懇談会を開催します（新型コロナウイルス感染症対策室）"
+    },
+    {
+      "date": "05/28",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/020527press.html",
       "text": "長野県新型コロナウイルス感染症対策条例（仮称）骨子（案）に対するご意見を募集します（危機管理部危機管理防災課）"
     },
@@ -14,11 +19,6 @@
       "date": "05/27",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200527senmonkapress.html",
       "text": "第14回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "05/27",
-      "url": "https://www.pref.nagano.lg.jp/bosai/020527press.html",
-      "text": "長野県新型コロナウイルス感染症・感染警戒レベルにおいて長野圏域はレベル2からレベル1になりました（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
