@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "05/28",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/020527press.html",
+      "text": "長野県新型コロナウイルス感染症対策条例（仮称）骨子（案）に対するご意見を募集します（危機管理部危機管理防災課）"
+    },
+    {
+      "date": "05/27",
+      "url": "https://www.pref.nagano.lg.jp/jinji/happyou/020527press.html",
+      "text": "新型コロナウイルス感染症の影響で失業された方等を対象に非常勤職員を募集します（総務部人事課）"
+    },
+    {
       "date": "05/27",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200527senmonkapress.html",
       "text": "第14回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
@@ -9,16 +19,6 @@
       "date": "05/27",
       "url": "https://www.pref.nagano.lg.jp/bosai/020527press.html",
       "text": "長野県新型コロナウイルス感染症・感染警戒レベルにおいて長野圏域はレベル2からレベル1になりました（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "05/26",
-      "url": "https://www.pref.nagano.lg.jp/bosai/200526press.html",
-      "text": "5月31日までの間、5月25日の緊急事態宣言解除の際に特定警戒都道府県であった地域との往来の自粛等をお願いします（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "05/25",
-      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/200525press.html",
-      "text": "長野県新型コロナ対策産業支援・再生本部会議を開催します(産業労働部産業政策課)"
     }
   ]
 }
