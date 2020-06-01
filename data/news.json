@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "06/01",
+      "url": "https://www.pref.nagano.lg.jp/bosai/0601press.html",
+      "text": "福岡県に対する往来については、慎重な対応をお願いします（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
+      "date": "06/01",
+      "url": "https://www.pref.nagano.lg.jp/bosai/0601press2.html",
+      "text": "【訂正版】福岡県に対する往来については、慎重な対応をお願いします（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "05/29",
       "url": "https://www.pref.nagano.lg.jp/shobo/200529press.html",
       "text": "新型コロナウイルス感染拡大防止のための施設の使用停止（休業）の要請等に係る電話相談窓口の統合について（危機管理部消防課）"
@@ -9,16 +19,6 @@
       "date": "05/29",
       "url": "https://www.pref.nagano.lg.jp/sansei/happyou/20200529press.html",
       "text": "新型コロナウイルス感染拡大防止のため一部業務を休業していた名古屋事務所、大阪事務所を6月1日（月）から全面再開します（産業労働部産業政策課）"
-    },
-    {
-      "date": "05/29",
-      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/20200529press2.html",
-      "text": "新型コロナの影響により支援が必要な事業者の相談・支援対応の充実のため、産業・雇用総合サポートセンターを設置します（産業労働部産業政策課）"
-    },
-    {
-      "date": "05/29",
-      "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200529press.html",
-      "text": "信州ベンチャー企業優先発注事業（新型コロナ特別対応型）認定申請者（信州ベンチャー開発認定品）を募集します（産業労働部産業立地・経営支援課）"
     }
   ]
 }
