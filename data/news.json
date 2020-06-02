@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "06/02",
+      "url": "https://www.pref.nagano.lg.jp/mono/happyou/200602press_seisansaitaku.html",
+      "text": "新型コロナウイルス感染症対策関連製品供給体制構築事業の支援対象者を決定しました（産業労働部産業技術課）"
+    },
+    {
+      "date": "06/02",
+      "url": "https://www.pref.nagano.lg.jp/kikaku/covid19/020602press.html",
+      "text": "長野県＆日本赤十字社　コラボ動画を公開！（新型コロナウイルス感染症対策関係）"
+    },
+    {
+      "date": "06/02",
+      "url": "https://www.pref.nagano.lg.jp/keieishien/20200528press.html",
+      "text": "新型コロナウイルス感染症に係るセーフティネット保証４号の指定期間が延長されました（産業労働部産業立地・経営支援課）"
+    },
+    {
       "date": "06/01",
       "url": "https://www.pref.nagano.lg.jp/bosai/0601press.html",
       "text": "福岡県に対する往来については、慎重な対応をお願いします（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "06/01",
-      "url": "https://www.pref.nagano.lg.jp/bosai/0601press2.html",
-      "text": "【訂正版】福岡県に対する往来については、慎重な対応をお願いします（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "05/29",
-      "url": "https://www.pref.nagano.lg.jp/shobo/200529press.html",
-      "text": "新型コロナウイルス感染拡大防止のための施設の使用停止（休業）の要請等に係る電話相談窓口の統合について（危機管理部消防課）"
-    },
-    {
-      "date": "05/29",
-      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/20200529press.html",
-      "text": "新型コロナウイルス感染拡大防止のため一部業務を休業していた名古屋事務所、大阪事務所を6月1日（月）から全面再開します（産業労働部産業政策課）"
     }
   ]
 }
