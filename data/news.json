@@ -1,19 +1,19 @@
 {
   "newsItems": [
     {
+      "date": "06/12",
+      "url": "https://www.pref.nagano.lg.jp/kyodo-npo/happyou/200612press.html",
+      "text": "ライオンズクラブ国際協会334-E地区様からフェイスシールドが寄贈されます（新型コロナウイルス感染症対策室・県民文化部県民協働課）"
+    },
+    {
+      "date": "06/12",
+      "url": "https://www.pref.nagano.lg.jp/kikaku/happyou/20200612press.html",
+      "text": "長野県×長野県ケーブルテレビ協議会 共同制作番組コロナに負けない！―新しい生活様式―を公開"
+    },
+    {
       "date": "06/10",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200610senmonkapress.html",
       "text": "第16回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "06/09",
-      "url": "https://www.pref.nagano.lg.jp/noson/happyou/20200609press.html",
-      "text": "農作業中の熱中症にご注意ください！！～新型コロナウイルス対策でのマスク着用時には特に注意～（農政部農村振興課）"
-    },
-    {
-      "date": "06/09",
-      "url": "https://www.pref.nagano.lg.jp/jinji/happyou/020609press.html",
-      "text": "新型コロナウイルス感染症の影響で失業された方等を対象にとした非常勤職員の募集期間を延長しました（総務部人事課）"
     }
   ]
 }
