@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "06/24",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200624.html",
+      "text": "新型コロナウイルス感染症一般健康相談窓口の相談受付時間を変更します（健康福祉部保健・疾病対策課）"
+    },
+    {
       "date": "06/15",
       "url": "https://www.pref.nagano.lg.jp/kyodo-npo/happyou/200615press.html",
       "text": "”コロナに負けない”信州応援基金がスタートしました（県民文化部県民協働課）"
@@ -14,11 +19,6 @@
       "date": "06/12",
       "url": "https://www.pref.nagano.lg.jp/kyodo-npo/happyou/200612press.html",
       "text": "ライオンズクラブ国際協会334-E地区様からフェイスシールドが寄贈されます（新型コロナウイルス感染症対策室・県民文化部県民協働課）"
-    },
-    {
-      "date": "06/12",
-      "url": "https://www.pref.nagano.lg.jp/kikaku/happyou/20200612press.html",
-      "text": "長野県×長野県ケーブルテレビ協議会 共同制作番組コロナに負けない！―新しい生活様式―を公開"
     }
   ]
 }
