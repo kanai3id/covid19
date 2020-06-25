@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "06/25",
+      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/20200625press.html",
+      "text": "休業要請等に係る相談、新型コロナウイルス拡大防止協力金受付窓口電話相談開設日を変更します（産業労働部産業政策課）"
+    },
+    {
       "date": "06/24",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200624.html",
       "text": "新型コロナウイルス感染症一般健康相談窓口の相談受付時間を変更します（健康福祉部保健・疾病対策課）"
@@ -14,11 +19,6 @@
       "date": "06/15",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200615senmonkapress.html",
       "text": "第17回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "06/12",
-      "url": "https://www.pref.nagano.lg.jp/kyodo-npo/happyou/200612press.html",
-      "text": "ライオンズクラブ国際協会334-E地区様からフェイスシールドが寄贈されます（新型コロナウイルス感染症対策室・県民文化部県民協働課）"
     }
   ]
 }
