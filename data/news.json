@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "07/02",
+      "url": "https://www.pref.nagano.lg.jp/rodokoyo/happyou/200702deskpress.html",
+      "text": "コロナ対策緊急支援デスク強化事業の業務受託者を募集します（産業労働部労働雇用課））"
+    },
+    {
       "date": "07/01",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200701senmonkapress.html",
       "text": "第18回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
@@ -14,11 +19,6 @@
       "date": "06/30",
       "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/20200630.html",
       "text": "信州ベンチャー企業優先発注事業（新型コロナ特別対応型）における新事業分野開拓者を認定しました（産業労働部産業立地・経営支援課）"
-    },
-    {
-      "date": "06/30",
-      "url": "https://www.pref.nagano.lg.jp/bosai/0630press.html",
-      "text": "埼玉県に対する往来については、慎重な対応をお願いします（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
