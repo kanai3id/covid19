@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "07/07",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200707senmonkapress.html",
+      "text": "第18回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "07/06",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200706yuushikishapress.html",
       "text": "第4回生活経済対策有識者懇談会を開催します（新型コロナウイルス感染症対策室）"
@@ -14,11 +19,6 @@
       "date": "07/03",
       "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200703press.html",
       "text": "新型コロナウイルス感染症の影響を受ける中小企業等の資金繰りを支援するため、中小企業融資制度を拡充します（産業労働部産業立地・経営支援課）"
-    },
-    {
-      "date": "07/02",
-      "url": "https://www.pref.nagano.lg.jp/rodokoyo/happyou/200702deskpress.html",
-      "text": "コロナ対策緊急支援デスク強化事業の業務受託者を募集します（産業労働部労働雇用課））"
     }
   ]
 }
