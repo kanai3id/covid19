@@ -1,9 +1,14 @@
 {
   "newsItems": [
     {
+      "date": "07/08",
+      "url": "https://www.pref.nagano.lg.jp/mono/happyou/20200703.html",
+      "text": "【コロナ特別対応！】新規就業者への技術伝承と雇用の維持を図るため研修を行う伝統的工芸品の製造業者に助成金を交付します（産業労働部産業技術課）"
+    },
+    {
       "date": "07/07",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200707senmonkapress.html",
-      "text": "第18回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
+      "text": "第19回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
     },
     {
       "date": "07/06",
@@ -14,11 +19,6 @@
       "date": "07/03",
       "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200703press_toppakin.html",
       "text": "健康・理美容サービス業等の小規模事業者向け新型コロナウイルス危機突破支援金の受付を７月１０日（金）から開始します（産業労働部産業立地・経営支援課）"
-    },
-    {
-      "date": "07/03",
-      "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200703press.html",
-      "text": "新型コロナウイルス感染症の影響を受ける中小企業等の資金繰りを支援するため、中小企業融資制度を拡充します（産業労働部産業立地・経営支援課）"
     }
   ]
 }
