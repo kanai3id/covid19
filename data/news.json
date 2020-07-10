@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "07/10",
+      "url": "https://www.pref.nagano.lg.jp/gikai/gikai/happyou/020710.html",
+      "text": "長野県議会新型コロナウイルス感染症対策連絡本部会議を開催します（議会事務局総務課）"
+    },
+    {
       "date": "07/08",
       "url": "https://www.pref.nagano.lg.jp/mono/happyou/20200703.html",
       "text": "【コロナ特別対応！】新規就業者への技術伝承と雇用の維持を図るため研修を行う伝統的工芸品の製造業者に助成金を交付します（産業労働部産業技術課）"
@@ -14,11 +19,6 @@
       "date": "07/06",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/200706yuushikishapress.html",
       "text": "第4回生活経済対策有識者懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/03",
-      "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200703press_toppakin.html",
-      "text": "健康・理美容サービス業等の小規模事業者向け新型コロナウイルス危機突破支援金の受付を７月１０日（金）から開始します（産業労働部産業立地・経営支援課）"
     }
   ]
 }
