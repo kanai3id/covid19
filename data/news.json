@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "07/16",
+      "url": "https://www.pref.nagano.lg.jp/eigyo/happyou/200716.html",
+      "text": "新型コロナウイルス感染症対策 長野県民手帳をご活用ください（産業労働部営業局）"
+    },
+    {
       "date": "07/15",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200715.html",
       "text": "新型コロナウイルス感染症感染者の発生について（80例）"
@@ -14,11 +19,6 @@
       "date": "07/13",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0713press2.html",
       "text": "北海道は、往来に当たって慎重な行動をお願いする地域に該当しなくなりました（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/12",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200712.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（78例）"
     }
   ]
 }
