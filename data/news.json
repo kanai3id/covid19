@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "07/21",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200721.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（85、86例）"
+    },
+    {
+      "date": "07/21",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0721.html",
+      "text": "福岡県への往来に当たっては、必要性をあらためて検討し、慎重に判断してください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "07/20",
       "url": "https://www.pref.nagano.lg.jp/kikaku/happyou/200720press.html",
       "text": "新型コロナ対策　アルクママスクバリエーションができました！"
@@ -9,16 +19,6 @@
       "date": "07/20",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0720press2.html",
       "text": "神奈川県への往来に当たっては、必要性をあらためて検討し、慎重に判断してください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/18",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200718.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（84例）"
-    },
-    {
-      "date": "07/17",
-      "url": "https://www.pref.nagano.lg.jp/nogi/happyou/20200717press.html",
-      "text": "新型コロナウイルス感染症に関する農業者相談窓口の開設日を変更します（農政部農業技術課）"
     }
   ]
 }
