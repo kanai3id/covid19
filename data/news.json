@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "07/24",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200724.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（87例）"
+    },
+    {
+      "date": "07/24",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0724shiga_press.html",
+      "text": "滋賀県、兵庫県、和歌山県との往来に当たっては、必要性をあらためて検討し、慎重に判断してください（危機管理部消防課新型コロナウイルス感染症対策室）"
+    },
+    {
+      "date": "07/24",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0724saga_press.html",
+      "text": "佐賀県との往来に当たっては、基本的な感染防止策の徹底など慎重な行動をお願いします（危機管理部消防課新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "07/23",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0723press.html",
       "text": "愛知県への往来に当たっては、必要性をあらためて検討し、慎重に判断してください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/22",
-      "url": "https://www.pref.nagano.lg.jp/zeimu/happyou/200722press.html",
-      "text": "新型コロナウイルス感染症対策助け合いふるさと寄付金の募集期間を延長します（総務部税務課）"
-    },
-    {
-      "date": "07/22",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0722.html",
-      "text": "岐阜県への往来に当たっては、基本的な感染防止策の徹底など慎重な行動をお願いします（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/21",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200721.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（85、86例）"
     }
   ]
 }
