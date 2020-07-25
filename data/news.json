@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "07/25",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200725.html",
+      "text": "【修正版】新型コロナウイルス感染症感染者の発生について（88例）"
+    },
+    {
+      "date": "07/25",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0725press2.html",
+      "text": "鹿児島県との往来に当たっては、必要性をあらためて検討し、慎重に判断してください（危機管理部消防課新型コロナウイルス感染症対策室）"
+    },
+    {
+      "date": "07/25",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0725.html",
+      "text": "山梨県、宮崎県及び沖縄県との往来に当たっては、基本的な感染防止策の徹底など慎重な行動をお願いします（危機管理部消防課新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "07/24",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200724.html",
       "text": "新型コロナウイルス感染症感染者の発生について（87例）"
-    },
-    {
-      "date": "07/24",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0724shiga_press.html",
-      "text": "滋賀県、兵庫県、和歌山県との往来に当たっては、必要性をあらためて検討し、慎重に判断してください（危機管理部消防課新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/24",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0724saga_press.html",
-      "text": "佐賀県との往来に当たっては、基本的な感染防止策の徹底など慎重な行動をお願いします（危機管理部消防課新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/23",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0723press.html",
-      "text": "愛知県への往来に当たっては、必要性をあらためて検討し、慎重に判断してください（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
