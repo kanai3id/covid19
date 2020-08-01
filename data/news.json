@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "08/01",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200801.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（106~111例）"
+    },
+    {
       "date": "07/31",
       "url": "https://www.pref.nagano.lg.jp/kenko-fukushi/happyou/press20200731.html",
       "text": "新型コロナ感染症クラスター対策チームを設置します（健康福祉部健康福祉政策課）"
@@ -14,11 +19,6 @@
       "date": "07/31",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0731press.html",
       "text": "宮城県及び香川県は、往来に当たって慎重な行動をお願いする地域に該当しなくなりました（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "07/31",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0731press2.html",
-      "text": "石川県及び鳥取県への往来に当たっては、基本的な感染防止策の徹底など慎重な行動をお願いします（新型コロナウイルス感染症対策室）"
     }
   ]
 }
