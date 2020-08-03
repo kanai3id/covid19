@@ -4,9 +4,9 @@
       <ul :class="$style.notes">
         <li>
         <external-link
-          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/20200424nyuin.pdf"
+          url="https://www.mhlw.go.jp/content/10900000/000655343.pdf"
         >
-          {{ $t('入院医療体制について') }}(2020-04-24)
+          {{ $t('入院医療体制について') }}(2020-07-29)
         </external-link>
         </li>
       </ul>
