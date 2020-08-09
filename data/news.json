@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "08/09",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200809.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（128～131例）"
+    },
+    {
+      "date": "08/09",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0406press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について"
+    },
+    {
+      "date": "08/09",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0405press.html",
+      "text": "新型コロナウイルス感染症患者の発生について"
+    },
+    {
       "date": "08/07",
       "url": "https://www.pref.nagano.lg.jp/kikaku/happyou/020807press.html",
       "text": "新型コロナウイルス感染症対策に係る緊急要請を行いました（危機管理部消防課新型コロナウイルス感染症対策室／企画振興部総合政策課／観光部山岳高原観光課）"
-    },
-    {
-      "date": "08/07",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200807.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（127例）"
-    },
-    {
-      "date": "08/07",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0807press2.html",
-      "text": "感染者が多数発生している地域との往来に当たっては十分ご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "08/06",
-      "url": "https://www.pref.nagano.lg.jp/rodokoyo/happyou/200805press.html",
-      "text": "Withコロナの就活を経験した就活のセンパイ学生との交流会をオンラインによる参加に限定して実施します（産業労働部労働雇用課）"
     }
   ]
 }
