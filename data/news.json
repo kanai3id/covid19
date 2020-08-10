@@ -1,19 +1,19 @@
 {
   "newsItems": [
     {
+      "date": "08/10",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200810.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（132例）"
+    },
+    {
+      "date": "08/10",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0810press.html",
+      "text": "感染者が多数発生している地域との往来に当たっては十分ご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "08/09",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200809.html",
       "text": "新型コロナウイルス感染症感染者の発生について（128～131例）"
-    },
-    {
-      "date": "08/09",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0406press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について"
-    },
-    {
-      "date": "08/09",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0405press.html",
-      "text": "新型コロナウイルス感染症患者の発生について"
     },
     {
       "date": "08/07",
