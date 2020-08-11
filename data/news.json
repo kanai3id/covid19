@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "08/10",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200810.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（132例）"
+      "date": "08/11",
+      "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200811press_ai-iot.html",
+      "text": "～Withコロナ時代を生き抜く～AI･IoT等先端技術利活用シンポジウムを開催します（産業労働部産業立地・経営支援課）"
     },
     {
-      "date": "08/10",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0810press.html",
+      "date": "08/11",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200811.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（133～134例）"
+    },
+    {
+      "date": "08/11",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0811press.html",
       "text": "感染者が多数発生している地域との往来に当たっては十分ご注意ください（危機管理部新型コロナウイルス感染症対策室）"
     },
     {
-      "date": "08/09",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200809.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（128～131例）"
-    },
-    {
-      "date": "08/07",
-      "url": "https://www.pref.nagano.lg.jp/kikaku/happyou/020807press.html",
-      "text": "新型コロナウイルス感染症対策に係る緊急要請を行いました（危機管理部消防課新型コロナウイルス感染症対策室／企画振興部総合政策課／観光部山岳高原観光課）"
+      "date": "08/11",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0811press2.html",
+      "text": "第23回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
     }
   ]
 }
