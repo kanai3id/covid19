@@ -1,8 +1,13 @@
 {
   "newsItems": [
     {
+      "date": "08/13",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200813.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（140例）"
+    },
+    {
       "date": "08/12",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200801.html",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200812.html",
       "text": "新型コロナウイルス感染症感染者の発生について（135~139例）"
     },
     {
@@ -14,11 +19,6 @@
       "date": "08/11",
       "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200811press_ai-iot.html",
       "text": "～Withコロナ時代を生き抜く～AI･IoT等先端技術利活用シンポジウムを開催します（産業労働部産業立地・経営支援課）"
-    },
-    {
-      "date": "08/11",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200811.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（133～134例）"
     }
   ]
 }
