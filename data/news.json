@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "08/14",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200814.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（141～143例）"
+    },
+    {
       "date": "08/13",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/covid19/press20200813.html",
       "text": "新型コロナウイルス感染症感染者の発生について（140例）"
@@ -14,11 +19,6 @@
       "date": "08/12",
       "url": "https://www.pref.nagano.lg.jp/eigyo/happyou/20200812press.html",
       "text": "コロナ禍でも、新しい商談形式に参加してビジネスチャンスを広げましょう！本年度のおいしい信州ふーど発掘商談会はＷＥＢ商談会形式で複数回開催します！（産業労働部営業局）"
-    },
-    {
-      "date": "08/11",
-      "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200811press_ai-iot.html",
-      "text": "～Withコロナ時代を生き抜く～AI･IoT等先端技術利活用シンポジウムを開催します（産業労働部産業立地・経営支援課）"
     }
   ]
 }
