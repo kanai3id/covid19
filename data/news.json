@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "08/24",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200824press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（173～178例）"
+    },
+    {
+      "date": "08/24",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0824press.html",
+      "text": "感染者が多数発生している地域との往来に当たっては十分ご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "08/23",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200823press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（170～172例）"
@@ -9,16 +19,6 @@
       "date": "08/22",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200822press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（164～169例）"
-    },
-    {
-      "date": "08/21",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200821press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（155～163例）"
-    },
-    {
-      "date": "08/20",
-      "url": "https://www.pref.nagano.lg.jp/rodokoyo/happyou/200820deskpress.html",
-      "text": "新型コロナウイルス感染症の影響により失業された方を支援するため長野県就業支援デスク緊急就業サポート事業（Jobサポ）を開始します！（産業労働部労働雇用課）"
     }
   ]
 }
