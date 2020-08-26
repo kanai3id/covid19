@@ -4,9 +4,9 @@
       <ul :class="$style.notes">
         <li>
         <external-link
-          url="https://www.mhlw.go.jp/content/10900000/000655343.pdf"
+          url="https://www.mhlw.go.jp/content/10900000/000661845.pdf"
         >
-          {{ $t('入院医療体制について') }}(2020-07-29)
+          {{ $t('入院医療体制について') }}(2020-08-19)
         </external-link>
         </li>
       </ul>
