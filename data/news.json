@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "08/27",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200827.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（195～199例）"
+    },
+    {
+      "date": "08/27",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0827press.html",
+      "text": "感染者が多数発生している地域との往来に当たっては十分ご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "08/26",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200826press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（186～192例）"
@@ -9,16 +19,6 @@
       "date": "08/26",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0826press.html",
       "text": "感染者が多数発生している地域との往来に当たっては十分ご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "08/26",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0826press2.html",
-      "text": "第6回生活経済対策有識者懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "08/25",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200825press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（184～185例）"
     }
   ]
 }
