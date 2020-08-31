@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "08/31",
+      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/200831press.html",
+      "text": "長野県新型コロナ対策産業支援・再生本部会議を開催します(産業労働部産業政策課)"
+    },
+    {
+      "date": "08/31",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200831press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（250～256例）"
+    },
+    {
+      "date": "08/31",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0831press.html",
+      "text": "感染者が多数発生している地域との往来に当たっては十分ご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "08/30",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200830press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（240～249例）"
-    },
-    {
-      "date": "08/29",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200829press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（220～232例）"
-    },
-    {
-      "date": "08/28",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200828press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（201～219例）"
-    },
-    {
-      "date": "08/28",
-      "url": "https://www.pref.nagano.lg.jp/jinken-danjo/200828press.html",
-      "text": "新型コロナウイルス感染症に係る人権関係機関連絡会議を開催します（県民文化部人権・男女共同参画課）"
     }
   ]
 }
