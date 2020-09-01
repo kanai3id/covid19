@@ -51,6 +51,7 @@
             </li>
           </ul>
         </li>
+<!--
         <li :class="[$style.box, $style.deceased]">
           <div :class="$style.pillar">
             <div :class="$style.content">
@@ -62,6 +63,7 @@
             </div>
           </div>
         </li>
+-->
         <li :class="[$style.box, $style.recovered]">
           <div :class="$style.pillar">
             <div :class="$style.content">
@@ -375,7 +377,7 @@ $default-boxdiff: 35px;
     &.deceased,
     &.recovered {
       margin-left: px2vw($bdw, $vw);
-      width: calc(100% / 5 - #{px2vw($bdw, $vw)});
+      width: calc(200% / 5 - #{px2vw($bdw, $vw)});
     }
   }
 }
