@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "09/02",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200902.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（262～268例）"
+    },
+    {
       "date": "09/01",
       "url": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/happyou/20200901.html",
       "text": "新型コロナウイルス感染症に関する差別・偏見防止に取り組みます（教育委員会事務局心の支援課）"
@@ -14,11 +19,6 @@
       "date": "09/01",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200901press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（257～258例）"
-    },
-    {
-      "date": "09/01",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200901press3.html",
-      "text": "上田市中心市街地の接待を伴う飲食店等に勤務している方を対象に、新型コロナウイルスのPCR検査を実施します。"
     }
   ]
 }
