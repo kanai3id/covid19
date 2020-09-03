@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "09/03",
+      "url": "https://www.pref.nagano.lg.jp/keieishien/20200902press.html",
+      "text": "新型コロナウイルス感染症に係るセーフティネット保証４号の指定期間が延長されました（産業労働部産業立地・経営支援課）"
+    },
+    {
+      "date": "09/03",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200903press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（269～277例）"
+    },
+    {
       "date": "09/02",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200902.html",
       "text": "新型コロナウイルス感染症感染者の発生について（262～268例）"
@@ -9,16 +19,6 @@
       "date": "09/01",
       "url": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/happyou/20200901.html",
       "text": "新型コロナウイルス感染症に関する差別・偏見防止に取り組みます（教育委員会事務局心の支援課）"
-    },
-    {
-      "date": "09/01",
-      "url": "https://www.pref.nagano.lg.jp/koho/happyou/200901press.html",
-      "text": "県政リモート座談会を開催します～コロナ禍における知事と事業者の皆さんとの意見交換～（企画振興部広報県民課）"
-    },
-    {
-      "date": "09/01",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200901press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（257～258例）"
     }
   ]
 }
