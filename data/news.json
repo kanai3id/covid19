@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "09/04",
+      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/20200904press.html",
+      "text": "新型コロナウイルス感染症の感染拡大に対応し、商店街等や店舗名を公表した事業者を支援するための予算を専決処分しました(総務部・産業労働部）"
+    },
+    {
+      "date": "09/04",
+      "url": "https://www.pref.nagano.lg.jp/kenko-fukushi/happyou/200904press.html",
+      "text": "県公式LINEアカウント長野県-新型コロナ対策パーソナルサポートで生活支援情報の提供を開始します（健康福祉部健康福祉政策課）"
+    },
+    {
+      "date": "09/04",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200904press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（281～283例）"
+    },
+    {
       "date": "09/03",
       "url": "https://www.pref.nagano.lg.jp/keieishien/20200902press.html",
       "text": "新型コロナウイルス感染症に係るセーフティネット保証４号の指定期間が延長されました（産業労働部産業立地・経営支援課）"
-    },
-    {
-      "date": "09/03",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200903press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（269～277例）"
-    },
-    {
-      "date": "09/02",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200902.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（262～268例）"
-    },
-    {
-      "date": "09/01",
-      "url": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/happyou/20200901.html",
-      "text": "新型コロナウイルス感染症に関する差別・偏見防止に取り組みます（教育委員会事務局心の支援課）"
     }
   ]
 }
