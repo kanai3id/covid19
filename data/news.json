@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "09/08",
+      "url": "https://www.pref.nagano.lg.jp/kenko-fukushi/happyou/0908press.html",
+      "text": "新型コロナウイルス感染症に関して医療機関への支援・医療提供体制の確保を求める国への要望を行います（健康福祉部健康福祉政策課）/（企画振興部市町村課）"
+    },
+    {
+      "date": "09/08",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200908press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（291例）"
+    },
+    {
       "date": "09/07",
       "url": "https://www.pref.nagano.lg.jp/noson/happyou/20200907press.html",
       "text": "～アフターコロナにおける信州暮らしの提案に向けて～信州暮らし（農ある暮らし・リゾートテレワーク）キックオフ会議を開催します（企画振興部信州暮らし推進課）/（産業労働部創業・サービス産業振興室）/（農政部農村振興課）/（建設部建築住宅課）"
@@ -9,16 +19,6 @@
       "date": "09/07",
       "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/200907press.html",
       "text": "SDGsセミナーコロナ禍におけるビジネスチャンスとしてのSDGsを開催します（産業立地・経営支援課）"
-    },
-    {
-      "date": "09/07",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200907press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（288～290例）"
-    },
-    {
-      "date": "09/05",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200905press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（285例）"
     }
   ]
 }
