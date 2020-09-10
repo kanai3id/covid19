@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "09/10",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200910press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（294～295例）"
+    },
+    {
+      "date": "09/10",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0910press.html",
+      "text": "佐久及び長野圏域の感染警戒レベルを3から2に引き下げます（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "09/09",
       "url": "https://www.pref.nagano.lg.jp/kenko-fukushi/happyou/0908press.html",
       "text": "新型コロナウイルス感染症に関して医療機関への支援・医療提供体制の確保を求める国への要望を行います（健康福祉部健康福祉政策課）/（企画振興部市町村課）"
@@ -9,16 +19,6 @@
       "date": "09/09",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200909press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（293例）"
-    },
-    {
-      "date": "09/09",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0909press.html",
-      "text": "第27回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/08",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200908press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（291例）"
     }
   ]
 }
