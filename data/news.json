@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "09/14",
+      "url": "https://www.pref.nagano.lg.jp/doctor/happyou/centerpress.html",
+      "text": "新型コロナウイルス感染症緊急包括支援事業の申請受付等を行う窓口を開設しました"
+    },
+    {
       "date": "09/12",
       "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0912press.html",
       "text": "上田圏域の感染警戒レベルを4から3に引き下げます（危機管理部新型コロナウイルス感染症対策室）"
@@ -14,11 +19,6 @@
       "date": "09/10",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200910press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（294～295例）"
-    },
-    {
-      "date": "09/10",
-      "url": "https://www.pref.nagano.lg.jp/iryo/happyou/press20200910.html",
-      "text": "新型コロナウイルス感染症軽症者等のための宿泊療養施設(東信地域)の運用を開始します（健康福祉部医療政策課）"
     }
   ]
 }
