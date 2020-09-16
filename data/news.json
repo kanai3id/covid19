@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "09/16",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0916press.html",
+      "text": "県内全域の感染警戒レベルをレベル1に引き下げます（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
+      "date": "09/16",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0916press.html",
+      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "09/15",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200915press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（297例）"
@@ -9,16 +19,6 @@
       "date": "09/15",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0915press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/15",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/020915press.html",
-      "text": "第28回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/14",
-      "url": "https://www.pref.nagano.lg.jp/doctor/happyou/centerpress.html",
-      "text": "新型コロナウイルス感染症緊急包括支援事業の申請受付等を行う窓口を開設しました"
     }
   ]
 }
