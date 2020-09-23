@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "09/23",
+      "url": "https://www.pref.nagano.lg.jp/jinken-danjo/20200923press.html",
+      "text": "新型コロナウイルスに伴う誹謗中傷等からみんなを守る共同宣言を行います（県民文化部人権・男女共同参画課）"
+    },
+    {
+      "date": "09/23",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0923press.html",
+      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
+      "date": "09/23",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/020923senmonkapress.html",
+      "text": "第29回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "09/18",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0918press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/16",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0916press.html",
-      "text": "県内全域の感染警戒レベルをレベル1に引き下げます（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/16",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0916press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/15",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200915press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（297例）"
     }
   ]
 }
