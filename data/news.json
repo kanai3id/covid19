@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "09/24",
+      "url": "https://www.pref.nagano.lg.jp/toshikei/happyou/200923press.html",
+      "text": "県管理公園の賑わい創出に関するアイディアを募集！～コロナ時代だからこそ、もっと楽しめる公園へ～(建設部都市・まちづくり課)"
+    },
+    {
+      "date": "09/24",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0924yuusikisyapress.html",
+      "text": "第7回生活経済対策有識者懇談会を開催します（新型コロナウイルス感染症対策室）"
+    },
+    {
+      "date": "09/24",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0924press.html",
+      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "09/23",
       "url": "https://www.pref.nagano.lg.jp/jinken-danjo/20200923press.html",
       "text": "新型コロナウイルスに伴う誹謗中傷等からみんなを守る共同宣言を行います（県民文化部人権・男女共同参画課）"
-    },
-    {
-      "date": "09/23",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0923press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/23",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/020923senmonkapress.html",
-      "text": "第29回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/18",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0918press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
