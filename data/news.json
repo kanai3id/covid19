@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "09/29",
+      "url": "https://www.pref.nagano.lg.jp/bosai/0929press.html",
+      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "09/28",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0928press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
@@ -14,11 +19,6 @@
       "date": "09/25",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0925press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/24",
-      "url": "https://www.pref.nagano.lg.jp/toshikei/happyou/200923press.html",
-      "text": "県管理公園の賑わい創出に関するアイディアを募集！～コロナ時代だからこそ、もっと楽しめる公園へ～(建設部都市・まちづくり課)"
     }
   ]
 }
