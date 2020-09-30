@@ -63,6 +63,10 @@ export default {
       } else {
         row['年代'] = this.$t(row['年代'])
       }
+
+      if (row['状況'] == '退院') {
+        row['状況'] = ""
+      }
     }
 
     const data = {
