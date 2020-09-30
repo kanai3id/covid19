@@ -1,23 +1,23 @@
 {
   "newsItems": [
     {
+      "date": "09/30",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200930press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（306例）"
+    },
+    {
+      "date": "09/30",
+      "url": "https://www.pref.nagano.lg.jp/gikai/gikai/happyou/020930.html",
+      "text": "長野県議会新型コロナウイルス感染症対策連絡本部会議を開催します（議会事務局総務課）"
+    },
+    {
+      "date": "09/30",
+      "url": "https://www.pref.nagano.lg.jp/bosai/0930press.html",
+      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "09/29",
       "url": "https://www.pref.nagano.lg.jp/bosai/0929press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/28",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0928press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "09/25",
-      "url": "https://www.pref.nagano.lg.jp/eigyo/happyou/2020092501press.html",
-      "text": "Afterコロナ時代を見据えた観光振興方針が策定されたことに伴い、安全・安心な観光地域づくりに資するための事業を対象に、観光関連サービス業等生産性向上支援事業の受付期間を延長します（産業労働部営業局）"
-    },
-    {
-      "date": "09/25",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/0925press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
