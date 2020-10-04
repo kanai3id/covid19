@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "10/04",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201004.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（313例）"
+    },
+    {
       "date": "10/03",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201003press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（312例）"
@@ -14,11 +19,6 @@
       "date": "10/02",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201002press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "10/01",
-      "url": "https://www.pref.nagano.lg.jp/koho/happyou/20201001press2.html",
-      "text": "新型コロナウイルスお困りごと相談センターの相談窓口の開設日を変更します（企画振興部広報県民課）"
     }
   ]
 }
