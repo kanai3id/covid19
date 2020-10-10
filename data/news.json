@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "10/10",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201010press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（319例）"
+    },
+    {
       "date": "10/09",
       "url": "https://www.pref.nagano.lg.jp/mono/happyou/1009kyokyu.html",
       "text": "新型コロナウイルス感染症対策関連製品供給体制構築事業の補助事業者の公募を開始します（産業労働部産業技術課）"
@@ -14,11 +19,6 @@
       "date": "10/09",
       "url": "https://www.pref.nagano.lg.jp/iju/201009press.html",
       "text": "採用担当者向けオンラインセミナー新型コロナが採用にもたらすものを開催します（企画振興部信州暮らし推進課・産業労働部労働雇用課）"
-    },
-    {
-      "date": "10/08",
-      "url": "https://www.pref.nagano.lg.jp/keieishien/happyou/201008press_sodanmadokuchi-henko.html",
-      "text": "中小企業・小規模事業者を対象とした新型コロナウイルス感染拡大に伴う経営・雇用に関する相談窓口の開設日を変更します（産業労働部産業立地・経営支援課、労働雇用課）"
     }
   ]
 }
