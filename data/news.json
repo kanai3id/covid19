@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "10/14",
+      "url": "https://www.pref.nagano.lg.jp/kokusai/happyou/201013pressrelease.html",
+      "text": "外国人県民に対する新型コロナウイルス感染症情報発信事業の業務受託事業者を募集します（県民文化部文化政策課多文化共生・パスポート室）"
+    },
+    {
       "date": "10/13",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201013press.html",
       "text": "新型コロナウイルス感染症患者の死亡について"
@@ -14,11 +19,6 @@
       "date": "10/13",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/021013senmonkapress.html",
       "text": "第31回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "10/12",
-      "url": "https://www.pref.nagano.lg.jp/eigyo/happyou/201007press.html",
-      "text": "令和２年度下期新型コロナウイルス感染症情報発信事業の業務受託者を募集します（産業労働部営業局）"
     }
   ]
 }
