@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "10/17",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201017press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（325~326例）"
+    },
+    {
       "date": "10/16",
       "url": "https://www.pref.nagano.lg.jp/shinko/happyou/20201016press.html",
       "text": "信州・諏訪からウィズコロナ時代の地域をひらく　やまびこフォーラム2020in諏訪の参加者を募集します（企画振興部地域振興課）"
@@ -14,11 +19,6 @@
       "date": "10/14",
       "url": "https://www.pref.nagano.lg.jp/kokusai/happyou/201013pressrelease.html",
       "text": "外国人県民に対する新型コロナウイルス感染症情報発信事業の業務受託事業者を募集します（県民文化部文化政策課多文化共生・パスポート室）"
-    },
-    {
-      "date": "10/13",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201013press.html",
-      "text": "新型コロナウイルス感染症患者の死亡について"
     }
   ]
 }
