@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "10/21",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/201021press.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（327例）"
+      "date": "10/22",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201022press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（328~329例）"
     },
     {
-      "date": "10/19",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20200919press.html",
-      "text": "長野日産自動車株式会社様から新型コロナウイルス感染症用の搬送車両を寄贈いただきます（健康福祉部感染症対策課）"
+      "date": "10/22",
+      "url": "https://www.pref.nagano.lg.jp/kankoshin/shienpress.html",
+      "text": "スキー場のリフト等を運営する事業者の新型コロナ対策を支援します（観光誘客課）"
     },
     {
-      "date": "10/19",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201019press.html",
+      "date": "10/22",
+      "url": "https://www.pref.nagano.lg.jp/iryo/happyou/press20201022.html",
+      "text": "新型コロナウイルス感染症軽症者等のための宿泊療養施設（東信地域）の運用を延長します（健康福祉部医療政策課）"
+    },
+    {
+      "date": "10/22",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201022press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "10/19",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/1019press.html",
-      "text": "第32回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
     }
   ]
 }
