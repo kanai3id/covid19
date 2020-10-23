@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "10/23",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/1023press.html",
+      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "10/22",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201022press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（328~329例）"
@@ -14,11 +19,6 @@
       "date": "10/22",
       "url": "https://www.pref.nagano.lg.jp/iryo/happyou/press20201022.html",
       "text": "新型コロナウイルス感染症軽症者等のための宿泊療養施設（東信地域）の運用を延長します（健康福祉部医療政策課）"
-    },
-    {
-      "date": "10/22",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201022press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
