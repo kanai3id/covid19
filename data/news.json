@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "10/31",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201031press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（340~341例）"
+    },
+    {
       "date": "10/30",
       "url": "https://www.pref.nagano.lg.jp/kankoki/happyou/happyou/201030press.html",
       "text": "新型コロナ感染防止対策に取り組む観光協会等を支援します（観光部山岳高原観光課）"
@@ -14,11 +19,6 @@
       "date": "10/30",
       "url": "https://www.pref.nagano.lg.jp/iju/happyou/20201030press.html",
       "text": "長野×新潟×富山×石川　４県合同オンライン移住フェア　“北陸新幹線でつながる、アフターコロナのNEW LIFE STYLE”　を開催します（企画振興部信州暮らし推進課）"
-    },
-    {
-      "date": "10/30",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201030press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
