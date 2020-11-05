@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "11/05",
+      "url": "https://www.pref.nagano.lg.jp/rodokoyo/happyou/021105press.html",
+      "text": "【好評につき第２弾！】Withコロナの就活を経験した就活のセンパイ学生との交流会を実施します（産業労働部労働雇用課）"
+    },
+    {
       "date": "11/04",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201104.html",
       "text": "第34回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
@@ -14,11 +19,6 @@
       "date": "11/02",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201102press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "11/01",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201101.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（342~343例）"
     }
   ]
 }
