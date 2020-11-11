@@ -1,6 +1,16 @@
 {
   "newsItems": [
     {
+      "date": "11/11",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201111press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（388～389例）"
+    },
+    {
+      "date": "11/11",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201111press.html",
+      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "11/10",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201110.html",
       "text": "新型コロナウイルス感染症感染者の発生について（385例）"
@@ -9,16 +19,6 @@
       "date": "11/10",
       "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201110press.html",
       "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "11/10",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/201110senmonkapress.html",
-      "text": "第35回新型コロナウイルス感染症対策専門家懇談会を開催します（新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "11/09",
-      "url": "https://www.pref.nagano.lg.jp/rodokoyo/happyou/201109press.html",
-      "text": "新型コロナウイルス感染症の影響により失業された方の雇用を確保するため緊急雇用対策助成金の受付を開始します（産業労働部労働雇用課）"
     }
   ]
 }
