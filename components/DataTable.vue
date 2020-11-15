@@ -13,7 +13,7 @@
       :custom-sort="customSort"
       :footer-props="{
         'items-per-page-options': [15, 30, 50, 100, 200, 300, -1],
-        'items-per-page-text': $t('1ページ当たり'),
+        'items-per-page-text': $t('1ページ当たり')
       }"
       class="cardTable"
     >
@@ -33,7 +33,7 @@
           $t('{itemsLength} 項目中 {pageStart} - {pageStop} ', {
             itemsLength: props.itemsLength,
             pageStart: props.pageStart,
-            pageStop: props.pageStop,
+            pageStop: props.pageStop
           })
         }}
       </template>
@@ -59,7 +59,6 @@
     -->
   </data-view>
 </template>
-
 
 <style lang="scss">
 .cardTable {
@@ -121,7 +120,15 @@
     font-size: 0.8rem;
   }
 }
-
+.v-menu__content {
+  width: 60px;
+  .v-list-item {
+    padding: 0 8px;
+  }
+}
+.v-list-item__title {
+  font-size: 0.8rem;
+}
 .note {
   margin: 8px 0 0;
   font-size: 12px;
@@ -142,31 +149,31 @@ import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
 // import OpenDataLink from '@/components/OpenDataLink.vue'
 
 export default Vue.extend({
-  components: { DataView, DataViewBasicInfoPanel /**, OpenDataLink */ },
+  components: { DataView, DataViewBasicInfoPanel /** , OpenDataLink */ },
   props: {
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     titleId: {
       type: String,
-      default: '',
+      default: ''
     },
     chartData: {
       type: Object,
-      default: () => {},
+      default: () => {}
     },
     date: {
       type: String,
-      default: '',
+      default: ''
     },
     info: {
       type: Object,
-      default: () => {},
+      default: () => {}
     },
     url: {
       type: String,
-      default: '',
+      default: ''
     },
     customSort: {
       type: Function,
@@ -187,8 +194,8 @@ export default Vue.extend({
           return comparison
         })
         return items
-      },
-    },
+      }
+    }
   },
   mounted() {
     const vTables = this.$refs.displayedTable as Vue
@@ -199,6 +206,6 @@ export default Vue.extend({
     nodes.forEach((table: HTMLElement) => {
       table.setAttribute('tabindex', '0')
     })
-  },
+  }
 })
 </script>
