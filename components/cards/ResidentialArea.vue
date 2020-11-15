@@ -21,7 +21,7 @@ import Data_ from '@/data/data.json'
 import Data from '@/data/residential-area.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatResidentialArea'
-import DataTable from '@/components/DataTable.vue'
+import DataTable from '@/components/DataTableExtend.vue'
 
 export default {
   components: {

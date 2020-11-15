@@ -1,16 +1,14 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
-    <client-only :placeholder="$t('読み込み中')">
+    <client-only>
       <data-table
-        :title="$t('陽性患者の属性')"
+        :title="$t('陽性者の属性')"
         :title-id="'attributes-of-confirmed-cases'"
         :chart-data="patientsTable"
         :chart-option="{}"
         :date="Data.patients.date"
         :info="sumInfoOfPatients"
-        :url="
-          'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
-        "
+        :url="'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'"
         :source="$t('オープンデータを入手')"
         :custom-sort="customSort"
       />
@@ -22,17 +20,24 @@
 import Data from '@/data/data.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
+import { getDayjsObject } from '@/utils/formatDate'
 import DataTable from '@/components/DataTable.vue'
 
 export default {
   components: {
-    DataTable
+    DataTable,
   },
   data() {
     // 感染者数グラフ
     const patientsGraph = formatGraph(Data.patients_summary.data)
     // 感染者数
     const patientsTable = formatTable(Data.patients.data)
+    // 日付
+    const lastDay = patientsGraph[patientsGraph.length - 1].label
+    const dateAsOf = this.$d(
+      getDayjsObject(lastDay).toDate(),
+      'dateWithoutYear'
+    )
 
     const sumInfoOfPatients = {
       lText: patientsGraph[
@@ -41,7 +46,7 @@ export default {
       sText: this.$t('{date}の累計', {
         date: patientsGraph[patientsGraph.length - 1].label
       }),
-      unit: this.$t('人')
+      unit: this.$t('人'),
     }
 
     // 陽性患者の属性 ヘッダー翻訳
@@ -52,37 +57,37 @@ export default {
     // 陽性患者の属性 中身の翻訳
     for (const row of patientsTable.datasets) {
       row['居住地'] = this.getTranslatedWording(row['居住地'])
-      row['性別'] = this.getTranslatedWording(row['性別'])
-      row['退院'] = this.getTranslatedWording(row['退院'])
+      row['年代と性別'] = this.getTranslatedWording(row['年代と性別'])
       row['状況'] = this.getTranslatedWording(row['状況'])
-      row['診断'] = this.getTranslatedWording(row['診断'])
 
-      if (row['年代'].substr(-1, 1) === '代') {
+      /* if (row['年代'].substr(-1, 1) === '代') {
         const age = row['年代'].substring(0, 2)
         row['年代'] = this.$t('{age}代', { age })
       } else {
         row['年代'] = this.$t(row['年代'])
-      }
-
-      if (row['状況'] == '退院') {
-        row['状況'] = ""
-      }
+      } */
     }
 
-    const data = {
+    return {
       Data,
       patientsTable,
-      sumInfoOfPatients
+      sumInfoOfPatients,
     }
-    return data
   },
   methods: {
     getTranslatedWording(value) {
-      if (value === '-' || value === '‐' || value === '―' || value == null) {
+      if (
+        value === '-' ||
+        value === '‐' ||
+        value === '―' ||
+        value === '－' ||
+        value === null
+      ) {
         // 翻訳しようとしている文字列が以下のいずれかだった場合、翻訳しない
         // - 全角のハイフン
         // - 半角のハイフン
         // - 全角のダッシュ
+        // - 全角ハイフンマイナス
         // - null
         return value
       }
@@ -90,8 +95,8 @@ export default {
       return this.$t(value)
     },
     customSort(items, index, isDesc) {
-      const lt10 = this.$t('10歳未満').toString()
-      const lt100 = this.$t('100歳以上').toString()
+      // const lt10 = this.$t('10歳未満').toString()
+      // const lt100 = this.$t('100歳以上').toString()
       const unknown = this.$t('不明').toString()
       const investigating = this.$t('調査中').toString()
       items.sort((a, b) => {
@@ -102,6 +107,7 @@ export default {
 
         let comparison = 0
 
+        /*
         // '10歳未満' < '10代' ... '90代' < '100歳以上' となるようにソートする
         // 「10歳未満」同士を比較する場合、と「100歳以上」同士を比較する場合、更にそうでない場合に場合分け
         if (
@@ -117,6 +123,7 @@ export default {
         } else {
           comparison = String(a[index[0]]) < String(b[index[0]]) ? -1 : 1
         }
+         */
 
         // 公表日のソートを正しくする
         if (index[0] === '公表日') {
@@ -124,10 +131,10 @@ export default {
           // 公表日に年まで含む場合は以下が使用可能になり、逆に今使用しているコードが使用不可能となる。
           // comparison = new Date(a[index[0]]) < new Date(b[index[0]]) ? -1 : 1
 
-          const aDate = a[index[0]].split('/').map(d => {
+          const aDate = a[index[0]].split('/').map((d) => {
             return parseInt(d)
           })
-          const bDate = b[index[0]].split('/').map(d => {
+          const bDate = b[index[0]].split('/').map((d) => {
             return parseInt(d)
           })
           comparison = aDate[1] > bDate[1] ? 1 : -1
@@ -155,7 +162,7 @@ export default {
         return isDesc[0] ? comparison * -1 : comparison
       })
       return items
-    }
-  }
+    },
+  },
 }
 </script>
