@@ -16,8 +16,12 @@
       <div>
         <slot name="button" />
       </div>
-      <div class="DataView-CardText">
+      <div class="DataView-Content">
         <slot />
+      </div>
+
+      <div class="DataView-Description DataView-Description--Additional">
+        <slot name="additionalDescription" />
       </div>
       <!--
       <div v-if="this.$slots.dataTable" class="DataView-Details">

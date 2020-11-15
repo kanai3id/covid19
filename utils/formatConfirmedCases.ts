@@ -9,23 +9,17 @@ type DataType = {
         {
           attr: '入院中'
           value: number
-          children: [
-            {
-              attr: '患者調査中'
-              value: number
-            },
-            {
-              attr: '無症状病原体保有者'
-              value: number
-            }
-          ]
         },
         {
-          attr: '退院'
+          attr: '患者'
           value: number
         },
         {
-          attr: '死亡'
+          attr: '無症状者'
+          value: number
+        },
+        {
+          attr: '退院'
           value: number
         }
       ]
@@ -37,10 +31,42 @@ type ConfirmedCasesType = {
   検査実施人数: number
   陽性者数: number
   入院中: number
-  患者調査中: number
-  無症状病原体保有者: number
-  死亡: number
+  患者: number
+  無症状者: number
   退院: number
+}
+
+interface ChildData {
+  attr: string
+  value: number
+}
+
+type ChildDataType = {
+  attr?: string
+  value?: number
+  children?: ChildData[]
+}
+
+function getSelectedItem(data: DataType, key: string) {
+  let result: number | undefined
+  const recursiveSearch = (data: ChildDataType) => {
+    if (result) {
+      return
+    }
+    if (data.attr === key) {
+      result = data.value
+    } else if (data.children) {
+      data.children.forEach((child: ChildDataType) => {
+        if (result) {
+          return
+        }
+        recursiveSearch(child)
+      })
+    }
+  }
+  recursiveSearch(data)
+
+  return result || 0
 }
 
 /**
@@ -49,14 +75,12 @@ type ConfirmedCasesType = {
  * @param data - Raw data
  */
 export default (data: DataType) => {
-  const formattedData: ConfirmedCasesType = {
-    検査実施人数: data.value,
-    陽性者数: data.children[0].value,
-    入院中: data.children[0].children[0].value,
-    患者調査中: data.children[0].children[0].children[0].value,
-    無症状病原体保有者: data.children[0].children[0].children[1].value,
-    死亡: data.children[0].children[2].value,
-    退院: data.children[0].children[1].value
-  }
-  return formattedData
+  return {
+    検査実施人数: getSelectedItem(data, '検査実施人数'),
+    陽性者数: getSelectedItem(data, '陽性患者数'),
+    入院中: getSelectedItem(data, '入院中'),
+    患者: getSelectedItem(data, '患者'),
+    無症状者: getSelectedItem(data, '無症状者'),
+    退院: getSelectedItem(data, '退院'),
+  } as ConfirmedCasesType
 }

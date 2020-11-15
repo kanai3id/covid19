@@ -17,7 +17,7 @@
 <script>
 import Data from '@/data/adjacent-prefecture.json'
 import formatTable from '@/utils/formatAdjacentPrefectureTable.ts'
-import DataTable from '@/components/DataTable.vue'
+import DataTable from '@/components/DataTableExtend.vue'
 
 export default {
   components: {

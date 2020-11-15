@@ -448,5 +448,9 @@
    "このようなソリューションの提供に感謝します。": "Thank you for providing such a solution.",
   "クリエイティブ・コモンズ 4.0": "Creative Commons 4.0",
   "信州ステイホームアクション": "SHINSHU STAY HOME ACTION",
-  "退院・死亡退院": "Discharge/Death Discharge"
+  "退院・死亡退院": "Discharge/Death Discharge",
+  "年代と性別": "Age, Gender",
+  "※死亡退院を含む": "(Note) Including death and discharge",
+  "1ページ当たり": "Items per page",
+  "{itemsLength} 項目中 {pageStart} - {pageStop} ": "{pageStart} - {pageStop} of {itemsLength} indexes"
 }
