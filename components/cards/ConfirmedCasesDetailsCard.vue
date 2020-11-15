@@ -31,11 +31,6 @@
           :aria-label="$t('検査陽性者の状況')"
           v-bind="confirmedCases"
         />
-        <!--<template v-slot:footer>
-          <open-data-link
-            url="https://www.pref.kyoto.jp/kentai/corona/pcrkensa.html"
-          />
-        </template>-->
       </data-view>
     </client-only>
   </v-col>
