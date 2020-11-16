@@ -9,7 +9,7 @@
         <template v-slot:additionalDescription>
           <ul>
             <li>
-              {{ $t('（注）チャーター機帰国者、クルーズ船乗客等は含まれていない') }}
+              {{ $t('（注）死亡数はCOVID-19 Japan様のデータを利用') }}
             </li>
             <!--<li>
               {{
