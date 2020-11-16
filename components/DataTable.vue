@@ -102,6 +102,9 @@
         }
       }
     }
+    .v-select {
+      margin-left: 10px;
+    }
     &:focus {
       outline: dotted $gray-3 1px;
     }
