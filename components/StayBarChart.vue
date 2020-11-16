@@ -16,6 +16,7 @@
       :options="displayOption"
       :height="240"
     />
+    <!--
     <template v-slot:description>
       <ul>
         <li>
@@ -25,6 +26,7 @@
         </li>
       </ul>
     </template>
+    -->
     <template v-slot:dataTable>
       <v-data-table
         :headers="tableHeaders"
