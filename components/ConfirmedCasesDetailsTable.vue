@@ -49,14 +49,22 @@
         </li>
         <li :class="[$style.box]">
           <div :class="$style.content">
-            <span>{{ $t('退院・死亡退院') }}</span>
+            <span>{{ $t('退院') }}</span>
             <span>
               <strong>{{ 退院.toLocaleString() }}</strong>
               <span :class="$style.unit">{{ $t('人') }}</span>
             </span>
           </div>
         </li>
-        
+        <li :class="[$style.box]">
+          <div :class="$style.content">
+            <span>{{ $t('死亡') }}</span>
+            <span>
+              <strong>{{ 死亡.toLocaleString() }}</strong>
+              <span :class="$style.unit">{{ $t('人') }}</span>
+            </span>
+          </div>
+        </li>
       </ul>
     </li>
   </ul>
@@ -70,29 +78,33 @@ export default Vue.extend({
   props: {
     検査実施人数: {
       type: Number,
-      required: true,
+      required: true
     },
     陽性者数: {
       type: Number,
-      required: true,
+      required: true
     },
     入院中: {
       type: Number,
-      required: true,
+      required: true
     },
     患者: {
       type: Number,
-      required: true,
+      required: true
     },
     無症状者: {
       type: Number,
-      required: true,
+      required: true
     },
     退院: {
       type: Number,
-      required: true,
+      required: true
     },
-  },
+    死亡: {
+      type: Number,
+      required: true
+    }
+  }
 })
 </script>
 
