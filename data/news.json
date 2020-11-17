@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "2020-11-17",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201117press.html",
+      "text": "新型コロナウイルス感染症感染者の発生について（472～478例）"
+    },
+    {
+      "date": "2020-11-17",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/462381.html",
+      "text": "(長野市)新型コロナウイルス感染症感染者の発生について【143～159例目】"
+    },
+    {
       "date": "2020-11-16",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201116press.html",
       "text": "新型コロナウイルス感染症感染者の発生について（462～464例）"
     },
     {
       "date": "2020-11-16",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201116press.html",
-      "text": "感染者が多数発生している地域との往来に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "2020-11-15",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201115.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（449～451例）"
-    },
-    {
-      "date": "2020-11-14",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201114.html",
-      "text": "新型コロナウイルス感染症感染者の発生について（430～437例）"
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/462325.html",
+      "text": "(長野市)新型コロナウイルス感染症感染者の発生について【136～142例目】"
     }
   ]
 }
