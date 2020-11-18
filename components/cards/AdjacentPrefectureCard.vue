@@ -7,7 +7,7 @@
       :chart-option="{}"
       :date="Data.date"
       :info="info"
-      :url="'https://www.stopcovid19.jp/'"
+      :url="'https://toyokeizai.net/sp/visual/tko/covid19/'"
       :source="$t('オープンデータを入手')"
       :custom-sort="customSort"
     />
