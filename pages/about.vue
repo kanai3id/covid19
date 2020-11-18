@@ -116,7 +116,7 @@
       <span><p></p></span>
       <p class="StaticCard-Note">
         <span>
-        {{ $t('隣接県の状況のみ、COVID-19 Japan様のデータを利用しています。') }}<br />
+        {{ $t('隣接県の状況のみ、TOYO KEIZAI ONLINE様のデータを利用しています。') }}<br />
         {{ $t('このようなソリューションの提供に感謝します。') }}<br />
         <a
           href="https://www.stopcovid19.jp/"
@@ -125,7 +125,7 @@
         >
           {{
             $t(
-              'COVID-19 Japan様'
+              'TOYO KEIZAI ONLINE様'
             )
           }}
         </a>

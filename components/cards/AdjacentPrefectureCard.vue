@@ -36,7 +36,7 @@ export default {
     }
 
     const info = {
-      sText: this.$t('COVID-19 Japan様のデータを利用', '')
+      sText: this.$t('TOYO KEIZAI ONLINE様のデータを利用', '')
     }
 
     const data = {
