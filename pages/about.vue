@@ -126,13 +126,7 @@
             {{ $t('TOYO KEIZAI ONLINE様') }}
           </a>
           <br />
-          <a
-            href="https://creativecommons.org/licenses/by/4.0/deed.ja"
-            target="_blank"
-            rel="noopener"
-          >
-            {{ $t('クリエイティブ・コモンズ 4.0') }}
-          </a>
+          {{ $t('MITライセンス') }}
         </span>
       </p>
     </static-card>
