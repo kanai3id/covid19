@@ -67,6 +67,15 @@
         </li>
       </ul>
     </li>
+    <li :class="[$style.box]">
+      <div :class="$style.content">
+        <span>{{ $t('実効再生産数') }}</span>
+        <span>
+          <strong>{{ 実効再生産数.toLocaleString() }}</strong>
+          <span :class="$style.unit">{{ $t('人') }}</span>
+        </span>
+      </div>
+    </li>
   </ul>
 </template>
 
@@ -101,6 +110,10 @@ export default Vue.extend({
       required: true
     },
     死亡: {
+      type: Number,
+      required: true
+    },
+    実効再生産数: {
       type: Number,
       required: true
     }

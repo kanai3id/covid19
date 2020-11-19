@@ -25,6 +25,10 @@ type DataType = {
         {
           attr: '死亡'
           value: number
+        },
+        {
+          attr: '実効再生産数'
+          value: number
         }
       ]
     }
@@ -39,6 +43,7 @@ type ConfirmedCasesType = {
   無症状者: number
   退院: number
   死亡: number
+  実効再生産数: number
 }
 
 interface ChildData {
@@ -87,6 +92,7 @@ export default (data: DataType) => {
     患者: getSelectedItem(data, '患者'),
     無症状者: getSelectedItem(data, '無症状者'),
     退院: getSelectedItem(data, '退院'),
-    死亡: getSelectedItem(data, '死亡')
+    死亡: getSelectedItem(data, '死亡'),
+    実効再生産数: getSelectedItem(data, '実効再生産数')
   } as ConfirmedCasesType
 }
