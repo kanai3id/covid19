@@ -9,7 +9,7 @@
         <template v-slot:additionalDescription>
           <ul>
             <li>
-              {{ $t('（注）重症、死亡数はTOYO KEIZAI ONLINE様のデータを利用') }}
+              {{ $t('（注）死亡数はTOYO KEIZAI ONLINE様のデータを利用') }}
             </li>
             <!--<li>
               {{

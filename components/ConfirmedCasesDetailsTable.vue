@@ -45,6 +45,7 @@
                 </span>
               </div>
             </li>
+            <!--
             <li :class="[$style.box]">
               <div :class="$style.content">
                 <span>{{ $t('重症') }}</span>
@@ -54,6 +55,7 @@
                 </span>
               </div>
             </li>
+            -->
           </ul>
         </li>
         <li :class="[$style.box]">
