@@ -45,6 +45,15 @@
                 </span>
               </div>
             </li>
+            <li :class="[$style.box]">
+              <div :class="$style.content">
+                <span>{{ $t('重症') }}</span>
+                <span>
+                  <strong>{{ 重症.toLocaleString() }}</strong>
+                  <span :class="$style.unit">{{ $t('人') }}</span>
+                </span>
+              </div>
+            </li>
           </ul>
         </li>
         <li :class="[$style.box]">
@@ -66,15 +75,6 @@
           </div>
         </li>
       </ul>
-    </li>
-    <li :class="[$style.box]">
-      <div :class="$style.content">
-        <span>{{ $t('実効再生産数') }}</span>
-        <span>
-          <strong>{{ 実効再生産数.toLocaleString() }}</strong>
-          <span :class="$style.unit">{{ $t('人') }}</span>
-        </span>
-      </div>
     </li>
   </ul>
 </template>
@@ -102,6 +102,10 @@ export default Vue.extend({
       required: true
     },
     無症状者: {
+      type: Number,
+      required: true
+    },
+    重症: {
       type: Number,
       required: true
     },

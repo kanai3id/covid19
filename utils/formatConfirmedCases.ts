@@ -19,6 +19,10 @@ type DataType = {
           value: number
         },
         {
+          attr: '重症'
+          value: number
+        },
+        {
           attr: '退院'
           value: number
         },
@@ -41,6 +45,7 @@ type ConfirmedCasesType = {
   入院中: number
   患者: number
   無症状者: number
+  重症: number
   退院: number
   死亡: number
   実効再生産数: number
@@ -91,6 +96,7 @@ export default (data: DataType) => {
     入院中: getSelectedItem(data, '入院中'),
     患者: getSelectedItem(data, '患者'),
     無症状者: getSelectedItem(data, '無症状者'),
+    重症: getSelectedItem(data, '重症'),
     退院: getSelectedItem(data, '退院'),
     死亡: getSelectedItem(data, '死亡'),
     実効再生産数: getSelectedItem(data, '実効再生産数')
