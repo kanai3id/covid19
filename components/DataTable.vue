@@ -7,7 +7,7 @@
       :ref="'displayedTable'"
       :headers="chartData.headers"
       :items="chartData.datasets"
-      :height="280"
+      :height="240"
       fixed-header
       :mobile-breakpoint="0"
       :custom-sort="customSort"
@@ -15,7 +15,11 @@
         'items-per-page-options': [15, 30, 50, 100, 200, 300, -1],
         'items-per-page-text': $t('1ページ当たり')
       }"
+      :items-per-page.sync="itemsPerPage"
+      :page.sync="page"
+      :disable-sort="true"
       class="cardTable"
+      :server-items-length="dataLength"
     >
       <template v-slot:body="{ items }">
         <tbody>
