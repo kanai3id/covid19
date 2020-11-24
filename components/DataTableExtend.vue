@@ -14,6 +14,8 @@
       :mobile-breakpoint="0"
       :custom-sort="customSort"
       class="cardTable"
+      :disable-sort="true"
+      :server-items-length="dataLength"
     />
     <!--
     >
