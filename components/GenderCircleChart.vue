@@ -144,7 +144,8 @@ export default {
         maintainAspectRatio: false,
         legend: {
           display: true
-        }
+        },
+        animation: { duration: 0 }
       }
     }
   },
