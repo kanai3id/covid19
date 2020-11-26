@@ -3,17 +3,17 @@
     <template v-slot:button>
       <ul :class="$style.notes">
         <li>
-        <external-link
-          url="https://www.mhlw.go.jp/content/10900000/000697184.pdf"
-        >
-          {{ $t('厚生労働省:療養状況等及び入院患者受入病床数について') }}(2020-11-18)
-        </external-link>
+          <external-link
+            url="https://www.mhlw.go.jp/content/10900000/000697184.pdf"
+          >
+            {{
+              $t('厚生労働省:療養状況等及び入院患者受入病床数について')
+            }}(2020-11-18)
+          </external-link>
         </li>
       </ul>
       <ul :class="$style.notes">
-        <li>
-          {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250
-        </li>
+        <li>{{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250</li>
       </ul>
     </template>
     <pie-chart
@@ -171,7 +171,8 @@ export default {
         maintainAspectRatio: false,
         legend: {
           display: true
-        }
+        },
+        animation: { duration: 0 }
       }
     }
   },
