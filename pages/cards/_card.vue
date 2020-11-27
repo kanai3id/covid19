@@ -55,7 +55,7 @@
     <residential-area-card
       v-else-if="this.$route.params.card == 'residential-area-card'"
     />
-    <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
+    <discharge-hospital-card v-else-if="this.$route.params.card == 'discharge-hospital-card'" />
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
     <adjacent-prefecture-card
@@ -70,7 +70,6 @@ import Data from '@/data/data.json'
 // import agencyData from '@/data/agency.json'
 import age from '@/data/age.json'
 import residentialarea from '@/data/residential-area.json'
-import stay from '@/data/stay.json'
 import adjacentprefecture from '@/data/adjacent-prefecture.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
@@ -86,7 +85,7 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 import AgeCard from '@/components/cards/AgeCard.vue'
 import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
 // import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
-import StayCard from '@/components/cards/StayCard.vue'
+import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
 import GenderCard from '@/components/cards/GenderCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
@@ -107,7 +106,7 @@ export default {
     AgeCard,
     ResidentialAreaCard,
     // HospitalizationCard,
-    StayCard,
+    DischargeHospitalCard,
     BedsCard,
     GenderCard,
     AdjacentPrefectureCard
@@ -167,9 +166,9 @@ export default {
         title = this.$t('居住地の状況')
         updatedAt = residentialarea.date
         break
-      case 'stay-card':
-        title = this.$t('入院患者日数')
-        updatedAt = stay.last_update
+      case 'discharge-hospital-card':
+        title = this.$t('退院数')
+        updatedAt =  adjacentprefecture.date
         break
       case 'beds-card':
         title = this.$t('入院患者数と病床数')
