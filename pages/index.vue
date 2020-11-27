@@ -30,7 +30,7 @@
       <confirmed-cases-number-card />
       <residential-area-card />
       <age-card />
-      <stay-card />
+      <discharge-hospital-card />
       <beds-card />
       <gender-card />
       <inspection-persons-number-card />
@@ -59,7 +59,7 @@ import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsC
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import AgeCard from '@/components/cards/AgeCard.vue'
 import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
-import StayCard from '@/components/cards/StayCard.vue'
+import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 // import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
@@ -86,7 +86,7 @@ export default Vue.extend({
     ConfirmedCasesAttributesCard,
     AgeCard,
     ResidentialAreaCard,
-    StayCard,
+    DischargeHospitalCard,
     // TestedNumberCard,
     InspectionPersonsNumberCard,
     // TelephoneAdvisoryReportsNumberCard
