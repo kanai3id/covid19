@@ -30,7 +30,7 @@
       <confirmed-cases-number-card />
       <residential-area-card />
       <age-card />
-      <discharge-hospital-card />
+      <stay-card />
       <beds-card />
       <gender-card />
       <inspection-persons-number-card />
@@ -40,6 +40,7 @@
       <!-- <metro-card /> -->
       <!-- <agency-card /> -->
       <adjacent-prefecture-card />
+      <discharge-hospital-card />
     </card-row>
     <v-divider />
   </div>
@@ -59,7 +60,7 @@ import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsC
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import AgeCard from '@/components/cards/AgeCard.vue'
 import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
-import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
+import StayCard from '@/components/cards/StayCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 // import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
@@ -72,6 +73,7 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 import BedsCard from '@/components/cards/BedsCard.vue'
 import GenderCard from '@/components/cards/GenderCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
+import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
 
 export default Vue.extend({
@@ -86,7 +88,7 @@ export default Vue.extend({
     ConfirmedCasesAttributesCard,
     AgeCard,
     ResidentialAreaCard,
-    DischargeHospitalCard,
+    StayCard,
     // TestedNumberCard,
     InspectionPersonsNumberCard,
     // TelephoneAdvisoryReportsNumberCard
@@ -95,7 +97,8 @@ export default Vue.extend({
     // AgencyCard
     BedsCard,
     GenderCard,
-    AdjacentPrefectureCard
+    AdjacentPrefectureCard,
+    DischargeHospitalCard
   },
   data() {
     const data = {
