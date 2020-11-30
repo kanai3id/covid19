@@ -55,11 +55,14 @@
     <residential-area-card
       v-else-if="this.$route.params.card == 'residential-area-card'"
     />
-    <discharge-hospital-card v-else-if="this.$route.params.card == 'discharge-hospital-card'" />
+    <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
+    />
+    <discharge-hospital-card
+      v-else-if="this.$route.params.card == 'discharge-hospital-card'"
     />
   </div>
 </template>
@@ -68,9 +71,13 @@
 import Data from '@/data/data.json'
 // import MetroData from '@/data/metro.json'
 // import agencyData from '@/data/agency.json'
-import age from '@/data/age.json'
+import ages from '@/data/age.json'
+import beds from '@/data/beds.json'
+import gender from '@/data/gender.json'
+import stay from '@/data/stay.json'
 import residentialarea from '@/data/residential-area.json'
 import adjacentprefecture from '@/data/adjacent-prefecture.json'
+import dischargehospital from '@/data/discharge-hospital.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
@@ -85,10 +92,11 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 import AgeCard from '@/components/cards/AgeCard.vue'
 import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
 // import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
-import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
+import StayCard from '@/components/cards/StayCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
 import GenderCard from '@/components/cards/GenderCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
+import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
 
 export default {
   components: {
@@ -106,10 +114,11 @@ export default {
     AgeCard,
     ResidentialAreaCard,
     // HospitalizationCard,
-    DischargeHospitalCard,
+    StayCard,
     BedsCard,
     GenderCard,
-    AdjacentPrefectureCard
+    AdjacentPrefectureCard,
+    DischargeHospitalCard
   },
   data() {
     let title, updatedAt
@@ -158,27 +167,33 @@ export default {
       //        title = this.$t('都庁来庁者数の推移')
       //        updatedAt = agencyData.date
       //        break
-      case 'card':
+      case 'age-card':
         title = this.$t('年代別陽性患者数')
-        updatedAt = age.last_update
+        updatedAt = ages.date
         break
       case 'residential-area-card':
         title = this.$t('居住地の状況')
         updatedAt = residentialarea.date
         break
-      case 'discharge-hospital-card':
-        title = this.$t('退院数')
-        updatedAt =  adjacentprefecture.date
+      case 'stay-card':
+        title = this.$t('入院日数')
+        updatedAt = stay.date
         break
       case 'beds-card':
         title = this.$t('入院患者数と病床数')
+        updatedAt = beds.beds_summary.date
         break
       case 'gender-card':
         title = this.$t('性別陽性患者数')
+        updatedAt = gender.gender_summary.date
         break
       case 'adjacent-prefecture-card':
         title = this.$t('隣接県の状況')
         updatedAt = adjacentprefecture.date
+        break
+      case 'discharge-hospital-card':
+        title = this.$t('退院・療養解除')
+        updatedAt = dischargehospital.date
         break
     }
 
