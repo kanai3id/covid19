@@ -1,24 +1,24 @@
 {
   "newsItems": [
     {
+      "date": "2020-12-07",
+      "url": "https://www.pref.nagano.lg.jp/keieishien/201207press.html",
+      "text": "withコロナ時代にベトナムで新しいビジネスパートナーを開拓する国際版オンライン商談会（ベトナム）の参加企業を募集します（産業立地・経営支援課）"
+    },
+    {
+      "date": "2020-12-07",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201207press.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（804～820例）"
+    },
+    {
+      "date": "2020-12-07",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20201207press.html",
+      "text": "陽性者が多数発生している地域への訪問に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
+    },
+    {
       "date": "2020-12-06",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201205press.html",
       "text": "新型コロナウイルス感染症陽性者の発生について（787～800例）"
-    },
-    {
-      "date": "2020-12-05",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/463449.html",
-      "text": "(長野市)新型コロナウイルス感染症感染者の発生について【285～287例目】"
-    },
-    {
-      "date": "2020-12-04",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20201204press.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（761～771例）"
-    },
-    {
-      "date": "2020-12-04",
-      "url": "https://www.pref.nagano.lg.jp/jinken-danjo/happyou/201204kokoro_press-teisei.html",
-      "text": "【訂正版】新型コロナに伴う誹謗中傷等の抑止に向けてココロのワクチンプロジェクトを展開します（県民文化部人権・男女共同参画課）"
     }
   ]
 }
