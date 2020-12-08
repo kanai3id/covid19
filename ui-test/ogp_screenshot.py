@@ -18,7 +18,7 @@ PATHS = {
     "/cards/gender-card": (959, 600),
     "/cards/number-of-inspection-persons": (959, 600),
     "/cards/number-of-reports-to-covid19-consultation-desk": (959, 500),
-    "/cards/adjacent-prefecture-card": (959, 480)
+    "/cards/adjacent-prefecture-card": (959, 480),
     "/cards/discharge-hospital-card": (959, 500)
 }
 
