@@ -7,18 +7,16 @@
         </v-icon>
         {{ $t('最新のお知らせ') }}
       </h3>
-<!--
       <span class="WhatsNew-link-to-emergency-page">
         <v-icon size="20" class="WhatsNew-link-to-emergency-page-icon">
           mdi-bullhorn
         </v-icon>
         <external-link
-          url="https://www.pref.nagano.lg.jp/eigyo/corona-stayhome.html"
+          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/0106komoroshilv5.pdf"
         >
-          {{ $t('信州ステイホームアクション') }}
+          {{ $t('小諸市の感染警戒レベルを５に引き上げ') }}
         </external-link>
       </span>
--->
     </div>
     <ul class="WhatsNew-list">
       <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
