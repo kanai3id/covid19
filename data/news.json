@@ -2,6 +2,11 @@
   "newsItems": [
     {
       "date": "2021-01-07",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/465028.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【397～403例目】"
+    },
+    {
+      "date": "2021-01-07",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210107press.html",
       "text": "令和３年１月９日（土）の新型コロナウイルス感染症受診・相談センター（諏訪保健所）電話番号の変更について（健康福祉部感染症対策課）"
     },
@@ -12,13 +17,8 @@
     },
     {
       "date": "2021-01-07",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/465028.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【397～403例目】"
-    },
-    {
-      "date": "2021-01-07",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/451795.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について"
+      "url": "https://www.pref.nagano.lg.jp/doctor/happyou/030107press.html",
+      "text": "新型コロナウイルス感染症緊急包括支援事業の申請受付期間を延長します（医師・看護人材確保対策課）"
     }
   ]
 }
