@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2021-01-09",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210109.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（1501～1541例）"
+    },
+    {
       "date": "2021-01-08",
       "url": "https://www.pref.nagano.lg.jp/noson/happyou/20210108press.html",
       "text": "～アフターコロナにおける信州暮らしの提案に向けて～信州暮らし八ヶ岳のふもと　ちのくらしガイドブックを紹介します（企画振興部信州暮らし推進課／産業労働部創業・サービス産業振興室／農政部農村振興課）"
@@ -14,11 +19,6 @@
       "date": "2021-01-08",
       "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/465100.html",
       "text": "(長野市)新型コロナウイルス感染症の発生について【404～406例目】"
-    },
-    {
-      "date": "2021-01-08",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/210108houmonpress.html",
-      "text": "緊急事態宣言の対象区域への訪問は、基本的に行わないようお願いします（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
