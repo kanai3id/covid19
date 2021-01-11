@@ -12,9 +12,9 @@
           mdi-bullhorn
         </v-icon>
         <external-link
-          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/0108iryokeiho.pdf"
+          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-sengen.html"
         >
-          {{ $t('全県に「医療警報」を発出します') }}
+          {{ $t('感染警戒レベル') }}
         </external-link>
       </span>
     </div>
