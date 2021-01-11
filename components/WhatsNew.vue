@@ -12,9 +12,9 @@
           mdi-bullhorn
         </v-icon>
         <external-link
-          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/0106komoroshilv5.pdf"
+          url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/0108iryokeiho.pdf"
         >
-          {{ $t('小諸市の感染警戒レベルを５に引き上げ') }}
+          {{ $t('全県に「医療警報」を発出します') }}
         </external-link>
       </span>
     </div>
