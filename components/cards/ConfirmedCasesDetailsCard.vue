@@ -9,6 +9,9 @@
         <template v-slot:additionalDescription>
           <ul>
             <li>
+              {{ $t('（注）入院：入院中/予定・宿泊療養/予定・自宅療養・調整中') }}
+            </li>
+            <li>
               {{ $t('（注）死亡数はTOYO KEIZAI ONLINE様のデータを利用') }}
             </li>
             <!--<li>
