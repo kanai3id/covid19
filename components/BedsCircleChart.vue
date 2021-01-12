@@ -1,6 +1,6 @@
 <template>
   <data-view :title="title" :title-id="titleId" :date="date" :url="url">
-    <template v-slot:button>
+    <template v-slot:additionalDescription>
       <ul :class="$style.notes">
         <li>
           <external-link
@@ -13,7 +13,10 @@
         </li>
       </ul>
       <ul :class="$style.notes">
-        <li>{{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250</li>
+        <li>* {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250</li>
+      </ul>
+      <ul :class="$style.notes">
+        <li>* {{ $t('入院：入院中/予定・宿泊療養/予定・自宅療養・調整中') }}</li>
       </ul>
     </template>
     <pie-chart
