@@ -16,17 +16,15 @@
       :options="displayOption"
       :height="240"
     />
-    <!--
     <template v-slot:description>
       <ul>
         <li>
           {{
-            $t('（注）退院した方は含まれていない')
+            $t('入院・療養施設・自宅療養')
           }}
         </li>
       </ul>
     </template>
-    -->
     <template v-slot:dataTable>
       <v-data-table
         :headers="tableHeaders"
