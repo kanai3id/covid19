@@ -14,7 +14,7 @@
         <external-link
           url="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-sengen.html"
         >
-          {{ $t('感染警戒レベル') }}
+          {{ $t('感染警戒レベル警報') }}
         </external-link>
       </span>
     </div>
