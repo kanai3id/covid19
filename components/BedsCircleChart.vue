@@ -159,11 +159,13 @@ export default {
             label(tooltipItem) {
               const index = tooltipItem.index
               const numerator = chartData[index].transition
-              const numeratorUnit = index === 1 ? unitBed : unitPerson
+              // const numeratorUnit = index === 1 ? unitBed : unitPerson
+              const numeratorUnit = index === 2 ? unitBed : unitPerson
               const denominator =
                 chartData[0].transition + chartData[1].transition
               const denominatorLabel = label
-              return `${numerator} ${numeratorUnit} (${denominatorLabel}: ${denominator}${unitBed})`
+              // return `${numerator} ${numeratorUnit} (${denominatorLabel}: ${denominator}${unitBed})`
+              return `${numerator} ${numeratorUnit}`
             },
             title(tooltipItem, data) {
               return data.labels[tooltipItem[0].index]
