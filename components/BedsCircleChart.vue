@@ -13,10 +13,9 @@
         </li>
       </ul>
       <ul :class="$style.notes">
-        <li>* {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250</li>
-      </ul>
-      <ul :class="$style.notes">
-        <li>* {{ $t('入院：入院中/予定・宿泊療養/予定・自宅療養・調整中') }}</li>
+        <li>
+          * {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250
+        </li>
       </ul>
     </template>
     <pie-chart
@@ -122,7 +121,8 @@ export default {
           ]
         }
       }
-      const colorArray = ['#00d154', '#008830']
+      // const colorArray = ['#00d154', '#008830']
+      const colorArray = ['#00b849', '#00d154', '#008830']
       return {
         labels: this.chartData.map(d => {
           return this.$t(d.label)
