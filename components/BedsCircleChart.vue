@@ -13,10 +13,9 @@
         </li>
       </ul>
       <ul :class="$style.notes">
-        <li>* {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250</li>
-      </ul>
-      <ul :class="$style.notes">
-        <li>* {{ $t('入院：入院中/予定・宿泊療養/予定・自宅療養・調整中') }}</li>
+        <li>
+          * {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250
+        </li>
       </ul>
     </template>
     <pie-chart
@@ -122,7 +121,8 @@ export default {
           ]
         }
       }
-      const colorArray = ['#00d154', '#008830']
+      // const colorArray = ['#00d154', '#008830']
+      const colorArray = ['#00b849', '#00d154', '#008830']
       return {
         labels: this.chartData.map(d => {
           return this.$t(d.label)
@@ -159,11 +159,13 @@ export default {
             label(tooltipItem) {
               const index = tooltipItem.index
               const numerator = chartData[index].transition
-              const numeratorUnit = index === 1 ? unitBed : unitPerson
+              // const numeratorUnit = index === 1 ? unitBed : unitPerson
+              const numeratorUnit = index === 2 ? unitBed : unitPerson
               const denominator =
                 chartData[0].transition + chartData[1].transition
               const denominatorLabel = label
-              return `${numerator} ${numeratorUnit} (${denominatorLabel}: ${denominator}${unitBed})`
+              // return `${numerator} ${numeratorUnit} (${denominatorLabel}: ${denominator}${unitBed})`
+              return `${numerator} ${numeratorUnit}`
             },
             title(tooltipItem, data) {
               return data.labels[tooltipItem[0].index]
