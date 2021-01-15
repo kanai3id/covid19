@@ -14,6 +14,9 @@
       </ul>
       <ul :class="$style.notes">
         <li>
+          * {{ $t('データは長野県の速報値を利用') }}
+        </li>
+        <li>
           * {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250
         </li>
       </ul>
@@ -40,11 +43,11 @@
 <script>
 import DataView from '@/components/DataView.vue'
 import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
-import OpenDataLink from '@/components/OpenDataLink.vue'
+// import OpenDataLink from '@/components/OpenDataLink.vue'
 import ExternalLink from '@/components/ExternalLink.vue'
 
 export default {
-  components: { DataView, DataViewBasicInfoPanel, OpenDataLink, ExternalLink },
+  components: { DataView, DataViewBasicInfoPanel, ExternalLink },
   props: {
     title: {
       type: String,
