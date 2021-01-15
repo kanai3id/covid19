@@ -183,7 +183,7 @@ const config: Configuration = {
         '/cards/residential-area-card',
         '/cards/stay-card',
         '/cards/beds-card',
-        '/cards/gender-card',
+        '/cards/patient-care-card',
         '/cards/adjacent-prefecture-card',
         '/cards/discharge-hospital-card'
       ]
