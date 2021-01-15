@@ -32,7 +32,8 @@
       <age-card />
       <stay-card />
       <beds-card />
-      <gender-card />
+      <patient-care-card />
+      <!-- <gender-card /> -->
       <inspection-persons-number-card />
       <!-- <tested-number-card /> -->
       <!-- <telephone-advisory-reports-number-card /> -->
@@ -71,7 +72,8 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 // import MetroCard from '@/components/cards/MetroCard.vue'
 // import AgencyCard from '@/components/cards/AgencyCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
-import GenderCard from '@/components/cards/GenderCard.vue'
+// import GenderCard from '@/components/cards/GenderCard.vue'
+import PatientCareCard from '@/components/cards/PatientCareCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
 import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
@@ -96,7 +98,8 @@ export default Vue.extend({
     // MetroCard,
     // AgencyCard
     BedsCard,
-    GenderCard,
+    // GenderCard,
+    PatientCareCard,
     AdjacentPrefectureCard,
     DischargeHospitalCard
   },
