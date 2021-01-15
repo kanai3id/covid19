@@ -6,6 +6,16 @@
         :title-id="'patient-care-card'"
         :date="mainSummary.lastUpdate"
       >
+        <template v-slot:additionalDescription>
+          <ul>
+            <li>
+              * {{ $t('データは長野県の速報値を利用') }}
+            </li>
+            <li>
+              * {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250
+            </li>
+          </ul>
+        </template>
         <confirmed-cases-details-table
           :aria-label="$t('検査陽性者の状況')"
           v-bind="confirmedCases"
