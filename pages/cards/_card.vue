@@ -58,13 +58,15 @@
     <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
     <patient-care-card v-else-if="this.$route.params.card == 'patient-care-card'" />
-    <!-- <gender-card v-else-if="this.$route.params.card == 'gender-card'" /> -->
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
     />
+    <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
+<!--
     <discharge-hospital-card
       v-else-if="this.$route.params.card == 'discharge-hospital-card'"
     />
+-->
   </div>
 </template>
 
@@ -96,7 +98,7 @@ import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
 // import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
 import StayCard from '@/components/cards/StayCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
-// import GenderCard from '@/components/cards/GenderCard.vue'
+import GenderCard from '@/components/cards/GenderCard.vue'
 import PatientCareCard from '@/components/cards/PatientCareCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
 import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
@@ -120,9 +122,9 @@ export default {
     StayCard,
     BedsCard,
     PatientCareCard,
-    // GenderCard,
     AdjacentPrefectureCard,
-    DischargeHospitalCard
+    DischargeHospitalCard,
+    GenderCard
   },
   data() {
     let title, updatedAt
@@ -187,10 +189,6 @@ export default {
         title = this.$t('入院患者数と病床数')
         updatedAt = beds.beds_summary.date
         break
-      // case 'gender-card':
-      //   title = this.$t('性別陽性患者数')
-      //   updatedAt = gender.gender_summary.date
-      //   break
       case 'patient-care-card':
          title = this.$t('患者療養状況')
          updatedAt = patient.lastUpdate
@@ -199,10 +197,14 @@ export default {
         title = this.$t('隣接県の状況')
         updatedAt = adjacentprefecture.date
         break
-      case 'discharge-hospital-card':
-        title = this.$t('退院・療養解除')
-        updatedAt = dischargehospital.date
+      case 'gender-card':
+        title = this.$t('性別陽性患者数')
+        updatedAt = gender.gender_summary.date
         break
+      // case 'discharge-hospital-card':
+      //   title = this.$t('退院・療養解除')
+      //   updatedAt = dischargehospital.date
+      //   break
     }
 
     const data = {

@@ -99,34 +99,48 @@
       </ul>
       <p class="StaticCard-Note">
         <span>
-          {{ $t('行政の皆さまのご協力に感謝します。') }}<br />
-          <a
-            href="https://www.pref.nagano.lg.jp/joho/kensei/tokei/johoka/opendata/documents/terms-of-use_r2.pdf"
-            target="_blank"
-            rel="noopener"
-          >
-            {{ $t('長野県オープンデータ利用規約') }}
-          </a>
-        </span>
-      </p>
-      <span><p /></span>
-      <p class="StaticCard-Note">
-        <span>
+        {{ $t('行政の皆さまのご協力に感謝します。') }}<br />
+        <a
+          href="https://www.pref.nagano.lg.jp/joho/kensei/tokei/johoka/opendata/documents/terms-of-use_r2.pdf"
+          target="_blank"
+          rel="noopener"
+        >
           {{
             $t(
-              '隣接県の状況のみ、TOYO KEIZAI ONLINE様のデータを利用しています。'
+              '長野県オープンデータ利用規約'
             )
-          }}<br />
-          {{ $t('このようなソリューションの提供に感謝します。') }}<br />
-          <a
-            href="https://toyokeizai.net/sp/visual/tko/covid19/"
-            target="_blank"
-            rel="noopener"
-          >
-            {{ $t('TOYO KEIZAI ONLINE様') }}
-          </a>
-          <br />
-          {{ $t('MITライセンス') }}
+          }}
+        </a>
+        </span>
+      </p>
+      <span><p></p></span>
+      <p class="StaticCard-Note">
+        <span>
+        {{ $t('隣接県の状況のみ、COVID-19 Japan様のデータを利用しています。') }}<br />
+        {{ $t('このようなソリューションの提供に感謝します。') }}<br />
+        <a
+          href="https://www.stopcovid19.jp/"
+          target="_blank"
+          rel="noopener"
+        >
+          {{
+            $t(
+              'COVID-19 Japan様'
+            )
+          }}
+        </a>
+        <br />
+        <a
+          href="https://creativecommons.org/licenses/by/4.0/deed.ja"
+          target="_blank"
+          rel="noopener"
+        >
+          {{
+            $t(
+              'クリエイティブ・コモンズ 4.0'
+            )
+          }}
+        </a>
         </span>
       </p>
     </static-card>

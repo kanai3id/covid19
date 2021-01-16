@@ -185,7 +185,8 @@ const config: Configuration = {
         '/cards/beds-card',
         '/cards/patient-care-card',
         '/cards/adjacent-prefecture-card',
-        '/cards/discharge-hospital-card'
+        '/cards/discharge-hospital-card',
+        '/cards/gender-card'
       ]
 
       const routes: string[] = []
