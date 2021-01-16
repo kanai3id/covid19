@@ -1,46 +1,46 @@
 {
-  "lastUpdate": "2021/01/15 17:46",
+  "lastUpdate": "2021/01/16 17:08",
   "main_summary": {
     "children": [
       {
         "attr": "患者数",
-        "value": 484,
+        "value": 531,
         "children": [
           {
             "attr": "入院",
-            "value": 235,
+            "value": 248,
             "children": [
               {
                 "attr": "入院中",
-                "value": 233
+                "value": 245
               },
               {
                 "attr": "入院予定",
-                "value": 2
+                "value": 3
               }
             ]
           },
           {
             "attr": "宿泊療養",
-            "value": 134,
+            "value": 143,
             "children": [
               {
                 "attr": "宿泊療養中",
-                "value": 134
+                "value": 139
               },
               {
                 "attr": "宿泊療養予定",
-                "value": 0
+                "value": 4
               }
             ]
           },
           {
             "attr": "自宅療養中",
-            "value": 104
+            "value": 123
           },
           {
             "attr": "調整中",
-            "value": 11
+            "value": 17
           }
         ]
       }
