@@ -62,9 +62,11 @@
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
     />
+<!--
     <discharge-hospital-card
       v-else-if="this.$route.params.card == 'discharge-hospital-card'"
     />
+-->
   </div>
 </template>
 
@@ -199,10 +201,10 @@ export default {
         title = this.$t('隣接県の状況')
         updatedAt = adjacentprefecture.date
         break
-      case 'discharge-hospital-card':
-        title = this.$t('退院・療養解除')
-        updatedAt = dischargehospital.date
-        break
+      // case 'discharge-hospital-card':
+      //   title = this.$t('退院・療養解除')
+      //   updatedAt = dischargehospital.date
+      //   break
     }
 
     const data = {

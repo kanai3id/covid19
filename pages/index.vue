@@ -41,7 +41,7 @@
       <!-- <metro-card /> -->
       <!-- <agency-card /> -->
       <adjacent-prefecture-card />
-      <discharge-hospital-card />
+      <!-- <discharge-hospital-card /> -->
     </card-row>
     <v-divider />
   </div>
@@ -75,7 +75,7 @@ import BedsCard from '@/components/cards/BedsCard.vue'
 // import GenderCard from '@/components/cards/GenderCard.vue'
 import PatientCareCard from '@/components/cards/PatientCareCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
-import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
+// import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
 
 export default Vue.extend({
@@ -101,7 +101,7 @@ export default Vue.extend({
     // GenderCard,
     PatientCareCard,
     AdjacentPrefectureCard,
-    DischargeHospitalCard
+    // DischargeHospitalCard
   },
   data() {
     const data = {
