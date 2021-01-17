@@ -42,7 +42,7 @@
           <div :class="$style.content">
             <span>{{ $t('宿泊療養') }}</span>
             <span>
-              <strong>{{ 入院.toLocaleString() }}</strong>
+              <strong>{{ 宿泊療養.toLocaleString() }}</strong>
               <span :class="$style.unit">{{ $t('人') }}</span>
             </span>
           </div>
