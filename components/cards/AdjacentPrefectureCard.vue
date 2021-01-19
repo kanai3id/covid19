@@ -7,7 +7,7 @@
       :chart-option="{}"
       :date="Data.date"
       :info="info"
-      :url="'https://www.stopcovid19.jp/'"
+      :url="'https://toyokeizai.net/sp/visual/tko/covid19/'"
       :source="$t('オープンデータを入手')"
       :custom-sort="customSort"
     />
@@ -36,7 +36,7 @@ export default {
     }
 
     const info = {
-      sText: this.$t('COVID-19 Japan様のデータを利用', '')
+      sText: this.$t('TOYO KEIZAI ONLINE様のデータを利用', '')
     }
 
     const data = {

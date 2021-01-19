@@ -6,8 +6,8 @@ const headers = [
   { text: '入院', value: '入院' },
   { text: '重症', value: '重症' },
   { text: '退院', value: '退院' },
-  { text: '死亡', value: '死亡' }
-//  { text: '実効再生産数', value: '実効再生産数' }
+  { text: '死亡', value: '死亡' },
+  { text: '実効再生産数', value: '実効再生産数' }
 ]
 
 type DataType = {
@@ -17,7 +17,7 @@ type DataType = {
   重症: number
   退院: number
   死亡: number
-//  実効再生産数: number
+  実効再生産数: number
   [key: string]: any
 }
 
@@ -28,7 +28,7 @@ type TableDataType = {
   重症: DataType['重症']
   退院: DataType['退院']
   死亡: DataType['死亡']
-//  実効再生産数: DataType['実効再生産数']
+  実効再生産数: DataType['実効再生産数']
 }
 
 type TableDateType = {
@@ -54,7 +54,7 @@ export default (data: DataType[]) => {
       重症: d['重症'],
       退院: d['退院'],
       死亡: d['死亡'],
-//      実効再生産数: d['実効再生産数']
+      実効再生産数: d['実効再生産数']
     }
     tableDate.datasets.push(TableRow)
   })
