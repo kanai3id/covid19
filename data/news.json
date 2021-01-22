@@ -2,13 +2,13 @@
   "newsItems": [
     {
       "date": "2021-01-22",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/465655.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【432例目】"
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210122press.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（2104～2129例）"
     },
     {
       "date": "2021-01-22",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210122press.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（2104～2129例）"
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/465655.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【432例目】"
     },
     {
       "date": "2021-01-22",
@@ -17,8 +17,8 @@
     },
     {
       "date": "2021-01-21",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/465605.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【431例目】"
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210121press.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（2079～2102例）"
     }
   ]
 }
