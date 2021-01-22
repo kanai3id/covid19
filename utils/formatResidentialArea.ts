@@ -3,6 +3,7 @@
 const headers = [
   { text: '更新日', value: '更新日' },
   { text: '居住地', value: '居住地' },
+  { text: '新規', value: '新規', align: 'center' },
   { text: '陽性者数', value: '陽性者数', align: 'center' },
   { text: '入院中', value: '入院中' },
   { text: '退院', value: '退院' }
@@ -11,6 +12,7 @@ const headers = [
 type DataType = {
   更新日: string
   居住地: string
+  新規: number
   陽性者数: number
   入院中: number
   退院: number
@@ -20,6 +22,7 @@ type DataType = {
 type TableDataType = {
   更新日: string
   居住地: DataType['居住地']
+  新規: DataType['新規']
   陽性者数: DataType['陽性者数']
   入院中: DataType['入院中']
   退院: DataType['退院']
@@ -44,6 +47,7 @@ export default (data: DataType[]) => {
     const TableRow: TableDataType = {
       更新日: d['更新日'],
       居住地: d['居住地'] ?? '調査中',
+      新規: d['新規'],
       陽性者数: d['陽性者数'],
       入院中: d['入院中'],
       退院: d['退院']
