@@ -8,11 +8,9 @@
       >
         <template v-slot:additionalDescription>
           <ul>
+            <li>* {{ $t('データは長野県の速報値を利用') }}</li>
             <li>
-              * {{ $t('データは長野県の速報値を利用') }}
-            </li>
-            <li>
-              * {{ $t('医療施設病床数') }}:350 / {{ $t('宿泊施設居室数') }}:250
+              * {{ $t('医療施設病床数') }}:434 / {{ $t('宿泊施設居室数') }}:375
             </li>
           </ul>
         </template>
@@ -40,8 +38,8 @@ export default {
     const confirmedCases = formatPatientCareCases(mainSummary.main_summary)
     return {
       mainSummary,
-      confirmedCases,
+      confirmedCases
     }
-  },
+  }
 }
 </script>
