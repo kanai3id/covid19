@@ -124,8 +124,8 @@ export default {
           ]
         }
       }
-      // const colorArray = ['#00d154', '#008830']
-      const colorArray = ['#00b849', '#00d154', '#008830']
+      const colorArray = ['#00d154', '#008830']
+      // const colorArray = ['#00b849', '#00d154', '#008830']
       return {
         labels: this.chartData.map(d => {
           return this.$t(d.label)
