@@ -57,7 +57,7 @@
     />
     <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
-    <!-- <patient-care-card v-else-if="this.$route.params.card == 'patient-care-card'" /> -->
+    <patient-care-card v-else-if="this.$route.params.card == 'patient-care-card'" />
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
@@ -96,8 +96,8 @@ import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
 // import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
 import StayCard from '@/components/cards/StayCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
-// import GenderCard from '@/components/cards/GenderCard.vue'
-// import PatientCareCard from '@/components/cards/PatientCareCard.vue'
+import GenderCard from '@/components/cards/GenderCard.vue'
+import PatientCareCard from '@/components/cards/PatientCareCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
 import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
 
@@ -120,7 +120,7 @@ export default {
     StayCard,
     BedsCard,
     PatientCareCard,
-    // GenderCard,
+    GenderCard,
     AdjacentPrefectureCard,
     DischargeHospitalCard
   },
@@ -191,10 +191,10 @@ export default {
         title = this.$t('性別陽性患者数')
         updatedAt = gender.gender_summary.date
         break
-      // case 'patient-care-card':
-      //   title = this.$t('患者療養状況')
-      //   updatedAt = patient.lastUpdate
-      //   break
+      case 'patient-care-card':
+         title = this.$t('患者療養状況')
+         updatedAt = patient.lastUpdate
+         break
       case 'adjacent-prefecture-card':
         title = this.$t('隣接県の状況')
         updatedAt = adjacentprefecture.date
