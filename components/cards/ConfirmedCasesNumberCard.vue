@@ -5,8 +5,9 @@
       :title-id="'number-of-confirmed-cases'"
       :chart-id="'time-bar-chart-patients'"
       :chart-data="patientsGraph"
-      :date="Data.patients.date"
+      :date="date"
       :unit="$t('人')"
+      :by-date="true"
       :url="
         'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
@@ -26,10 +27,11 @@ export default {
   data() {
     // 感染者数グラフ
     const patientsGraph = formatGraph(Data.patients_summary.data)
+    const date = Data.patients_summary.date
 
     const data = {
-      Data,
-      patientsGraph
+      patientsGraph,
+      date
     }
     return data
   }
