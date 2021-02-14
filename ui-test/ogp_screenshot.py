@@ -15,12 +15,11 @@ PATHS = {
     "/cards/age-card": (959, 600),
     "/cards/stay-card": (959, 500),
     "/cards/beds-card": (959, 600),
-    "/cards/patient-care-card": (959, 500),
+    "/cards/gender-card": (959, 600),
     "/cards/number-of-inspection-persons": (959, 600),
     "/cards/number-of-reports-to-covid19-consultation-desk": (959, 500),
     "/cards/adjacent-prefecture-card": (959, 480),
-    "/cards/discharge-hospital-card": (959, 500),
-    "/cards/gender-card": (959, 600)
+    "/cards/discharge-hospital-card": (959, 500)
 }
 
 options = webdriver.ChromeOptions()
