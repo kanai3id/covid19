@@ -169,24 +169,17 @@ const config: Configuration = {
       const locales = ['ja', 'en']
       const pages = [
         '/cards/details-of-confirmed-cases',
-        '/cards/details-of-tested-cases',
-        '/cards/number-of-confirmed-cases',
-        '/cards/number-of-confirmed-cases-by-municipalities',
         '/cards/attributes-of-confirmed-cases',
-        '/cards/number-of-tested',
-        '/cards/number-of-inspection-persons',
-        '/cards/number-of-reports-to-covid19-telephone-advisory-center',
-        '/cards/number-of-reports-to-covid19-consultation-desk',
-        '/cards/predicted-number-of-toei-subway-passengers',
-        '/cards/agency',
-        '/cards/age-card',
+        '/cards/number-of-confirmed-cases',
         '/cards/residential-area-card',
+        '/cards/age-card',
         '/cards/stay-card',
         '/cards/beds-card',
-        '/cards/patient-care-card',
+        '/cards/gender-card',
+        '/cards/number-of-inspection-persons',
+        '/cards/number-of-reports-to-covid19-consultation-desk',
         '/cards/adjacent-prefecture-card',
-        '/cards/discharge-hospital-card',
-        '/cards/gender-card'
+        '/cards/discharge-hospital-card'
       ]
 
       const routes: string[] = []
