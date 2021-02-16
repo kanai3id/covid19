@@ -297,11 +297,11 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 tooltipItem.value!
               ).toLocaleString()} ${unit}`
               return labelText
-            } //,
-            //title(tooltipItem, data) {
-            //  const label = data.labels![tooltipItem[0].index!] as string
-            //  return self.$d(getComplementedDate(label), 'dateWithoutYear')
-            //}
+            },
+            title(tooltipItem, data) {
+              const label = data.labels![tooltipItem[0].index!] as string
+              return self.$d(getComplementedDate(label), 'date')
+            }
           }
         },
         maintainAspectRatio: false,
