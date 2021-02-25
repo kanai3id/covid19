@@ -1,6 +1,11 @@
 {
   "newsItems": [
     {
+      "date": "2021-02-25",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210225press.html",
+      "text": "新型コロナウイルスワクチンに関する情報を掲載したホームページを開設します（健康福祉部感染症対策課ワクチン接種体制整備室）"
+    },
+    {
       "date": "2021-02-24",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210224press.html",
       "text": "新型コロナウイルス感染症陽性者の発生について（2359例）"
@@ -14,11 +19,6 @@
       "date": "2021-02-19",
       "url": "https://www.pref.nagano.lg.jp/toshikei/happyou/210219press2.html",
       "text": "県管理公園の賑わい創出に関するアイディアを募集！～コロナ時代だからこそ、もっと楽しめる公園へ～(建設部都市・まちづくり課)"
-    },
-    {
-      "date": "2021-02-19",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210219.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（2354例）"
     }
   ]
 }
