@@ -8,7 +8,9 @@
         :chart-option="{}"
         :date="Data.patients.date"
         :info="sumInfoOfPatients"
-        :url="'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'"
+        :url="
+          'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
+        "
         :source="$t('オープンデータを入手')"
         :custom-sort="customSort"
       />
@@ -25,7 +27,7 @@ import DataTable from '@/components/DataTable.vue'
 
 export default {
   components: {
-    DataTable,
+    DataTable
   },
   data() {
     // 感染者数グラフ
@@ -34,19 +36,14 @@ export default {
     const patientsTable = formatTable(Data.patients.data)
     // 日付
     const lastDay = patientsGraph[patientsGraph.length - 1].label
-    const dateAsOf = this.$d(
-      getDayjsObject(lastDay).toDate(),
-      'dateWithoutYear'
-    )
+    const dateAsOf = this.$d(getDayjsObject(lastDay).toDate(), 'date')
 
     const sumInfoOfPatients = {
       lText: patientsGraph[
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
-      sText: this.$t('{date}の累計', {
-        date: patientsGraph[patientsGraph.length - 1].label
-      }),
-      unit: this.$t('人'),
+      sText: this.$t('{date}の累計', { date: dateAsOf }),
+      unit: this.$t('人')
     }
 
     // 陽性患者の属性 ヘッダー翻訳
@@ -71,7 +68,7 @@ export default {
     return {
       Data,
       patientsTable,
-      sumInfoOfPatients,
+      sumInfoOfPatients
     }
   },
   methods: {
@@ -131,10 +128,10 @@ export default {
           // 公表日に年まで含む場合は以下が使用可能になり、逆に今使用しているコードが使用不可能となる。
           // comparison = new Date(a[index[0]]) < new Date(b[index[0]]) ? -1 : 1
 
-          const aDate = a[index[0]].split('/').map((d) => {
+          const aDate = a[index[0]].split('/').map(d => {
             return parseInt(d)
           })
-          const bDate = b[index[0]].split('/').map((d) => {
+          const bDate = b[index[0]].split('/').map(d => {
             return parseInt(d)
           })
           comparison = aDate[1] > bDate[1] ? 1 : -1
@@ -162,7 +159,7 @@ export default {
         return isDesc[0] ? comparison * -1 : comparison
       })
       return items
-    },
-  },
+    }
+  }
 }
 </script>

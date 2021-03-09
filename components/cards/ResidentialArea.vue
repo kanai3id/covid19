@@ -21,6 +21,7 @@ import Data_ from '@/data/data.json'
 import Data from '@/data/residential-area.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatResidentialArea'
+import { getDayjsObject } from '@/utils/formatDate'
 import DataTable from '@/components/DataTableExtend.vue'
 
 export default {
@@ -33,13 +34,15 @@ export default {
 
     const residentialAreaTable = formatTable(Data.data)
 
+    // 日付
+    const lastDay = patientsGraph[patientsGraph.length - 1].label
+    const dateAsOf = this.$d(getDayjsObject(lastDay).toDate(), 'date')
+
     const sumInfoOfPatients = {
       lText: patientsGraph[
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
-      sText: this.$t('{date}の累計', {
-        date: patientsGraph[patientsGraph.length - 1].label
-      }),
+      sText: this.$t('{date}の累計', { date: dateAsOf }),
       unit: this.$t('人')
     }
 
