@@ -58,10 +58,10 @@
         <div class="Footer-Left">
           <slot name="footer" />
           <div>
-            <a class="Permalink" :href="permalink()">
-              <time :datetime="formattedDate">{{
-                $t('{date} 更新', { date })
-              }}</time>
+            <a class="Permalink" :href="permalink">
+              <time :datetime="formattedDate">
+                {{ $t('{date} 更新', { date: formattedDateForDisplay }) }}
+              </time>
             </a>
           </div>
         </div>
@@ -214,6 +214,9 @@ export default Vue.extend({
   computed: {
     formattedDate(): string {
       return convertDatetimeToISO8601Format(this.date)
+    },
+    formattedDateForDisplay(): string {
+      return this.$d(new Date(this.date), 'dateTime')
     },
     graphEmbedValue(): string {
       const graphEmbedValue =

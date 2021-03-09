@@ -4,7 +4,7 @@
       <slot name="attentionNote" />
     </template>
     <template v-slot:description>
-      {{ comment }}
+      <slot name="description" />
     </template>
     <template v-slot:button>
       <data-selector
@@ -47,41 +47,38 @@
       </client-only>
     </template>
     <template v-slot:infoPanel>
-      <data-view-basic-info-panel
+      <data-view-data-set-panel
         :l-text="displayInfo.lText"
         :s-text="displayInfo.sText"
         :unit="displayInfo.unit"
       />
       <slot v-if="dataKind === 'cumulative'" name="additionalInfoPanel" />
     </template>
-    <!--
-      <template v-slot:footer>
-        <open-data-link v-show="url" :url="url" />
-      </template>
-    -->
+    <template v-slot:footer>
+      <open-data-link v-show="url" :url="url" />
+    </template>
   </data-view>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
 import { Chart } from 'chart.js'
 import dayjs from 'dayjs'
-import { GraphDataType } from '@/utils/formatGraph'
-import DataView from '@/components/DataView.vue'
+import Vue from 'vue'
+import { ThisTypedComponentOptionsWithRecordProps } from 'vue/types/options'
+
 import DataSelector from '@/components/DataSelector.vue'
-import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
+import DataView from '@/components/DataView.vue'
+import DataViewDataSetPanel from '@/components/DataViewDataSetPanel.vue'
 import DataViewTable, {
   TableHeader,
   TableItem
 } from '@/components/DataViewTable.vue'
+import OpenDataLink from '@/components/OpenDataLink.vue'
 import ScrollableChart from '@/components/ScrollableChart.vue'
-// import OpenDataLink from '@/components/OpenDataLink.vue'
 import { DisplayData, yAxesBgPlugin } from '@/plugins/vue-chart'
-
+import calcDayBeforeRatio from '@/utils/calcDayBeforeRatio'
 import { getGraphSeriesStyle } from '@/utils/colors'
-import { getComplementedDate } from '@/utils/formatDate'
-import { calcDayBeforeRatio } from '@/utils/formatDayBeforeRatio'
+import { GraphDataType } from '@/utils/formatGraph'
 
 type Data = {
   dataKind: 'transition' | 'cumulative'
@@ -109,7 +106,6 @@ type Props = {
   chartId: string
   chartData: GraphDataType[]
   date: string
-  comment: string
   unit: string
   url: string
   yAxesBgPlugin: Chart.PluginServiceRegistrationOptions[]
@@ -133,10 +129,10 @@ const options: ThisTypedComponentOptionsWithRecordProps<
   components: {
     DataView,
     DataSelector,
-    DataViewBasicInfoPanel,
+    DataViewDataSetPanel,
     DataViewTable,
-    ScrollableChart
-    // OpenDataLink,
+    ScrollableChart,
+    OpenDataLink
   },
   props: {
     title: {
@@ -158,11 +154,6 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     date: {
       type: String,
       required: true
-    },
-    comment: {
-      type: String,
-      required: false,
-      default: ''
     },
     unit: {
       type: String,
@@ -191,10 +182,11 @@ const options: ThisTypedComponentOptionsWithRecordProps<
         displayData: this.displayData,
         dataIndex: 1
       })
+      const formattedLastDay = this.$d(lastDay, 'date')
       if (this.dataKind === 'transition' && this.byDate) {
         return {
           lText: lastDayData,
-          sText: `${lastDay} ${this.$t('日別値')}（${this.$t(
+          sText: `${formattedLastDay} ${this.$t('日別値')}（${this.$t(
             '前日比'
           )}: ${dayBeforeRatio} ${this.unit}）`,
           unit: this.unit
@@ -202,7 +194,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       } else if (this.dataKind === 'transition') {
         return {
           lText: lastDayData,
-          sText: `${lastDay} ${this.$t('実績値')}（${this.$t(
+          sText: `${formattedLastDay} ${this.$t('実績値')}（${this.$t(
             '前日比'
           )}: ${dayBeforeRatio} ${this.unit}）`,
           unit: this.unit
@@ -210,7 +202,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       }
       return {
         lText: lastDayData,
-        sText: `${lastDay} ${this.$t('累計値')}（${this.$t(
+        sText: `${formattedLastDay} ${this.$t('累計値')}（${this.$t(
           '前日比'
         )}: ${dayBeforeRatio} ${this.unit}）`,
         unit: this.unit
@@ -285,22 +277,22 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       }
     },
     displayOption() {
-      const self = this
       const unit = this.unit
       const scaledTicksYAxisMax = this.scaledTicksYAxisMax
+
       const options: Chart.ChartOptions = {
         tooltips: {
           displayColors: false,
           callbacks: {
-            label(tooltipItem) {
+            label: tooltipItem => {
               const labelText = `${parseInt(
                 tooltipItem.value!
               ).toLocaleString()} ${unit}`
               return labelText
             },
-            title(tooltipItem, data) {
+            title: (tooltipItem, data) => {
               const label = data.labels![tooltipItem[0].index!] as string
-              return self.$d(getComplementedDate(label), 'date')
+              return this.$d(new Date(label), 'date')
             }
           }
         },
@@ -347,31 +339,34 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               time: {
                 unit: 'month',
                 displayFormats: {
-                  month: 'MMM'
+                  month: 'YYYY-MM'
                 }
               }
             }
           ],
           yAxes: [
             {
-              stacked: true,
+              position: 'left',
               gridLines: {
                 display: true,
+                drawOnChartArea: true,
                 color: '#E5E5E5'
               },
               ticks: {
-                suggestedMin: 0,
                 maxTicksLimit: 8,
                 fontColor: '#808080',
+                suggestedMin: 0,
                 suggestedMax: scaledTicksYAxisMax
               }
             }
           ]
         }
       }
+
       if (this.$route.query.ogp === 'true') {
         Object.assign(options, { animation: { duration: 0 } })
       }
+
       return options
     },
     displayDataHeader() {
@@ -399,12 +394,14 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       }
     },
     displayOptionHeader() {
+      const scaledTicksYAxisMax = this.scaledTicksYAxisMax
+
       const options: Chart.ChartOptions = {
+        tooltips: { enabled: false },
         maintainAspectRatio: false,
         legend: {
           display: false
         },
-        tooltips: { enabled: false },
         scales: {
           xAxes: [
             {
@@ -416,9 +413,8 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               ticks: {
                 fontSize: 9,
                 maxTicksLimit: 20,
-                fontColor: 'transparent',
+                fontColor: 'transparent', // displayOption では '#808080'
                 maxRotation: 0,
-                minRotation: 0,
                 callback: (label: string) => {
                   return dayjs(label).format('D')
                 }
@@ -429,58 +425,45 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               stacked: true,
               gridLines: {
                 drawOnChartArea: false,
-                drawTicks: false, // true -> false
+                drawTicks: false, // displayOption では true
                 drawBorder: false,
                 tickMarkLength: 10
               },
               ticks: {
                 fontSize: 11,
-                fontColor: 'transparent', // #808080
-                padding: 13, // 3 + 10(tickMarkLength)
-                fontStyle: 'bold',
-                callback: (label: string) => {
-                  const monthStringArry = [
-                    'Jan',
-                    'Feb',
-                    'Mar',
-                    'Apr',
-                    'May',
-                    'Jun',
-                    'Jul',
-                    'Aug',
-                    'Sep',
-                    'Oct',
-                    'Nov',
-                    'Dec'
-                  ]
-                  const month = monthStringArry.indexOf(label.split(' ')[0]) + 1
-                  return month + '月'
-                }
+                fontColor: 'transparent', // displayOption では '#808080'
+                padding: 13, // 3 + 10(tickMarkLength)，displayOption では 3
+                fontStyle: 'bold'
               },
               type: 'time',
               time: {
-                unit: 'month'
+                unit: 'month',
+                displayFormats: {
+                  month: 'YYYY-MM'
+                }
               }
             }
           ],
           yAxes: [
             {
-              stacked: true,
+              position: 'left',
               gridLines: {
                 display: true,
-                drawOnChartArea: false,
-                color: '#E5E5E5' // #E5E5E5
+                drawOnChartArea: false, // displayOption では true
+                color: '#E5E5E5'
               },
               ticks: {
-                suggestedMin: 0,
                 maxTicksLimit: 8,
-                fontColor: '#808080' // #808080
+                fontColor: '#808080',
+                suggestedMin: 0,
+                suggestedMax: scaledTicksYAxisMax
               }
             }
           ]
         },
         animation: { duration: 0 }
       }
+
       return options
     },
     scaledTicksYAxisMax() {
