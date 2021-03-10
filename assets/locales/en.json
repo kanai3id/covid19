@@ -504,5 +504,7 @@
   "年代と性別": "Age, Gender",
   "※死亡退院を含む": "(Note) Including death discharge / transfer",
   "1ページ当たり": "Items per page",
-  "{itemsLength} 項目中 {pageStart} - {pageStop} ": "{pageStart} - {pageStop} of {itemsLength} indexes"
+  "{itemsLength} 項目中 {pageStart} - {pageStop} ": "{pageStart} - {pageStop} of {itemsLength} indexes",
+  "ワクチン接種について": "About vaccination",
+  "新型コロナウイルス感染症に係るワクチン接種について": "About vaccination for new coronavirus infection"
 }
