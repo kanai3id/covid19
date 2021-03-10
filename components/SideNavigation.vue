@@ -165,6 +165,13 @@ export default Vue.extend({
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona.html',
           divider: true
         },
+        {
+          icon: 'mdi-needle',
+          title: this.$t('新型コロナウイルス感染症に係るワクチン接種について'),
+          link:
+            'https://www.pref.nagano.lg.jp/kansensho-taisaku/vaccine.html',
+          divider: true
+        },
         /*   
         {
           icon: 'ParentIcon',
