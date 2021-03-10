@@ -10,9 +10,16 @@ if not os.path.exists("ogp"):
 PATHS = {
     "/?dummy": (959, 500),
     "/cards/details-of-confirmed-cases": (959, 500),
+    "/cards/attributes-of-confirmed-cases": (959, 480),
     "/cards/number-of-confirmed-cases": (959, 500),
+    "/cards/residential-area-card": (959, 480),
+    "/cards/age-card": (959, 600),
+    "/cards/stay-card": (959, 500),
     "/cards/beds-card": (959, 600),
     "/cards/gender-card": (959, 600),
+    "/cards/number-of-inspection-persons": (959, 600),
+    "/cards/number-of-reports-to-covid19-consultation-desk": (959, 500),
+    "/cards/adjacent-prefecture-card": (959, 480),
     "/cards/discharge-hospital-card": (959, 500)
 }
 
@@ -24,7 +31,6 @@ driver = webdriver.Chrome(options=options)
 
 langs = ['ja', 'en']
 for lang in langs:
-    print(lang)
     if not os.path.exists("ogp/{}".format(lang)):
         os.mkdir("ogp/{}".format(lang))
     for path, size in PATHS.items():
