@@ -218,10 +218,14 @@ export default Vue.extend({
     formattedDateForDisplay(): string {
       return this.$d(new Date(this.date), 'dateTime')
     },
+    permalink(): string {
+      const permalink = `/cards/${this.titleId}`
+      return this.localePath(permalink)
+    },
     graphEmbedValue(): string {
       const graphEmbedValue =
         '<iframe width="560" height="315" src="' +
-        this.permalink(true, true) +
+        this.permalink_l(true, true) +
         '" frameborder="0"></iframe>'
       return graphEmbedValue
     }
@@ -266,7 +270,7 @@ export default Vue.extend({
     stopClosingShareMenu(e: Event) {
       e.stopPropagation()
     },
-    permalink(host: boolean = false, embed: boolean = false) {
+    permalink_l(host: boolean = false, embed: boolean = false) {
       let permalink = '/cards/' + this.titleId
       if (embed) {
         permalink = permalink + '?embed=true'
@@ -287,20 +291,20 @@ export default Vue.extend({
         this.$t('新型コロナウイルス感染症') +
         this.$t('対策サイト(非公式)') +
         '&url=' +
-        this.permalink(true) +
+        this.permalink_l(true) +
         '&' +
         'hashtags=StopCovid19JP'
       window.open(url)
     },
     facebook() {
       const url =
-        'https://www.facebook.com/sharer.php?u=' + this.permalink(true)
+        'https://www.facebook.com/sharer.php?u=' + this.permalink_l(true)
       window.open(url)
     },
     line() {
       const url =
         'https://social-plugins.line.me/lineit/share?url=' +
-        this.permalink(true)
+        this.permalink_l(true)
       window.open(url)
     },
     toggleDetails() {
