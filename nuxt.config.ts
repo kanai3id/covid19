@@ -166,7 +166,7 @@ const config: Configuration = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['en']
+      const locales = ['ja','en']
       const pages = [
         '/cards/details-of-confirmed-cases',
         '/cards/attributes-of-confirmed-cases',
