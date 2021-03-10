@@ -2,6 +2,7 @@ import os
 import time
 
 from selenium import webdriver
+import chromedriver_binary
 
 if not os.path.exists("ogp"):
     os.mkdir("ogp")
@@ -21,7 +22,9 @@ options.add_argument("--hide-scrollbars")
 
 driver = webdriver.Chrome(options=options)
 
-for lang in ("ja"):
+langs = ['ja', 'en']
+for lang in langs:
+    print(lang)
     if not os.path.exists("ogp/{}".format(lang)):
         os.mkdir("ogp/{}".format(lang))
     for path, size in PATHS.items():
