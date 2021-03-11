@@ -4,11 +4,11 @@
       <ul :class="$style.notes">
         <li>
           <external-link
-            url="https://www.mhlw.go.jp/content/10900000/000749618.pdf"
+            url="https://www.mhlw.go.jp/stf/seisakunitsuite/newpage_00023.html"
           >
             {{
               $t('厚生労働省:療養状況等及び入院患者受入病床数について')
-            }}(2021-3-5)
+            }}
           </external-link>
         </li>
       </ul>
