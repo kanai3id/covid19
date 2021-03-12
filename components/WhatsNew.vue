@@ -9,12 +9,12 @@
       </h3>
       <span class="WhatsNew-link-to-emergency-page">
         <v-icon size="20" class="WhatsNew-link-to-emergency-page-icon">
-          mdi-bullhorn
+          mdi-needle
         </v-icon>
         <external-link
           url="https://www.pref.nagano.lg.jp/kansensho-taisaku/vaccine.html"
         >
-          {{ $t('ワクチン接種について') }}
+          {{ $t('新型コロナワクチン接種について') }}
         </external-link>
       </span>
     </div>
