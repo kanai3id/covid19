@@ -53,7 +53,6 @@ export default {
     }
     // 陽性患者の属性 中身の翻訳
     for (const row of residentialAreaTable.datasets) {
-      row['更新日'] = this.getTranslatedWording(row['更新日'])
       row['居住地'] = this.getTranslatedWording(row['居住地'])
       row['陽性患者数'] = this.getTranslatedWording(row['陽性患者数'])
     }
