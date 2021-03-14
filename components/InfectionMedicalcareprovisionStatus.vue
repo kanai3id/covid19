@@ -2,7 +2,7 @@
   <div class="InfectionMedicalcareprovisionStatus">
     <div class="InfectionMedicalcareprovisionStatus-heading">
       <h3 class="InfectionMedicalcareprovisionStatus-title">
-        {{ $t('感染状況・医療提供体制（サマリ）') }}
+        {{ $t('感染状況・医療提供体制') }}
         {{ date }}時点
       </h3>
     </div>
@@ -86,7 +86,7 @@ export default Vue.extend({
       border: 1px solid;
       border-color: #000;
       margin: 0 4px 1px 0;
-      color: $gray-3;
+      color: #008830;
 
       @include font-size(12);
     }
