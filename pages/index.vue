@@ -14,6 +14,8 @@
       </div>
     </div>
     <whats-new class="mb-4" :items="newsItems" />
+    <infection-medicalcareprovision-status />
+<!--
     <static-info
       class="mb-4"
       :url="
@@ -22,6 +24,7 @@
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
       :btn-text="$t('24時間対応')"
     />
+-->
     <card-row class="DataBlock">
       <!-- 検査陽性者の状況 -->
       <confirmed-cases-details-card />
@@ -52,6 +55,7 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
+import InfectionMedicalcareprovisionStatus from '@/components/InfectionMedicalcareprovisionStatus.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import CardRow from '@/components/cards/CardRow.vue'
 import Data from '@/data/data.json'
@@ -82,6 +86,7 @@ export default Vue.extend({
   components: {
     PageHeader,
     WhatsNew,
+    InfectionMedicalcareprovisionStatus,
     StaticInfo,
     CardRow,
     ConfirmedCasesDetailsCard,

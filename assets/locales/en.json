@@ -544,5 +544,13 @@
   "80代女性": "80,Female",
   "90代女性": "90,Female",
   "90歳以上女性": "Over 90,Female",
-  "新規": "New"
+  "新規": "New",
+  "感染状況・医療提供体制（サマリ）": "”The Infection trends in Nagano\" and ”Medical System Provisions”.",
+  "感染状況": "Current Infection Status",
+  "医療提供体制": "Medical System Provisions",
+  "新規陽性者": "New patient",
+  "確保病床数": "Beds",
+  "検査数": "Inspections",
+  "入院数": "Hospitalizations",
+  "参考値": "/reference value"
 }
