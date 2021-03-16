@@ -1,12 +1,12 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('検査実施人数')"
+      :title="$t('検査実施件数')"
       :title-id="'number-of-inspection-persons'"
       :chart-id="'number-of-inspection-persons'"
       :chart-data="graphData"
       :date="data.date"
-      :unit="$t('人')"
+      :unit="$t('件')"
     >
       <template v-slot:description>
         <!--
@@ -50,7 +50,7 @@ export default {
       }
     })
 
-    // 検査実施人数グラフ
+    // 査実施件数グラフ
     const graphData = formatGraph(formatData)
 
     return {

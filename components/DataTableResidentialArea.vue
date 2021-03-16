@@ -7,39 +7,28 @@
       :ref="'displayedTable'"
       :headers="chartData.headers"
       :items="chartData.datasets"
-      :height="240"
-      fixed-header
+      :items-per-page="-1"
+      :hide-default-footer="true"
+      :height="320"
+      :fixed-header="true"
       :mobile-breakpoint="0"
       :custom-sort="customSort"
-      :footer-props="{
-        'items-per-page-options': [15, 30, 50, 100, 200, 300, -1],
-        'items-per-page-text': $t('1ページ当たり')
-      }"
-      :items-per-page.sync="itemsPerPage"
-      :page.sync="page"
       :disable-sort="true"
       class="cardTable"
-      :server-items-length="dataLength"
     >
       <template v-slot:body="{ items }">
         <tbody>
           <tr v-for="item in items" :key="item.text">
-            <th class="text-start">{{ item['No'] }}</th>
-            <th class="text-start">{{ item['公表日'] }}</th>
-            <th class="text-start">{{ item['居住地'] }}</th>
-            <th class="text-start">{{ item['年代と性別'] }}</th>
-            <th class="text-start">{{ item['状況'] }}</th>
+            <th class="text-start">{{ item['更新日'] }}</th>
+            <td class="text-start" style="font-size : 12px;">
+              {{ item['居住地'] }}
+            </td>
+            <th class="text-start">{{ item['新規'] }}</th>
+            <th class="text-start">{{ item['陽性者数'] }}</th>
+            <th class="text-start">{{ item['入院中'] }}</th>
+            <th class="text-start">{{ item['退院'] }}</th>
           </tr>
         </tbody>
-      </template>
-      <template slot="footer.page-text" slot-scope="props">
-        {{
-          $t('{itemsLength} 項目中 {pageStart} - {pageStop} ', {
-            itemsLength: props.itemsLength,
-            pageStart: props.pageStart,
-            pageStop: props.pageStop
-          })
-        }}
       </template>
     </v-data-table>
     <template v-slot:additionalDescription>
@@ -56,11 +45,9 @@
         :unit="info.unit"
       />
     </template>
-    <!--
-      <template v-slot:footer>
-        <open-data-link :url="url" />
-      </template>
-    -->
+    <template v-slot:footer>
+      <open-data-link :url="url" />
+    </template>
   </data-view>
 </template>
 
@@ -72,6 +59,18 @@
       height: auto;
       border-bottom: 1px solid $gray-4;
       white-space: nowrap;
+      color: $gray-2;
+      font-size: 12px;
+
+      &.text-center {
+        text-align: center;
+      }
+    }
+    td {
+      padding: 8px 10px;
+      height: auto;
+      border-bottom: 1px solid $gray-4;
+      white-space: wrap;
       color: $gray-2;
       font-size: 12px;
 
@@ -106,9 +105,6 @@
         }
       }
     }
-    .v-select {
-      margin-left: 10px;
-    }
     &:focus {
       outline: dotted $gray-3 1px;
     }
@@ -122,9 +118,6 @@
       margin-left: 0;
       margin-right: 5px;
     }
-  }
-  .v-data-footer__select .v-select__selections .v-select__selection--comma {
-    font-size: 0.8rem;
   }
 }
 .v-menu__content {
@@ -153,10 +146,10 @@
 import Vue from 'vue'
 import DataView from '@/components/DataView.vue'
 import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
-// import OpenDataLink from '@/components/OpenDataLink.vue'
+import OpenDataLink from '@/components/OpenDataLink.vue'
 
 export default Vue.extend({
-  components: { DataView, DataViewBasicInfoPanel /** , OpenDataLink */ },
+  components: { DataView, DataViewBasicInfoPanel, OpenDataLink },
   props: {
     title: {
       type: String,

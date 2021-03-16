@@ -22,7 +22,7 @@ import Data from '@/data/residential-area.json'
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatResidentialArea'
 import { getDayjsObject } from '@/utils/formatDate'
-import DataTable from '@/components/DataTableExtend.vue'
+import DataTable from '@/components/DataTableResidentialArea.vue'
 
 export default {
   components: {

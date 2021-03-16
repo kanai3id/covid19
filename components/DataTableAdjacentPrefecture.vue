@@ -9,35 +9,27 @@
       :items="chartData.datasets"
       :items-per-page="-1"
       :hide-default-footer="true"
-      :height="320"
+      :height="340"
       :fixed-header="true"
       :mobile-breakpoint="0"
       :custom-sort="customSort"
-      class="cardTable"
       :disable-sort="true"
-    />
-    <!--
+      class="cardTable"
     >
       <template v-slot:body="{ items }">
         <tbody>
           <tr v-for="item in items" :key="item.text">
-            <th class="text-start">{{ item['公表日'] }}</th>
-            <td class="text-start">{{ item['居住地'] }}</td>
-            <td class="text-start">{{ item['年代'] }}</td>
-            <td class="text-start">{{ item['性別'] }}</td>
-            <td class="text-start">{{ item['退院'] }}</td>
+            <th class="text-start">{{ item['県名'] }}</th>
+            <th class="text-start">{{ item['陽性者数'] }}</th>
+            <th class="text-start">{{ item['入院'] }}</th>
+            <th class="text-start">{{ item['重症'] }}</th>
+            <th class="text-start">{{ item['退院'] }}</th>
+            <th class="text-start">{{ item['死亡'] }}</th>
+            <th class="text-start">{{ item['実効再生産数'] }}</th>
           </tr>
         </tbody>
       </template>
     </v-data-table>
-    -->
-    <div class="note">
-      <ul>
-        <li>
-          {{ $t('※退院には死亡退院・転院を含む') }}
-        </li>
-      </ul>
-    </div>
     <template v-slot:infoPanel>
       <data-view-basic-info-panel
         :l-text="info.lText"
@@ -50,6 +42,85 @@
     </template>
   </data-view>
 </template>
+
+<style lang="scss">
+.cardTable {
+  &.v-data-table {
+    th {
+      padding: 8px 10px;
+      height: auto;
+      border-bottom: 1px solid $gray-4;
+      white-space: nowrap;
+      color: $gray-2;
+      font-size: 12px;
+
+      &.text-center {
+        text-align: center;
+      }
+    }
+
+    tbody {
+      tr {
+        color: $gray-1;
+
+        th {
+          font-weight: normal;
+        }
+
+        td {
+          padding: 8px 10px;
+          height: auto;
+          font-size: 12px;
+
+          &.text-center {
+            text-align: center;
+          }
+        }
+
+        &:nth-child(odd) {
+          th,
+          td {
+            background: rgba($gray-4, 0.3);
+          }
+        }
+      }
+    }
+    &:focus {
+      outline: dotted $gray-3 1px;
+    }
+  }
+  .v-data-table__wrapper {
+    box-shadow: 0 -20px 12px -12px #0003 inset;
+  }
+  .v-data-footer {
+    @include font-size(12);
+    &__pagination {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+}
+.v-menu__content {
+  width: 60px;
+  .v-list-item {
+    padding: 0 8px;
+  }
+}
+.v-list-item__title {
+  font-size: 0.8rem;
+}
+.note {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: $gray-3;
+
+  ul,
+  ol {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+</style>
 
 <script lang="ts">
 import Vue from 'vue'
@@ -110,8 +181,9 @@ export default Vue.extend({
     const vTables = this.$refs.displayedTable as Vue
     const vTableElement = vTables.$el
     const tables = vTableElement.querySelectorAll('table')
-
-    tables.forEach((table: HTMLElement) => {
+    // NodeListをIE11でforEachするためのワークアラウンド
+    const nodes = Array.prototype.slice.call(tables, 0)
+    nodes.forEach((table: HTMLElement) => {
       table.setAttribute('tabindex', '0')
     })
   }
