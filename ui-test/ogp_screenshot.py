@@ -2,7 +2,6 @@ import os
 import time
 
 from selenium import webdriver
-import chromedriver_binary
 
 if not os.path.exists("ogp"):
     os.mkdir("ogp")

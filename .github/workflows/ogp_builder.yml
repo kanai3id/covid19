@@ -35,7 +35,6 @@ jobs:
       - run: yarn run test
       - run: yarn run generate:deploy
       - run: pip3 install selenium
-      - run: pip3 install chromedriver_binary
       - run: (python3 -m http.server --directory ./dist 8000 &)  ; python3 ./ui-test/ogp_screenshot.py
       - name: Upload screenshot
         uses: actions/upload-artifact@v1
