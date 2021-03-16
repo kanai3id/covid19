@@ -2,11 +2,6 @@
   "newsItems": [
     {
       "date": "2021-03-16",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/468297.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【486～490例目】"
-    },
-    {
-      "date": "2021-03-16",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210316_vaccine_dai2dan_press.html",
       "text": "医療従事者等向け新型コロナワクチン第2弾の配送先が決まりました（健康福祉部ワクチン接種体制整備室）"
     },
@@ -14,6 +9,11 @@
       "date": "2021-03-16",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210316.html",
       "text": "新型コロナウイルス感染症陽性者の発生について（2432～2434例）"
+    },
+    {
+      "date": "2021-03-16",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/468297.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【486～490例目】"
     },
     {
       "date": "2021-03-16",
