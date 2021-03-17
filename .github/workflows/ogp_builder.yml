@@ -15,7 +15,7 @@ jobs:
         id: extract_branch
       - uses: actions/checkout@v2
         with:
-          ref: ${{ steps.extract_branch.outputs.branch }}
+          ref: production
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -51,7 +51,7 @@ jobs:
         id: extract_branch
       - uses: actions/checkout@v2
         with:
-          ref: ${{ steps.extract_branch.outputs.branch }}
+          ref: production
       - name: Download ogp images
         uses: actions/download-artifact@v1
         with:
@@ -67,4 +67,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.extract_branch.outputs.branch }}
+          branch: production
