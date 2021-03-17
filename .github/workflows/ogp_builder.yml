@@ -51,7 +51,7 @@ jobs:
         id: extract_branch
       - uses: actions/checkout@v2
         with:
-          ref: production
+          ref: ${{ steps.extract_branch.outputs.branch }}
       - name: Download ogp images
         uses: actions/download-artifact@v1
         with:
@@ -67,4 +67,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: production
+          branch: ${{ steps.extract_branch.outputs.branch }}
