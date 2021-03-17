@@ -57,7 +57,9 @@
     />
     <stay-card v-else-if="this.$route.params.card == 'stay-card'" />
     <beds-card v-else-if="this.$route.params.card == 'beds-card'" />
-    <patient-care-card v-else-if="this.$route.params.card == 'patient-care-card'" />
+    <patient-care-card
+      v-else-if="this.$route.params.card == 'patient-care-card'"
+    />
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
@@ -192,9 +194,9 @@ export default {
         updatedAt = gender.gender_summary.date
         break
       case 'patient-care-card':
-         title = this.$t('患者療養状況')
-         updatedAt = patient.lastUpdate
-         break
+        title = this.$t('患者療養状況')
+        updatedAt = patient.lastUpdate
+        break
       case 'adjacent-prefecture-card':
         title = this.$t('隣接県の状況')
         updatedAt = adjacentprefecture.date
@@ -213,11 +215,12 @@ export default {
   },
   head() {
     const url = 'https://covid19-nagano.info'
-    const timestamp = new Date().getTime()
-    const ogpImage =
+    // const timestamp = new Date().getTime()
+    const ogpImage = `${url}/ogp.png`
+    /* const ogpImage =
       this.$i18n.locale === 'ja'
         ? `${url}/ogp/${this.$route.params.card}.png?t=${timestamp}`
-        : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}`
+        : `${url}/ogp/${this.$i18n.locale}/${this.$route.params.card}.png?t=${timestamp}` */
     const description = `${this.updatedAt} | ${this.$t(
       '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県出身の個人(ITエンジニア)が長野県非公式で開設したものです。'
     )}`
