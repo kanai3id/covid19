@@ -1,9 +1,8 @@
 name: OGP Builder
 
 on:
-  push:
-    branches:
-      - master
+  repository_dispatch:
+    types: [ogp_builder]
 
 jobs:
   build:
