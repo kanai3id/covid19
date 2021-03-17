@@ -68,12 +68,11 @@
 .cardTable {
   &.v-data-table {
     th {
-      padding: 8px 10px;
-      height: auto;
-      border-bottom: 1px solid $gray-4;
-      white-space: nowrap;
-      color: $gray-2;
-      font-size: 12px;
+      padding: 8px 10px !important;
+      height: auto !important;
+      border-bottom: 1px solid $gray-4 !important;
+      color: $gray-2 !important;
+      @include font-size(12, true);
 
       &.text-center {
         text-align: center;
