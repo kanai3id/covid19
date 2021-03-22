@@ -435,6 +435,7 @@
   "朝日村": "Asahi village",
   "中川村": "Nakagawa village",
   "高山村": "Takayama village",
+  "川上村": "Kawakami village",
   "南佐久郡川上村": "Minamisakugun kawakami village",
   "佐久保健所管内": "Saku area",
   "松本保健所管内": "Matsumoto area",
@@ -553,5 +554,6 @@
   "確保病床数": "Beds",
   "検査数": "Inspections",
   "入院数": "Hospitalizations",
-  "参考値": "/reference value"
+  "参考値": "/reference value",
+  "ワクチン情報": "Vaccine information"
 }
