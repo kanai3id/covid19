@@ -1,9 +1,14 @@
 {
   "newsItems": [
     {
-      "date": "2021-03-26",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210326.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（2515～2630例）"
+      "date": "2021-03-27",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/469136.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【618～631例目】"
+    },
+    {
+      "date": "2021-03-27",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210327press.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（2666～2679例）"
     },
     {
       "date": "2021-03-26",
@@ -12,13 +17,8 @@
     },
     {
       "date": "2021-03-26",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/20210326press.html",
-      "text": "新型コロナウイルス感染症の感染拡大地域等への訪問に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
-    },
-    {
-      "date": "2021-03-25",
-      "url": "https://www.pref.nagano.lg.jp/sansei/happyou/20210325press.html",
-      "text": "県職員の新型コロナウイルス感染症陽性者の発生について（産業労働部産業政策課・総務部人事課）"
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210326.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（2615～2630例）"
     }
   ]
 }
