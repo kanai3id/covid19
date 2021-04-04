@@ -175,7 +175,7 @@ const config: Configuration = {
         '/cards/age-card',
         '/cards/stay-card',
         '/cards/beds-card',
-        '/cards/gender-card',
+        '/cards/patient-care-card',
         '/cards/number-of-inspection-persons',
         '/cards/number-of-reports-to-covid19-consultation-desk',
         '/cards/adjacent-prefecture-card',

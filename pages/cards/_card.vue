@@ -60,7 +60,9 @@
     <patient-care-card
       v-else-if="this.$route.params.card == 'patient-care-card'"
     />
+<!--
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
+-->
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
     />
@@ -189,10 +191,10 @@ export default {
         title = this.$t('入院患者数と病床数')
         updatedAt = beds.beds_summary.date
         break
-      case 'gender-card':
-        title = this.$t('性別陽性患者数')
-        updatedAt = gender.gender_summary.date
-        break
+//    case 'gender-card':
+//      title = this.$t('性別陽性患者数')
+//      updatedAt = gender.gender_summary.date
+//      break
       case 'patient-care-card':
         title = this.$t('患者療養状況')
         updatedAt = patient.lastUpdate
