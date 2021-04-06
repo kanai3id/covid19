@@ -37,6 +37,7 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.0",
     "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxt/types": "2.15.3",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@types/d3": "^5.7.2",
     "@types/mapbox-gl": "^1.8.0",
@@ -72,6 +73,7 @@
     "jest": "^24.1.0",
     "lint-staged": "^10.0.8",
     "nodemon": "^1.18.9",
+    "nuxt-property-decorator": "^2.9.1",
     "nuxt-purgecss": "^0.2.1",
     "nuxt-svg-loader": "^1.2.0",
     "prettier": "^1.19.1",

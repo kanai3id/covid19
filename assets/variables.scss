@@ -12,6 +12,7 @@ $gray-5: #f8f9fa;
 $white: #fff;
 $link: #006ca8;
 $emergency: #FFE200;
+$alert: #AD2121;
 
 // ==================
 // shadow
@@ -49,6 +50,11 @@ $z-index-map: (
     @content;
   }
 }
+
+// ==================
+// font-family
+$western: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue";
+$japanese: "Hiragino Sans", "Meiryo", "Source Han Sans", "Noto Sans CJK JP", "Yu Gothic";
 
 // ==================
 // font-size

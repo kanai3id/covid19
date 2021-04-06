@@ -1,7 +1,11 @@
 <template>
   <v-card ref="dataView" class="DataView" :loading="loading">
     <div class="DataView-Inner">
-      <div class="DataView-Header">
+
+      <div
+        class="DataView-Header"
+        :class="!!$slots.dataSetPanel ? 'with-dataSetPanel' : ''"
+      >
         <h3
           class="DataView-Title"
           :class="!!$slots.infoPanel ? 'with-infoPanel' : ''"
@@ -9,7 +13,11 @@
           {{ title }}
         </h3>
         <slot name="infoPanel" />
+        <div v-if="!!$slots.dataSetPanel" class="DataView-DataSetPanel">
+          <slot name="dataSetPanel" />
+        </div>
       </div>
+
       <div class="DataView-Description">
         <slot name="description" />
       </div>
@@ -355,10 +363,13 @@ export default Vue.extend({
     }
 
     @include largerThan($large) {
-      width: 100%;
+      justify-content: space-between;
       flex-flow: row;
-      flex-wrap: wrap;
       padding: 0;
+
+      &.with-dataSetPanel {
+        flex-flow: column;
+      }
     }
   }
 
@@ -396,21 +407,40 @@ export default Vue.extend({
   &-Title {
     width: 100%;
     margin-bottom: 10px;
-    font-size: 1.25rem;
     line-height: 1.5;
     font-weight: normal;
     color: $gray-2;
+    @include font-size(20);
+
+    &.with-dataSetPanel {
+      margin-bottom: 0;
+    }
 
     @include largerThan($large) {
       margin-bottom: 0;
+
       &.with-infoPanel {
-        width: 50%;
+        flex: 1 1 50%;
+        margin-right: 24px;
       }
+    }
+
+    span {
+      display: inline-block;
     }
   }
 
   &-CardText {
     margin: 16px 0;
+  }
+
+  &-InfoPanel {
+    flex: 1 1 50%;
+  }
+
+  &-DataSetPanel {
+    flex: 1 0 auto;
+    width: 100%;
   }
 
   &-Description {
