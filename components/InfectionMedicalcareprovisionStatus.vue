@@ -8,7 +8,11 @@
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
       <div class="InfectionMedicalcareprovisionStatus-Headline">
+        <app-link
+          to="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html"
+        >
           {{ $t('感染状況') }}
+        </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
         {{ $t('新規陽性者')
@@ -21,7 +25,9 @@
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
       <div class="InfectionMedicalcareprovisionStatus-Headline">
+        <app-link to="https://covid19-nagano.info/cards/patient-care-card/">
           {{ $t('医療提供体制') }}
+        </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
         {{ $t('入院数')
@@ -35,10 +41,11 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
+import AppLink from '@/components/AppLink.vue'
 import InfectionMedicalcareprovisionStatus from '@/data/infection_medicalcareprovision_status.json'
 
 export default Vue.extend({
+  components: { AppLink },
   data() {
     const date = InfectionMedicalcareprovisionStatus.date
     const statisticDate =
@@ -46,9 +53,9 @@ export default Vue.extend({
     return {
       statuses: InfectionMedicalcareprovisionStatus,
       date: this.$d(new Date(date), 'date'),
-      statisticDate: this.$d(new Date(statisticDate), 'dateWithoutYear'),
+      statisticDate: this.$d(new Date(statisticDate), 'dateWithoutYear')
     }
-  },
+  }
 })
 </script>
 
