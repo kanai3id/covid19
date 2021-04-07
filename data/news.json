@@ -2,11 +2,6 @@
   "newsItems": [
     {
       "date": "2021-04-07",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/470283.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【768～795例目】"
-    },
-    {
-      "date": "2021-04-07",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210407vaccinepress.html",
       "text": "高齢者への新型コロナウイルスワクチンの接種が始まります（健康福祉部ワクチン接種体制整備室）"
     },
@@ -14,6 +9,11 @@
       "date": "2021-04-07",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0407press2.html",
       "text": "新型コロナウイルス感染症陽性者の発生について（2985～3002例）"
+    },
+    {
+      "date": "2021-04-07",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/470283.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【768～795例目】"
     }
   ]
 }
