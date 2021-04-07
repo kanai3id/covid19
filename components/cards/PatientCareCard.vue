@@ -2,7 +2,7 @@
   <v-col cols="12" md="6" class="DataCard">
     <client-only>
       <data-view
-        :title="$t('患者療養状況')"
+        :title="$t('療養患者状況')"
         :title-id="'patient-care-card'"
         :date="mainSummary.lastUpdate"
       >
