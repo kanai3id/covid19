@@ -98,8 +98,8 @@ const config: Configuration = {
     ['@nuxtjs/dotenv', { filename: `.env.${environment}` }],
     ['nuxt-i18n', i18n],
     'nuxt-svg-loader',
-    'nuxt-purgecss',
-    ['vue-scrollto/nuxt', { duration: 1000, offset: -72 }]
+    ['vue-scrollto/nuxt', { duration: 1000, offset: -72 }],
+    'nuxt-webfontloader'
   ],
   /*
    ** vuetify module configuration
@@ -115,7 +115,7 @@ const config: Configuration = {
   googleAnalytics: {
     id: 'UA-162797773-1'
   },
-  optionalCookies: [
+  /* optionalCookies: [
     {
       name: 'i18n_redirected',
       label: 'i18n Redirection Cookie',
@@ -123,7 +123,7 @@ const config: Configuration = {
         'For automatically switching UI languages in accordance with locale preferences in the web browser configuration.',
       cookies: ['i18n_redirected']
     }
-  ],
+  ], */
   build: {
     plugins: [
       new webpack.ProvidePlugin({
@@ -161,7 +161,7 @@ const config: Configuration = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['ja','en']
+      const locales = ['ja', 'en']
       const pages = [
         '/cards/details-of-confirmed-cases',
         '/cards/attributes-of-confirmed-cases',
