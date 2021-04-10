@@ -1,13 +1,10 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    cache-control = '''
-    max-age=0,
-    no-cache,
-    no-store,
-    must-revalidate'''
-
 [[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
+
+[build]
+  functions = "dist/functions"
+
+[build.environment]
+  TZ="Asia/Tokyo"
