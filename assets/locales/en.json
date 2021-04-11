@@ -170,7 +170,7 @@
   "県民の皆様へ": "To the residents of Nagano",
   "長野県新型コロナウイルス感染症対策本部報": "Tokyo Novel Coronavirus Response Headquarters announcements",
   "長野県主催等 中止又は延期するイベント等": "Cancellation or postponement of events held by the Tokyo Government (Japanese)",
-  "長野県公式ホームページ": "Official website of the Tokyo Metropolitan Government",
+  "長野県公式ホームページ": "Official website of the Nagano Prefecture",
   "知事からのメッセージ": "Message from Governor on COVID-19",
   "多言語対応選択メニュー": "Select language",
   "このサイトの内容物は": " Content on This Site is Licensed Under a",
@@ -514,7 +514,7 @@
   "行政の皆さまのご協力に感謝します。": "Thank you for the cooperation of Nagano Prefecture administration",
   "長野県オープンデータ利用規約": "Nagano Open Data Terms of Use",
   "TOYO KEIZAI ONLINE様": "TOYO KEIZAI ONLINE",
-  "隣接県の状況のみ、TOYO KEIZAI ONLINE様のデータを利用しています。": "The data of TOYO KEIZAI ONLINE is used for the data of the situation of the neighboring prefectures.",
+  "隣接県の状況は TOYO KEIZAI ONLINE様 のデータを利用しています。": "The data of TOYO KEIZAI ONLINE is used for the data of the situation of the neighboring prefectures.",
    "このようなソリューションの提供に感謝します。": "Thank you for providing such a solution.",
   "クリエイティブ・コモンズ 4.0": "Creative Commons 4.0",
   "MITライセンス": "MIT license",
@@ -560,5 +560,11 @@
   "入院数": "Hospitalizations",
   "参考値": "/reference value",
   "ワクチン情報": "Vaccine information",
-  "療養患者数": "Medical treatment patient"
+  "療養患者数": "Medical treatment patient",
+  "出典元:NTTドコモ モバイル空間統計": "出典元:NTTドコモ モバイル空間統計",
+  "計測日": "measuring date",
+  "滞在人口増減率": "Rate of change",
+  "長野駅増減率": "Nagano station increase rate",
+  "長野駅周辺滞在人口の増加率は NTTドコモ モバイル空間統計様 のデータを利用しています。": "The rate of increase in the population staying around Nagano Station is based on data from NTTドコモ モバイル空間統計",
+  "出典元：NTTドコモ モバイル空間統計": "Source: NTTドコモ モバイル空間統計"
 }
