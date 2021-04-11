@@ -39,12 +39,12 @@
     <div class="InfectionMedicalcareprovisionStatus-Box">
       <div class="InfectionMedicalcareprovisionStatus-Headline">
         <app-link to="https://mobaku.jp/covid-19/archive/kantokoshinetsu.html#area_31">
-          {{ $t('長野駅増減率') }}
+          {{ $t('長野駅周辺状況') }}
         </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
-        {{ $t('滞在人口増減率')
-        }}<span> {{ statuses.data['滞在人口増減率'].toLocaleString() }}%</span> （{{
+        {{ $t('前日増減比')
+        }}<span> {{ statuses.data['滞在人口増減比'].toLocaleString() }}%</span> （{{
           $t('計測日')
         }}<span>{{ statuses.data['滞在人口増減日時'].toLocaleString() }}</span>）
         {{ $t('出典元:NTTドコモ モバイル空間統計') }}

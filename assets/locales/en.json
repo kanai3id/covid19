@@ -563,8 +563,9 @@
   "療養患者数": "Medical treatment patient",
   "出典元:NTTドコモ モバイル空間統計": "出典元:NTTドコモ モバイル空間統計",
   "計測日": "measuring date",
-  "滞在人口増減率": "Rate of change",
-  "長野駅増減率": "Nagano station increase rate",
+  "前日増減比": "Change ratio/day",
+  "長野駅周辺状況": "Status around Nagano Station",
   "長野駅周辺滞在人口の増加率は NTTドコモ モバイル空間統計様 のデータを利用しています。": "The rate of increase in the population staying around Nagano Station is based on data from NTTドコモ モバイル空間統計",
-  "出典元：NTTドコモ モバイル空間統計": "Source: NTTドコモ モバイル空間統計"
+  "出典元：NTTドコモ モバイル空間統計": "Source: NTTドコモ モバイル空間統計",
+  "感染状況・医療提供体制・長野駅周辺人口増減状況": "Infection status, Medical care provision, Status around Nagano Station"
 }
