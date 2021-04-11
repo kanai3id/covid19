@@ -191,6 +191,15 @@ const config: Configuration = {
       return routes
     }
   },
+  /*
+   * PWA - Workbox configuration
+   * https://pwa.nuxtjs.org/workbox
+   */
+  pwa: {
+    workbox: {
+      enabled: false
+    }
+  },
   // /*
   // ** hot read configuration for docker
   // */
