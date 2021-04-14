@@ -8,20 +8,23 @@
         :chart-data="patientsGraph"
         :date="Data.date"
         :unit="$t('人')"
-        :url="
-          'https://toyokeizai.net/sp/visual/tko/covid19/'
-        ">
+        :url="'https://toyokeizai.net/sp/visual/tko/covid19/'"
+      >
         <template v-slot:additionalDescription>
-            <ul>
-              <li>
-                {{ $t('（注）療養患者数：入院中/予定・宿泊療養/予定・自宅療養・調整中') }}
-              </li>
-            </ul>
-            <ul>
-              <li>
-                {{ $t('TOYO KEIZAI ONLINE様のデータを利用') }}
-              </li>
-            </ul>
+          <ul>
+            <li>
+              {{
+                $t(
+                  '（注）療養患者数：入院中/予定・宿泊療養/予定・自宅療養・調整中'
+                )
+              }}
+            </li>
+          </ul>
+          <ul>
+            <li>
+              {{ $t('TOYO KEIZAI ONLINE様のデータを利用') }}
+            </li>
+          </ul>
         </template>
       </time-bar-chart>
     </client-only>
@@ -31,7 +34,7 @@
 <script>
 import Data from '@/data/discharge-hospital.json'
 import formatGraph from '@/utils/formatGraph'
-import TimeBarChart from '@/components/TimeBarChart.vue'
+import TimeBarChart from '@/components/TimeBarChartDisableDataSelector.vue'
 
 export default {
   components: {
