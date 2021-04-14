@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <stay-bar-chart
-      :title="$t('入院中患者日数')"
+      :title="$t('療養中患者日数')"
       :title-id="'stay-card'"
       :chart-id="'chart-stay-card'"
       :chart-data="stayData"
