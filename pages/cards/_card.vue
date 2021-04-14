@@ -204,7 +204,7 @@ export default {
         updatedAt = adjacentprefecture.date
         break
       case 'discharge-hospital-card':
-        title = this.$t('退院・療養解除')
+        title = this.$t('治療患者数')
         updatedAt = dischargehospital.date
         break
     }

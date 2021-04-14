@@ -2,7 +2,7 @@
   <v-col cols="12" md="6" class="DataCard">
     <client-only>
       <time-bar-chart
-        :title="$t('退院・療養解除')"
+        :title="$t('療養患者数')"
         :title-id="'discharge-hospital-card'"
         :chart-id="'time-bar-chart-patients'"
         :chart-data="patientsGraph"
@@ -12,6 +12,11 @@
           'https://toyokeizai.net/sp/visual/tko/covid19/'
         ">
         <template v-slot:additionalDescription>
+            <ul>
+              <li>
+                {{ $t('（注）療養患者数：入院中/予定・宿泊療養/予定・自宅療養・調整中') }}
+              </li>
+            </ul>
             <ul>
               <li>
                 {{ $t('TOYO KEIZAI ONLINE様のデータを利用') }}
