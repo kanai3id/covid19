@@ -1,14 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "2021-04-18",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/470897.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【916～918例目】"
+      "date": "2021-04-19",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/470917.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【919例目】"
     },
     {
-      "date": "2021-04-18",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210418.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（3478~3505例）"
+      "date": "2021-04-19",
+      "url": "https://www.pref.nagano.lg.jp/shogai-shien/happyou/210419press.html",
+      "text": "高齢者施設等における新型コロナウイルス感染症の自主検査の費用助成制度を拡充します（健康福祉部）"
+    },
+    {
+      "date": "2021-04-19",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210419.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（3508~3525例）"
+    },
+    {
+      "date": "2021-04-19",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0419pcrpress.html",
+      "text": "茅野市及び原村内の飲食店に勤務している方を対象に、新型コロナウイルス感染症のＰＣＲ検査を実施します"
     }
   ]
 }
