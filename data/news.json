@@ -1,24 +1,19 @@
 {
   "newsItems": [
     {
-      "date": "2021-04-20",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/471022.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【920例目】"
+      "date": "2021-04-21",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/471099.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【921～927例目】"
     },
     {
-      "date": "2021-04-20",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/2021042002.html",
-      "text": "新型コロナウイルス感染症（変異株）陽性者の発生について"
+      "date": "2021-04-21",
+      "url": "https://www.pref.nagano.lg.jp/noson/happyou/210421press.html",
+      "text": "外国人の農業就労者向け 新型コロナウイルス感染症 感染予防対策チラシとポスターを作成しました！（農政部農村振興課）"
     },
     {
-      "date": "2021-04-20",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0420press.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（3528~3545例）"
-    },
-    {
-      "date": "2021-04-20",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0420pcrpress.html",
-      "text": "諏訪市内の飲食店に勤務している方を対象に、新型コロナウイルス感染症のＰＣＲ検査を実施します"
+      "date": "2021-04-21",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0421press.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（3555~3580例）"
     }
   ]
 }
