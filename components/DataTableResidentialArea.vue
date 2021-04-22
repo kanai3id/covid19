@@ -25,7 +25,7 @@
             </td>
             <th class="text-start">{{ item['新規'] }}</th>
             <th class="text-start">{{ item['陽性者数'] }}</th>
-            <th class="text-start">{{ item['入院中'] }}</th>
+            <th class="text-start">{{ item['療養中'] }}</th>
             <th class="text-start">{{ item['退院'] }}</th>
           </tr>
         </tbody>

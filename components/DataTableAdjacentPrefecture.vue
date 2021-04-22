@@ -21,7 +21,7 @@
           <tr v-for="item in items" :key="item.text">
             <th class="text-start">{{ item['県名'] }}</th>
             <th class="text-start">{{ item['陽性者数'] }}</th>
-            <th class="text-start">{{ item['入院'] }}</th>
+            <th class="text-start">{{ item['療養中'] }}</th>
             <th class="text-start">{{ item['重症'] }}</th>
             <th class="text-start">{{ item['退院'] }}</th>
             <th class="text-start">{{ item['死亡'] }}</th>
