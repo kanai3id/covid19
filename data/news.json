@@ -1,19 +1,24 @@
 {
   "newsItems": [
     {
-      "date": "2021-04-21",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/471099.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【921～927例目】"
+      "date": "2021-04-22",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/471198.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【928～942例目】"
     },
     {
-      "date": "2021-04-21",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0421press.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（3555~3580例）"
+      "date": "2021-04-22",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/2021042002.html",
+      "text": "新型コロナウイルス感染症（変異株）陽性者の発生について"
     },
     {
-      "date": "2021-04-21",
-      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0421press2.html",
-      "text": "長野圏域に発出している新型コロナウイルス特別警報Ⅱは、明日から特別警報Ⅰに切り替えます（危機管理部新型コロナウイルス感染症対策室）"
+      "date": "2021-04-22",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0422press.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（3599~3635例）"
+    },
+    {
+      "date": "2021-04-22",
+      "url": "https://www.pref.nagano.lg.jp/hoken-shippei/happyou/0422press.html",
+      "text": "松本圏域に新型コロナウイルス特別警報Ⅰを発出します（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
 }
