@@ -2,11 +2,6 @@
   "newsItems": [
     {
       "date": "2021-04-26",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/471343.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【961例目】"
-    },
-    {
-      "date": "2021-04-26",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210426.html",
       "text": "新型コロナウイルス感染症陽性者の発生について（3737～3741例）"
     },
@@ -14,6 +9,11 @@
       "date": "2021-04-26",
       "url": "https://www.pref.nagano.lg.jp/jisedai/happyou/happyou/210426press.html",
       "text": "新型コロナ対策　学生向け食料配布を実施します（県民文化部こども若者局次世代サポート課）"
+    },
+    {
+      "date": "2021-04-26",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/471343.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【961例目】"
     },
     {
       "date": "2021-04-26",
