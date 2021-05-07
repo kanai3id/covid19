@@ -390,6 +390,7 @@
   "東御市": "Tomi city",
   "伊那市": "Ina city",
   "駒ヶ根市": "Komagane city",
+  "駒ケ根市": "Komagane city",
   "安曇野市": "Azumino town",
   "大町市": "Omachi town",
   "諏訪市": "Suwa town",
@@ -531,6 +532,7 @@
   "{itemsLength} 項目中 {pageStart} - {pageStop} ": "{pageStart} - {pageStop} of {itemsLength} indexes",
   "新型コロナワクチン接種について": "About new corona vaccination",
   "新型コロナウイルス感染症に係るワクチン接種について": "About vaccination for new coronavirus infection",
+  "日別値": "as a day",
   "乳児男性": "Infant,Male",
   "10歳未満男性": "Under 10,Male",
   "10代男性": "10,Male",
@@ -573,5 +575,7 @@
   "長野駅周辺滞在人口の増加率は NTTドコモ モバイル空間統計様 のデータを利用しています。": "The rate of increase in the population staying around Nagano Station is based on data from NTTドコモ モバイル空間統計",
   "出典元：NTTドコモ モバイル空間統計": "Source: NTTドコモ モバイル空間統計",
   "感染状況・医療提供体制・長野駅周辺人口増減状況": "Infection status, Medical care provision, Status around Nagano Station",
-  "データは長野県の速報値を利用": "Data uses preliminary figures from Nagano Prefecture"
+  "データは長野県の速報値を利用": "Data uses preliminary figures from Nagano Prefecture",
+  "7日間移動平均": "7-day moving average",
+  "陽性者累計数": "Cumulative number of patients"
 }

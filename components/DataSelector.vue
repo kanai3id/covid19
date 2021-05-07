@@ -1,51 +1,34 @@
 <template>
-  <v-btn-toggle
-    :aria-controls="targetId"
-    :value="value"
-    class="DataSelector"
-    mandatory
-    @change="$emit('input', $event)"
-  >
+  <v-btn-toggle v-model="valueInner" class="DataSelector" mandatory>
     <v-btn
+      v-for="item in itemsInner"
+      :key="item.key"
       v-ripple="false"
-      :aria-pressed="value === 'transition' ? 'true' : 'false'"
-      value="transition"
+      :value="item.key"
       class="DataSelector-Button"
+      :x-small="true"
     >
-      {{ $t('日別') }}
-    </v-btn>
-    <v-btn
-      v-ripple="false"
-      :aria-pressed="value === 'cumulative' ? 'true' : 'false'"
-      value="cumulative"
-      class="DataSelector-Button"
-    >
-      {{ $t('累計') }}
+      {{ item.label }}
     </v-btn>
   </v-btn-toggle>
 </template>
 
 <style lang="scss">
 .DataSelector {
-  margin-top: 20px;
+  margin-top: 2px;
   border: 1px solid $gray-4;
   background-color: $white;
-
   &-Button {
     border: none !important;
     margin: 2px;
+    padding: 0 6px !important;
     border-radius: 4px !important;
     height: 24px !important;
     font-size: 12px !important;
     color: $gray-1 !important;
     background-color: $white !important;
-
     &::before {
       background-color: inherit;
-    }
-
-    &:focus {
-      outline: dotted $gray-3 1px;
     }
   }
 
@@ -57,22 +40,41 @@
 </style>
 
 <script lang="ts">
-import Vue from 'vue'
+import { Component, Vue, Prop, Emit } from 'vue-property-decorator'
 
-export default Vue.extend({
-  name: 'DataSelector',
-  props: {
-    value: {
-      type: String,
-      default: 'transition'
-    },
-    targetId: {
-      type: String,
-      default: (val: string | null) => {
-        // TODO: type は NullableString 型をとり、default: null とする
-        return val && val !== '' ? val : null
-      }
+export type SelectorItem = {
+  key: string
+  label: string
+}
+
+@Component
+export default class DataSelector extends Vue {
+  private get valueInner(): string {
+    return this.value
+  }
+
+  private set valueInner(value: string) {
+    this.input(value)
+  }
+
+  @Prop()
+  public value!: string
+
+  @Emit()
+  public input(_: string) {}
+
+  private get itemsInner(): SelectorItem[] {
+    if (this.items) {
+      return this.items
+    } else {
+      return [
+        { key: 'transition', label: this.$t('日別') } as SelectorItem,
+        { key: 'cumulative', label: this.$t('累計') } as SelectorItem
+      ]
     }
   }
-})
+
+  @Prop()
+  public items!: SelectorItem[]
+}
 </script>

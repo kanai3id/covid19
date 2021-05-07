@@ -1,13 +1,11 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
-    <time-bar-chart
-      :title="$t('陽性患者数')"
+    <patients-line-chart
+      :date="Data.patients_summary.date"
+      :daily-data="Data.patients_summary.data"
       :title-id="'number-of-confirmed-cases'"
       :chart-id="'time-bar-chart-patients'"
-      :chart-data="patientsGraph"
-      :date="date"
-      :unit="$t('人')"
-      :by-date="true"
+      :title="$t('陽性患者数')"
       :url="
         'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html'
       "
@@ -17,21 +15,16 @@
 
 <script>
 import Data from '@/data/data.json'
-import formatGraph from '@/utils/formatGraph'
-import TimeBarChart from '@/components/TimeBarChart.vue'
+import PatientsLineChart from '@/components/PatientsLineChart.vue'
 
 export default {
   components: {
-    TimeBarChart
+    PatientsLineChart
   },
   data() {
     // 感染者数グラフ
-    const patientsGraph = formatGraph(Data.patients_summary.data)
-    const date = Data.patients_summary.date
-
     const data = {
-      patientsGraph,
-      date
+      Data
     }
     return data
   }
