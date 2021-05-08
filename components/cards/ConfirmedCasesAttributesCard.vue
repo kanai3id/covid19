@@ -57,6 +57,13 @@ export default {
       row['年代と性別'] = this.getTranslatedWording(row['年代と性別'])
       row['状況'] = this.getTranslatedWording(row['状況'])
 
+      if (row['状況'] === '入院') {
+        row['状況'] = "療養"
+      }
+      if (row['状況'] === 'hospitalized') {
+        row['状況'] = "recuperation"
+      }
+
       /* if (row['年代'].substr(-1, 1) === '代') {
         const age = row['年代'].substring(0, 2)
         row['年代'] = this.$t('{age}代', { age })
