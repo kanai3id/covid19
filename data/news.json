@@ -1,23 +1,18 @@
 {
   "newsItems": [
     {
-      "date": "2021-05-11",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210511hasseipress.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（4139～4154例）"
+      "date": "2021-05-12",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/472112.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【1037～1041例目】"
     },
     {
-      "date": "2021-05-11",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210511henipress.html",
-      "text": "新型コロナウイルス感染症（変異株）陽性者の発生について"
+      "date": "2021-05-12",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210512.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（4161～4192例）"
     },
     {
-      "date": "2021-05-11",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/472034.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【1035、1036例目】"
-    },
-    {
-      "date": "2021-05-11",
-      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/210511press.html",
+      "date": "2021-05-12",
+      "url": "https://www.pref.nagano.lg.jp/bosai/happyou/210512press.html",
       "text": "新型コロナウイルス感染症の感染拡大地域等への訪問に当たってはご注意ください（危機管理部新型コロナウイルス感染症対策室）"
     }
   ]
