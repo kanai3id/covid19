@@ -88,7 +88,7 @@ export default class TestsChart extends Vue {
 
   private readonly yAxisRightSetting: YAxisSetting = {
     suggestedMin: 0,
-    suggestedMax: 20,
+    suggestedMax: 10,
     step: 5,
     unit: '%',
     visible: true
