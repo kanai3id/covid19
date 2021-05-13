@@ -308,7 +308,7 @@ export default class TimeBarLineChart extends Vue {
               display: false
             },
             ticks: {
-              fontSize: 9,
+              fontSize: 10,
               maxTicksLimit: 20,
               fontColor: '#808080'
             }
@@ -324,6 +324,7 @@ export default class TimeBarLineChart extends Vue {
             },
             ticks: {
               fontColor: '#808080',
+              fontSize: 10,
               min: this.displayYAxisLeftSetting.min,
               max: this.displayYAxisLeftSetting.max,
               suggestedMin: this.displayYAxisLeftSetting.suggestedMin,
@@ -349,6 +350,7 @@ export default class TimeBarLineChart extends Vue {
             position: 'right',
             ticks: {
               fontColor: '#808080',
+              fontSize: 10,
               min: this.displayYAxisRightSetting.min,
               max: this.displayYAxisRightSetting.max,
               suggestedMin: this.displayYAxisRightSetting.suggestedMin,
