@@ -36,9 +36,7 @@ import dayjs, { Dayjs } from 'dayjs'
 import * as Enumerable from 'linq'
 import DataView from '@/components/DataView.vue'
 import { getDayjsObject } from '@/utils/formatDate'
-import DataSelector, { SelectorItem } from '@/components/DataSelector.vue'
 import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
-import DateSelectSlider from '@/components/DateSelectSlider.vue'
 import TimeBarLineChart, {
   GraphData,
   YAxisSetting
@@ -65,9 +63,7 @@ type DisplayInfo = {
 @Component({
   components: {
     DataView,
-    DataSelector,
     DataViewBasicInfoPanel,
-    DateSelectSlider,
     TimeBarLineChart,
     OpenDataLink
   }
@@ -135,7 +131,9 @@ export default class TestsChart extends Vue {
     return {
       lTitle: `${this.$t('陽性率')}`,
       lText: latestValueText,
-      sText: `${latestDate} （${this.$t('前日比')}：${this.displayDiffValue} ${this.$t('ポイント')}）`,
+      sText: `${latestDate} （${this.$t('前日比')}：${
+        this.displayDiffValue
+      } ${this.$t('ポイント')}）`,
       unit: dataset.unit
     }
   }
@@ -169,25 +167,21 @@ export default class TestsChart extends Vue {
         const first = d.first()
         let ave
         if (d.count() === 7) {
-            const grp = d.where(
-                d => d['陽性者数'] !== undefined && d['検査人数'] !== undefined
-            )
-            const sumPersons = grp.sum(d => Number(d['検査人数']))
-            const sumPositives = grp.sum(d => Number(d['陽性者数']))
-            ave =
-                sumPersons === 0
-                ? undefined
-                : Math.round((sumPositives / sumPersons) * 1000) / 10
+          const grp = d.where(
+            d => d['陽性者数'] !== undefined && d['検査人数'] !== undefined
+          )
+          const sumPersons = grp.sum(d => Number(d['検査人数']))
+          const sumPositives = grp.sum(d => Number(d['陽性者数']))
+          ave =
+            sumPersons === 0
+              ? undefined
+              : Math.round((sumPositives / sumPersons) * 1000) / 10
         }
-        const cnt =
-          d.count() === 7
-            ? d.where(d => d['検査人数'] !== undefined).sum(d => Number(d['検査人数']))
-            : undefined
         return {
           date: dayjs(dayjs(first['日付']).format('YYYY-MM-DD')),
           total: Number(first['検査人数']),
           positive: Number(first['陽性者数']),
-          average7days: ave,
+          average7days: ave
         }
       })
       .reverse()
@@ -220,9 +214,9 @@ export default class TestsChart extends Vue {
           title: this.$t('検査人数'),
           unit: this.$t('人'),
           values: rows.select(d => d.negative).toArray(),
-          tooltipValues: rows.select(d => d.total ).toArray(),
+          tooltipValues: rows.select(d => d.total).toArray(),
           yAxisKind: 'y-axis-left',
-          order: 3,
+          order: 3
         },
         {
           type: 'bar',
@@ -236,7 +230,7 @@ export default class TestsChart extends Vue {
         {
           type: 'line',
           title: this.$t('陽性率(7日間平均)'),
-          unit: this.$t('%'),
+          unit: '%',
           values: rows.select(d => d.average7days).toArray(),
           yAxisKind: 'y-axis-right',
           order: 1
