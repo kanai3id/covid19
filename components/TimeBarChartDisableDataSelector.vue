@@ -307,7 +307,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 display: false
               },
               ticks: {
-                fontSize: 9,
+                fontSize: 10,
                 maxTicksLimit: 20,
                 fontColor: '#808080',
                 maxRotation: 0,
@@ -328,7 +328,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 tickMarkLength: 10
               },
               ticks: {
-                fontSize: 11,
+                fontSize: 10,
                 fontColor: '#808080',
                 padding: 3,
                 fontStyle: 'bold'
