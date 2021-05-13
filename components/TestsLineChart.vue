@@ -12,7 +12,6 @@
         legend-order-kind="desc"
         :y-axis-left-setting="yAxisLeftSetting"
         :y-axis-right-setting="yAxisRightSetting"
-        disable-legend-click="true"
       />
     </div>
 
