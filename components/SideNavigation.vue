@@ -72,8 +72,9 @@
               <img src="/facebook.png" alt="Facebook" />
             </picture>
           </a>
+          -->
           <a
-            href="https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-line.html"
+            href="https://www.pref.nagano.lg.jp/kansensho-taisaku/kenko/kenko/kansensho/joho/corona-line.html"
             target="_blank"
             rel="noopener noreferrer"
             class="SideNavigation-SocialLink"
@@ -83,7 +84,6 @@
               <img src="/line.png" alt="LINE" />
             </picture>
           </a>
-          -->
           <a
             href="https://twitter.com/Nagano_Corona"
             target="_blank"
