@@ -25,9 +25,12 @@
     <tested-number-card
       v-else-if="this.$route.params.card == 'number-of-tested'"
     />
--->
     <inspection-persons-number-card
       v-else-if="this.$route.params.card == 'number-of-inspection-persons'"
+    />
+-->
+    <positive-rate-card
+      v-else-if="this.$route.params.card == 'positive-rate-card'"
     />
     <!--
     <telephone-advisory-reports-number-card
@@ -84,13 +87,15 @@ import stay from '@/data/stay.json'
 import residentialarea from '@/data/residential-area.json'
 import adjacentprefecture from '@/data/adjacent-prefecture.json'
 import dischargehospital from '@/data/discharge-hospital.json'
+import test from '@/data/test.json'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 // import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
-import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
+// import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
+import PositiveRateCard from '@/components/cards/PositiveRateCard.vue'
 // import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
 // import MetroCard from '@/components/cards/MetroCard.vue'
@@ -113,7 +118,8 @@ export default {
     ConfirmedCasesAttributesCard,
     //    ConfirmedCasesByMunicipalitiesCard,
     //    TestedNumberCard,
-    InspectionPersonsNumberCard,
+    //  InspectionPersonsNumberCard,
+    PositiveRateCard,
     //    TelephoneAdvisoryReportsNumberCard,
     ConsultationDeskReportsNumberCard,
     //    MetroCard,
@@ -155,9 +161,13 @@ export default {
       //        title = this.$t('検査実施件数')
       //        updatedAt = Data.inspections_summary.date
       //        break
-      case 'number-of-inspection-persons':
-        title = this.$t('検査実施人数')
-        updatedAt = Data.inspection_persons.date
+      //case 'number-of-inspection-persons':
+      //  title = this.$t('検査実施人数')
+      //  updatedAt = Data.inspection_persons.date
+      //  break
+      case 'positive-rate-card':
+        title = this.$t('検査の陽性率')
+        updatedAt = test.test_summary.date
         break
       //      case 'number-of-reports-to-covid19-telephone-advisory-center':
       //        title = this.$t('新型コロナコールセンター相談件数')

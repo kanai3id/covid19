@@ -170,8 +170,8 @@ const config: Configuration = {
         '/cards/age-card',
         '/cards/stay-card',
         '/cards/beds-card',
-        '/cards/patient-care-card',
-        '/cards/number-of-inspection-persons',
+        '/cards/patient-care',
+        '/cards/positive-rate-card',
         '/cards/number-of-reports-to-covid19-consultation-desk',
         '/cards/adjacent-prefecture-card',
         '/cards/discharge-hospital-card'

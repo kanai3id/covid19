@@ -37,7 +37,8 @@
       <beds-card />
       <!-- <gender-card /> -->
       <patient-care-card />
-      <inspection-persons-number-card />
+      <!-- <inspection-persons-number-card /> -->
+      <positive-rate-card />
       <!-- <tested-number-card /> -->
       <!-- <telephone-advisory-reports-number-card /> -->
       <consultation-desk-reports-number-card />
@@ -69,7 +70,8 @@ import StayCard from '@/components/cards/StayCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 // import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
 // import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
-import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
+// import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
+import PositiveRateCard from '@/components/cards/PositiveRateCard.vue'
 // import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 // import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
@@ -97,7 +99,8 @@ export default Vue.extend({
     ResidentialAreaCard,
     StayCard,
     // TestedNumberCard,
-    InspectionPersonsNumberCard,
+    // InspectionPersonsNumberCard,
+    PositiveRateCard,
     // TelephoneAdvisoryReportsNumberCard
     ConsultationDeskReportsNumberCard,
     // MetroCard,

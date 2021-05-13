@@ -14,6 +14,12 @@ export type PatientsSummaryWeekly = {
   小計: number
 }
 
+export type TestSummaryDaily = {
+  日付: string
+  検査人数: number
+  陽性者数: number
+}
+
 export type DataDaily = {
   // eslint-disable-next-line camelcase
   patients_summary: {

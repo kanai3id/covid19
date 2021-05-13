@@ -1,5 +1,8 @@
 <template>
   <div class="DataView-DataInfo">
+    <span class="DataView-DataInfo-summary-items">
+      <small class="DataView-DataInfo-unit">{{ lTitle }}</small>
+    </span>
     <span v-if="lText !== ''" class="DataView-DataInfo-summary">
       {{ lText }}
       <small class="DataView-DataInfo-summary-unit">{{ unit }}</small>
@@ -15,6 +18,10 @@
     @include largerThan($large) {
       text-align: right;
       width: 50%;
+    }
+
+    &-unit {
+      font-size: 1.2em;
     }
 
     &-summary {
@@ -45,6 +52,11 @@ import Vue from 'vue'
 
 export default Vue.extend({
   props: {
+    lTitle: {
+      type: String,
+      required: false,
+      default: ''
+    },
     lText: {
       type: String,
       required: false,
