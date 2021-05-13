@@ -373,7 +373,7 @@ export default class TimeBarLineChart extends Vue {
     return option
   }
 
-  private readonly defaultSpan: number = 60
+  private readonly defaultSpan: number = 30
 
   private displaySpan: number[] = [0, 0]
 
