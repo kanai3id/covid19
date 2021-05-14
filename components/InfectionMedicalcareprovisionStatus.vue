@@ -16,11 +16,11 @@
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
         {{ $t('新規陽性者')
-        }}<span>{{ statuses.data['新規陽性者'].toLocaleString() }}人</span> /
+        }}<span> {{ statuses.data['新規陽性者'].toLocaleString() }}人</span> |
         {{ $t('検査数')
-        }}<span>{{ statuses.data['検査数'].toLocaleString() }}件</span>（{{
+        }}<span>{{ statuses.data['検査数'].toLocaleString() }}件</span> ({{
           statisticDate
-        }}{{ $t('参考値') }}）
+        }}{{ $t('参考値') }})
       </div>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
@@ -31,22 +31,25 @@
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
         {{ $t('入院数')
-        }}<span>{{ statuses.data['入院数'].toLocaleString() }}人</span> （{{
+        }}<span> {{ statuses.data['入院数'].toLocaleString() }}人</span> ({{
           $t('確保病床数')
-        }}<span>{{ statuses.data['確保病床数'].toLocaleString() }}床</span>）
+        }}<span>{{ statuses.data['確保病床数'].toLocaleString() }}床</span>)
       </div>
     </div>
     <div class="InfectionMedicalcareprovisionStatus-Box">
       <div class="InfectionMedicalcareprovisionStatus-Headline">
-        <app-link to="https://mobaku.jp/covid-19/archive/kantokoshinetsu.html#area_31">
+        <app-link
+          to="https://mobaku.jp/covid-19/archive/kantokoshinetsu.html#area_31"
+        >
           {{ $t('長野駅周辺状況') }}
         </app-link>
       </div>
       <div class="InfectionMedicalcareprovisionStatus-description">
         {{ $t('前日増減比')
-        }}<span> {{ statuses.data['滞在人口増減比'].toLocaleString() }}%</span> （{{
-          $t('計測日')
-        }}<span>{{ statuses.data['滞在人口増減日時'].toLocaleString() }}</span>）
+        }}<span> {{ statuses.data['滞在人口増減比'].toLocaleString() }}%</span>
+        ({{ $t('計測日')
+        }}<span>{{ statuses.data['滞在人口増減日時'].toLocaleString() }}</span
+        >)
         {{ $t('出典元:NTTドコモ モバイル空間統計') }}
       </div>
     </div>

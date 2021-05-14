@@ -308,7 +308,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               },
               ticks: {
                 fontSize: 10,
-                maxTicksLimit: 20,
+                maxTicksLimit: 40,
                 fontColor: '#808080',
                 maxRotation: 0,
                 callback: (label: string) => {

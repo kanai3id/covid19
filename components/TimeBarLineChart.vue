@@ -309,7 +309,7 @@ export default class TimeBarLineChart extends Vue {
             },
             ticks: {
               fontSize: 10,
-              maxTicksLimit: 20,
+              maxTicksLimit: 10,
               fontColor: '#808080'
             }
           }
