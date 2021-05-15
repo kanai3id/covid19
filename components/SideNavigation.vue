@@ -156,20 +156,19 @@ export default Vue.extend({
         {
           icon: 'mdi-chart-timeline-variant',
           title: this.$t('長野の最新感染動向'),
-          link: this.localePath('/')
+          link: this.localePath('/'),
+          divider: true
         },
         {
           icon: 'CovidIcon',
           title: this.$t('新型コロナウイルス感染症が心配なときに'),
           link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona.html',
-          divider: true
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona.html'
         },
         {
           icon: 'mdi-needle',
           title: this.$t('新型コロナウイルス感染症に係るワクチン接種について'),
-          link:
-            'https://www.pref.nagano.lg.jp/kansensho-taisaku/vaccine.html',
+          link: 'https://www.pref.nagano.lg.jp/kansensho-taisaku/vaccine.html',
           divider: true
         },
         /*   
@@ -204,7 +203,8 @@ export default Vue.extend({
         {
           icon: 'mdi-phone',
           title: this.$t('お困りごと相談センター'),
-          link: 'https://www.pref.nagano.lg.jp/koho/happyou/20200505press.html'
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html'
         },
         {
           icon: 'ParentIcon',
@@ -214,39 +214,17 @@ export default Vue.extend({
         {
           icon: 'mdi-domain',
           title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html',
+          link: 'https://www.pref.nagano.lg.jp/keieishien/corona.html'
         },
         {
           icon: 'mdi-food-apple',
           title: this.$t('農業農村支援センター'),
-          link: 'https://www.pref.nagano.lg.jp/nogi/happyou/20200430nogipress.html',
+          link: 'https://www.pref.nagano.lg.jp/nosei/covid-19taiousaku.html'
         },
         {
           icon: 'mdi-food',
           title: this.$t('飲食・サービス業等応援事業'),
           link: 'https://www.pref.nagano.lg.jp/eigyo/ouenhojokin.html',
-          divider: true
-        },
-/** 
-        {
-          title: this.$t('中止又は延期するイベント等'),
-          link:
-            'https://twitter.com/search?q=filter%3Averified%20%E9%95%B7%E9%87%8E%E7%9C%8C%20(%E5%BB%B6%E6%9C%9F%20OR%20%E9%A0%86%E5%BB%B6%20OR%20%E7%84%A1%E8%A6%B3%E5%AE%A2%20OR%20%E6%8C%AF%E6%9B%BF)&src=typed_query&f=live'
-        },
-        {
-          title: this.$t('知事からのメッセージ'),
-          link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/documents/onegai0329.pdf'
-        },
-*/
-        {
-          title: this.$t('県内相談窓口'),
-          link:
-            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-soudan.html'
-        },
-        {
-          title: this.$t('長野県公式ホームページ'),
-          link: 'https://www.pref.nagano.lg.jp/',
           divider: true
         },
         {
