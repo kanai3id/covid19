@@ -163,7 +163,8 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       const self = this
       const options: ChartOptions = {
         tooltips: {
-          displayColors: false,
+          mode: 'x',
+          displayColors: true,
           callbacks: {
             title(tooltipItem) {
               const dateString = tooltipItem[0].label
