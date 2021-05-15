@@ -224,7 +224,13 @@ export default Vue.extend({
         {
           icon: 'mdi-food',
           title: this.$t('飲食・サービス業等応援事業'),
-          link: 'https://www.pref.nagano.lg.jp/eigyo/ouenhojokin.html',
+          link: 'https://www.pref.nagano.lg.jp/eigyo/ouenhojokin.html'
+        },
+        {
+          icon: 'mdi-account-multiple',
+          title: this.$t('個人のみなさま(支援情報ナビ)'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-support2.html',
           divider: true
         },
         {
