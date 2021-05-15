@@ -231,6 +231,12 @@ export default Vue.extend({
           title: this.$t('個人のみなさま(支援情報ナビ)'),
           link:
             'https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-support2.html',
+        },
+        {
+          icon: 'mdi-human-pregnant',
+          title: this.$t('妊産婦の皆様へ'),
+          link:
+            'https://www.pref.nagano.lg.jp/hoken-shippei/boshishika/ninsanpu.html',
           divider: true
         },
         {
