@@ -47,22 +47,22 @@ import { convertDateToISO8601Format } from '@/utils/formatDate'
 export default Vue.extend({
   components: {
     AppLink,
-    VaccineIcon,
+    VaccineIcon
   },
   props: {
     items: {
       type: Array,
-      required: true,
+      required: true
     },
     isEmergency: {
       type: Boolean,
       required: false,
-      default: false,
-    },
+      default: false
+    }
   },
   data() {
     return {
-      mdiInformation,
+      mdiInformation
     }
   },
   methods: {
@@ -71,8 +71,8 @@ export default Vue.extend({
     },
     formattedDateForDisplay(dateString: string) {
       return this.$d(new Date(dateString), 'date')
-    },
-  },
+    }
+  }
 })
 </script>
 
@@ -129,10 +129,12 @@ export default Vue.extend({
         margin: 5px;
         @include font-size(14);
 
+        /**
         @include lessThan($medium) {
           display: flex;
           flex-wrap: wrap;
         }
+*/
 
         &-time {
           flex: 0 0 90px;
