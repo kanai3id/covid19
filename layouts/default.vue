@@ -137,7 +137,7 @@ export default class Default extends Vue implements NuxtConfig {
           content: `${this.$t('{date} 更新', {
             date: convertDateToSimpleFormat(lastUpdate),
           })}: ${this.$tc(
-            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、個人が長野県非公式で開設したものです。'
+            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、長野県出身の個人(ITエンジニア)が長野県非公式で開設したものです。'
           )}`,
         },
         {

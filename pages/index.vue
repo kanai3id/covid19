@@ -28,24 +28,19 @@
     <card-row class="DataBlock">
       <!-- 検査陽性者の状況 -->
       <confirmed-cases-details-card />
-      <!-- <tested-cases-details-card /> -->
       <confirmed-cases-attributes-card />
       <confirmed-cases-number-card />
       <residential-area-card />
       <age-card />
       <stay-card />
       <beds-card />
-      <!-- <gender-card /> -->
       <patient-care-card />
-      <!-- <inspection-persons-number-card /> -->
       <positive-rate-card />
-      <!-- <tested-number-card /> -->
-      <!-- <telephone-advisory-reports-number-card /> -->
       <consultation-desk-reports-number-card />
-      <!-- <metro-card /> -->
-      <!-- <agency-card /> -->
       <adjacent-prefecture-card />
       <discharge-hospital-card />
+      <!-- <gender-card /> -->
+      <!-- <inspection-persons-number-card /> -->
     </card-row>
     <v-divider />
   </div>
@@ -54,62 +49,53 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
-import PageHeader from '@/components/PageHeader.vue'
-import WhatsNew from '@/components/WhatsNew.vue'
-import InfectionMedicalcareprovisionStatus from '@/components/InfectionMedicalcareprovisionStatus.vue'
-import StaticInfo from '@/components/StaticInfo.vue'
-import CardRow from '@/components/cards/CardRow.vue'
+import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
+
+import PageHeader from '@/components/PageHeader.vue'
+import WhatsNew from '@/components/WhatsNew.vue'
+import CardRow from '@/components/cards/CardRow.vue'
+import StaticInfo from '@/components/StaticInfo.vue'
+import InfectionMedicalcareprovisionStatus from '@/components/InfectionMedicalcareprovisionStatus.vue'
+
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
-// import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
-import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
-import AgeCard from '@/components/cards/AgeCard.vue'
-import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
-import StayCard from '@/components/cards/StayCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
-// import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
-// import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
-// import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
+import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
+import AgeCard from '@/components/cards/AgeCard.vue'
+import StayCard from '@/components/cards/StayCard.vue'
 import PositiveRateCard from '@/components/cards/PositiveRateCard.vue'
-// import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
-// import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-// import MetroCard from '@/components/cards/MetroCard.vue'
-// import AgencyCard from '@/components/cards/AgencyCard.vue'
 import BedsCard from '@/components/cards/BedsCard.vue'
-// import GenderCard from '@/components/cards/GenderCard.vue'
 import PatientCareCard from '@/components/cards/PatientCareCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
 import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
-import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+// import GenderCard from '@/components/cards/GenderCard.vue'
+// import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
     WhatsNew,
-    InfectionMedicalcareprovisionStatus,
-    StaticInfo,
     CardRow,
+    StaticInfo,
+    InfectionMedicalcareprovisionStatus,
     ConfirmedCasesDetailsCard,
-    // TestedCasesDetailsCard,
-    ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    AgeCard,
+    ConfirmedCasesNumberCard,
     ResidentialAreaCard,
+    AgeCard,
     StayCard,
-    // TestedNumberCard,
-    // InspectionPersonsNumberCard,
     PositiveRateCard,
-    // TelephoneAdvisoryReportsNumberCard
     ConsultationDeskReportsNumberCard,
-    // MetroCard,
-    // AgencyCard
     BedsCard,
-    // GenderCard,
     PatientCareCard,
     AdjacentPrefectureCard,
     DischargeHospitalCard
+    // GenderCard,
+    // InspectionPersonsNumberCard,
   },
   data() {
     const data = {

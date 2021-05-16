@@ -3,57 +3,15 @@
     <confirmed-cases-details-card
       v-if="this.$route.params.card == 'details-of-confirmed-cases'"
     />
-    <!--
-    <tested-cases-details-card
-      v-else-if="this.$route.params.card == 'details-of-tested-cases'"
-    />
--->
     <confirmed-cases-number-card
       v-else-if="this.$route.params.card == 'number-of-confirmed-cases'"
     />
-    <!--
-    <confirmed-cases-by-municipalities-card
-      v-else-if="
-        this.$route.params.card == 'number-of-confirmed-cases-by-municipalities'
-      "
-    />
--->
     <confirmed-cases-attributes-card
       v-else-if="this.$route.params.card == 'attributes-of-confirmed-cases'"
     />
-    <!--
-    <tested-number-card
-      v-else-if="this.$route.params.card == 'number-of-tested'"
-    />
-    <inspection-persons-number-card
-      v-else-if="this.$route.params.card == 'number-of-inspection-persons'"
-    />
--->
     <positive-rate-card
       v-else-if="this.$route.params.card == 'positive-rate-card'"
     />
-    <!--
-    <telephone-advisory-reports-number-card
-      v-else-if="
-        this.$route.params.card ==
-          'number-of-reports-to-covid19-telephone-advisory-center'
-      "
-    />
--->
-    <consultation-desk-reports-number-card
-      v-else-if="
-        this.$route.params.card ==
-          'number-of-reports-to-covid19-consultation-desk'
-      "
-    />
-    <!--
-    <metro-card
-      v-else-if="
-        this.$route.params.card == 'predicted-number-of-toei-subway-passengers'
-      "
-    />
-    <agency-card v-else-if="this.$route.params.card == 'agency'" />
--->
     <age-card v-else-if="this.$route.params.card == 'age-card'" />
     <residential-area-card
       v-else-if="this.$route.params.card == 'residential-area-card'"
@@ -63,76 +21,79 @@
     <patient-care-card
       v-else-if="this.$route.params.card == 'patient-care-card'"
     />
-<!--
-    <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
--->
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
     />
     <discharge-hospital-card
       v-else-if="this.$route.params.card == 'discharge-hospital-card'"
     />
+<!--
+    <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
+    <inspection-persons-number-card
+      v-else-if="this.$route.params.card == 'number-of-inspection-persons'"
+    />
+-->
   </div>
 </template>
 
 <script>
 import Data from '@/data/data.json'
-// import MetroData from '@/data/metro.json'
-// import agencyData from '@/data/agency.json'
 import ages from '@/data/age.json'
 import beds from '@/data/beds.json'
-import gender from '@/data/gender.json'
-import patient from '@/data/patient-care.json'
 import stay from '@/data/stay.json'
+import patient from '@/data/patient-care.json'
 import residentialarea from '@/data/residential-area.json'
 import adjacentprefecture from '@/data/adjacent-prefecture.json'
 import dischargehospital from '@/data/discharge-hospital.json'
 import test from '@/data/test.json'
+// import gender from '@/data/gender.json'
+
+// 検査陽性者の状況 : data.json
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
-// import TestedCasesDetailsCard from '@/components/cards/TestedCasesDetailsCard.vue'
-import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+// 陽性患者の属性 : data.json
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
-// import ConfirmedCasesByMunicipalitiesCard from '@/components/cards/ConfirmedCasesByMunicipalitiesCard.vue'
-// import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
-// import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
-import PositiveRateCard from '@/components/cards/PositiveRateCard.vue'
-// import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
-import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-// import MetroCard from '@/components/cards/MetroCard.vue'
-// import AgencyCard from '@/components/cards/AgencyCard.vue'
-import AgeCard from '@/components/cards/AgeCard.vue'
+// 陽性患者数 : data.json
+import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+// 居住地の状況 : residential-area.json
 import ResidentialAreaCard from '@/components/cards/ResidentialArea.vue'
-// import HospitalizationCard from '@/components/cards/HospitalizationCard.vue'
+// 年代別陽性患者数 : age.json
+import AgeCard from '@/components/cards/AgeCard.vue'
+// 療養中患者日数 : stay.json
 import StayCard from '@/components/cards/StayCard.vue'
+// 検査の陽性率 : test.json
+import PositiveRateCard from '@/components/cards/PositiveRateCard.vue'
+// 新型コロナ受診相談窓口相談件数 : data.json
+import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
+// 入院患者数と病床数 : beds.json
 import BedsCard from '@/components/cards/BedsCard.vue'
-import GenderCard from '@/components/cards/GenderCard.vue'
+// 療養患者状況 : patient-care.json
 import PatientCareCard from '@/components/cards/PatientCareCard.vue'
+// 隣接県の状況 : adjacent-prefecture.json
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
+// 療養患者数 : discharge-hospital.json
 import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
+
+// 性別陽性患者数 : gender.json
+// import GenderCard from '@/components/cards/GenderCard.vue'
+// 検査実施件数 : data.json
+// import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
 
 export default {
   components: {
     ConfirmedCasesDetailsCard,
-    //    TestedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    //    ConfirmedCasesByMunicipalitiesCard,
-    //    TestedNumberCard,
-    //  InspectionPersonsNumberCard,
     PositiveRateCard,
-    //    TelephoneAdvisoryReportsNumberCard,
     ConsultationDeskReportsNumberCard,
-    //    MetroCard,
-    //    AgencyCard,
     AgeCard,
     ResidentialAreaCard,
-    // HospitalizationCard,
     StayCard,
     BedsCard,
     PatientCareCard,
-    GenderCard,
     AdjacentPrefectureCard,
     DischargeHospitalCard
+    // GenderCard,
+    // InspectionPersonsNumberCard,
   },
   data() {
     let title, updatedAt
@@ -141,73 +102,41 @@ export default {
         title = this.$t('検査陽性者の状況')
         updatedAt = Data.patients.date
         break
-      //      case 'details-of-tested-cases':
-      //        title = this.$t('検査実施状況')
-      //        updatedAt = Data.inspection_status_summary.date
-      //        break
-      case 'number-of-confirmed-cases':
-        title = this.$t('陽性患者数')
-        updatedAt = Data.patients.date
-        break
-      //      case 'number-of-confirmed-cases-by-municipalities':
-      //        title = this.$t('陽性患者数（区市町村別）')
-      //        updatedAt = patientData.date
-      //        break
       case 'attributes-of-confirmed-cases':
         title = this.$t('陽性患者の属性')
         updatedAt = Data.patients.date
         break
-      //      case 'number-of-tested':
-      //        title = this.$t('検査実施件数')
-      //        updatedAt = Data.inspections_summary.date
-      //        break
-      //case 'number-of-inspection-persons':
-      //  title = this.$t('検査実施人数')
-      //  updatedAt = Data.inspection_persons.date
-      //  break
-      case 'positive-rate-card':
-        title = this.$t('検査の陽性率')
-        updatedAt = test.test_summary.date
-        break
-      //      case 'number-of-reports-to-covid19-telephone-advisory-center':
-      //        title = this.$t('新型コロナコールセンター相談件数')
-      //        updatedAt = Data.contacts.date
-      //        break
-      case 'number-of-reports-to-covid19-consultation-desk':
-        title = this.$t('新型コロナ受診相談窓口相談件数')
-        updatedAt = Data.querents.date
-        break
-      //      case 'predicted-number-of-toei-subway-passengers':
-      //        title = this.$t('都営地下鉄の利用者数の推移')
-      //        updatedAt = MetroData.date
-      //        break
-      //      case 'agency':
-      //        title = this.$t('都庁来庁者数の推移')
-      //        updatedAt = agencyData.date
-      //        break
-      case 'age-card':
-        title = this.$t('年代別陽性患者数')
-        updatedAt = ages.date
+      case 'number-of-confirmed-cases':
+        title = this.$t('陽性患者数')
+        updatedAt = Data.patients.date
         break
       case 'residential-area-card':
         title = this.$t('居住地の状況')
         updatedAt = residentialarea.date
         break
+      case 'age-card':
+        title = this.$t('年代別陽性患者数')
+        updatedAt = ages.date
+        break
       case 'stay-card':
-        title = this.$t('入院日数')
+        title = this.$t('療養中患者日数')
         updatedAt = stay.date
         break
       case 'beds-card':
         title = this.$t('入院患者数と病床数')
         updatedAt = beds.beds_summary.date
         break
-//    case 'gender-card':
-//      title = this.$t('性別陽性患者数')
-//      updatedAt = gender.gender_summary.date
-//      break
       case 'patient-care-card':
         title = this.$t('患者療養状況')
         updatedAt = patient.lastUpdate
+        break
+      case 'positive-rate-card':
+        title = this.$t('検査の陽性率')
+        updatedAt = test.test_summary.date
+        break
+      case 'number-of-reports-to-covid19-consultation-desk':
+        title = this.$t('新型コロナ受診相談窓口相談件数')
+        updatedAt = Data.querents.date
         break
       case 'adjacent-prefecture-card':
         title = this.$t('隣接県の状況')
@@ -217,6 +146,14 @@ export default {
         title = this.$t('治療患者数')
         updatedAt = dischargehospital.date
         break
+//    case 'gender-card':
+//      title = this.$t('性別陽性患者数')
+//      updatedAt = gender.gender_summary.date
+//      break
+//    case 'number-of-inspection-persons':
+//      title = this.$t('検査実施人数')
+//      updatedAt = Data.inspection_persons.date
+//      break
     }
 
     const data = {
