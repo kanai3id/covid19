@@ -317,7 +317,7 @@ export default class TimeBarLineChart extends Vue {
         yAxes: [
           {
             id: 'y-axis-left',
-            stacked: this.displayYAxisLeftSetting.stacked ?? true,
+            stacked: false,
             gridLines: {
               display: true,
               color: '#E5E5E5'

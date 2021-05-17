@@ -193,7 +193,7 @@ export default class TestsChart extends Vue {
       .select(d => {
         let negative: number | undefined
         if (d.total !== undefined && d.positive !== undefined) {
-          negative = d.total - d.positive
+          negative = d.total
         }
         return {
           date: d.date.format('YYYY-MM-DD'),
