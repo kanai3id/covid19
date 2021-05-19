@@ -15,7 +15,7 @@
     </div>
     <whats-new class="mb-4" :items="newsItems" />
     <infection-medicalcareprovision-status />
-<!--
+    <!--
     <static-info
       class="mb-4"
       :url="
@@ -38,7 +38,7 @@
       <positive-rate-card />
       <consultation-desk-reports-number-card />
       <adjacent-prefecture-card />
-      <discharge-hospital-card />
+      <medical-treatment-card />
       <!-- <gender-card /> -->
       <!-- <inspection-persons-number-card /> -->
     </card-row>
@@ -57,7 +57,6 @@ import News from '@/data/news.json'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
 import CardRow from '@/components/cards/CardRow.vue'
-import StaticInfo from '@/components/StaticInfo.vue'
 import InfectionMedicalcareprovisionStatus from '@/components/InfectionMedicalcareprovisionStatus.vue'
 
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
@@ -71,7 +70,7 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 import BedsCard from '@/components/cards/BedsCard.vue'
 import PatientCareCard from '@/components/cards/PatientCareCard.vue'
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
-import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
+import MedicalTreatmentCard from '@/components/cards/MedicalTreatmentCard.vue'
 // import GenderCard from '@/components/cards/GenderCard.vue'
 // import InspectionPersonsNumberCard from '@/components/cards/InspectionPersonsNumberCard.vue'
 
@@ -80,7 +79,6 @@ export default Vue.extend({
     PageHeader,
     WhatsNew,
     CardRow,
-    StaticInfo,
     InfectionMedicalcareprovisionStatus,
     ConfirmedCasesDetailsCard,
     ConfirmedCasesAttributesCard,
@@ -93,7 +91,7 @@ export default Vue.extend({
     BedsCard,
     PatientCareCard,
     AdjacentPrefectureCard,
-    DischargeHospitalCard
+    MedicalTreatmentCard
     // GenderCard,
     // InspectionPersonsNumberCard,
   },

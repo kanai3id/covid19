@@ -21,13 +21,18 @@
     <patient-care-card
       v-else-if="this.$route.params.card == 'patient-care-card'"
     />
+    <consultation-desk-reports-number-card
+      v-else-if="
+        this.$route.params.card == 'consultation-desk-reports-number-card'
+      "
+    />
     <adjacent-prefecture-card
       v-else-if="this.$route.params.card == 'adjacent-prefecture-card'"
     />
-    <discharge-hospital-card
-      v-else-if="this.$route.params.card == 'discharge-hospital-card'"
+    <medical-treatment-card
+      v-else-if="this.$route.params.card == 'medical-treatment-card'"
     />
-<!--
+    <!--
     <gender-card v-else-if="this.$route.params.card == 'gender-card'" />
     <inspection-persons-number-card
       v-else-if="this.$route.params.card == 'number-of-inspection-persons'"
@@ -44,7 +49,7 @@ import stay from '@/data/stay.json'
 import patient from '@/data/patient-care.json'
 import residentialarea from '@/data/residential-area.json'
 import adjacentprefecture from '@/data/adjacent-prefecture.json'
-import dischargehospital from '@/data/discharge-hospital.json'
+import medicaltreatment from '@/data/medical-treatment.json'
 import test from '@/data/test.json'
 // import gender from '@/data/gender.json'
 
@@ -71,7 +76,7 @@ import PatientCareCard from '@/components/cards/PatientCareCard.vue'
 // 隣接県の状況 : adjacent-prefecture.json
 import AdjacentPrefectureCard from '@/components/cards/AdjacentPrefectureCard.vue'
 // 療養患者数 : discharge-hospital.json
-import DischargeHospitalCard from '@/components/cards/DischargeHospitalCard.vue'
+import MedicalTreatmentCard from '@/components/cards/MedicalTreatmentCard.vue'
 
 // 性別陽性患者数 : gender.json
 // import GenderCard from '@/components/cards/GenderCard.vue'
@@ -91,7 +96,7 @@ export default {
     BedsCard,
     PatientCareCard,
     AdjacentPrefectureCard,
-    DischargeHospitalCard
+    MedicalTreatmentCard
     // GenderCard,
     // InspectionPersonsNumberCard,
   },
@@ -134,7 +139,7 @@ export default {
         title = this.$t('検査の陽性率')
         updatedAt = test.test_summary.date
         break
-      case 'number-of-reports-to-covid19-consultation-desk':
+      case 'consultation-desk-reports-number-card':
         title = this.$t('新型コロナ受診相談窓口相談件数')
         updatedAt = Data.querents.date
         break
@@ -142,18 +147,18 @@ export default {
         title = this.$t('隣接県の状況')
         updatedAt = adjacentprefecture.date
         break
-      case 'discharge-hospital-card':
+      case 'medical-treatment-card':
         title = this.$t('治療患者数')
-        updatedAt = dischargehospital.date
+        updatedAt = medicaltreatment.date
         break
-//    case 'gender-card':
-//      title = this.$t('性別陽性患者数')
-//      updatedAt = gender.gender_summary.date
-//      break
-//    case 'number-of-inspection-persons':
-//      title = this.$t('検査実施人数')
-//      updatedAt = Data.inspection_persons.date
-//      break
+      //    case 'gender-card':
+      //      title = this.$t('性別陽性患者数')
+      //      updatedAt = gender.gender_summary.date
+      //      break
+      //    case 'number-of-inspection-persons':
+      //      title = this.$t('検査実施人数')
+      //      updatedAt = Data.inspection_persons.date
+      //      break
     }
 
     const data = {

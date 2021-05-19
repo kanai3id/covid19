@@ -166,9 +166,9 @@ const config: Configuration = {
         '/cards/beds-card',
         '/cards/patient-care',
         '/cards/positive-rate-card',
-        '/cards/number-of-reports-to-covid19-consultation-desk',
+        '/cards/consultation-desk-reports-number-card',
         '/cards/adjacent-prefecture-card',
-        '/cards/discharge-hospital-card'
+        '/cards/medical-treatment-card'
       ]
 
       const routes: string[] = []

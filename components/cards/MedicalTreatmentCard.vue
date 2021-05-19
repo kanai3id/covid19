@@ -3,7 +3,7 @@
     <client-only>
       <time-bar-chart
         :title="$t('療養患者数')"
-        :title-id="'discharge-hospital-card'"
+        :title-id="'medical-treatment-card'"
         :chart-id="'time-bar-chart-patients'"
         :chart-data="patientsGraph"
         :date="Data.date"
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import Data from '@/data/discharge-hospital.json'
+import Data from '@/data/medical-treatment.json'
 import formatGraph from '@/utils/formatGraph'
 import TimeBarChart from '@/components/TimeBarChartDisableDataSelector.vue'
 
