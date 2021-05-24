@@ -2,13 +2,23 @@
   "newsItems": [
     {
       "date": "2021-05-24",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/472787.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【1076～1078例目】"
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210524hasseipress.html",
+      "text": "新型コロナウイルス感染症陽性者の発生について（4632～4650例目）"
     },
     {
       "date": "2021-05-24",
-      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210524hasseipress.html",
-      "text": "新型コロナウイルス感染症陽性者の発生について（4632～4650例目）"
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0524pcrpress2.html",
+      "text": "駒ヶ根市及び宮田村内の飲食店に勤務している方を対象に、新型コロナウイルス感染症のＰＣＲ検査を実施します（健康福祉部感染症対策課）"
+    },
+    {
+      "date": "2021-05-24",
+      "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/0524pcrpress1.html",
+      "text": "伊那市、箕輪町及び南箕輪村内の飲食店に勤務している方を対象に、新型コロナウイルス感染症のＰＣＲ検査を実施します（健康福祉部感染症対策課）"
+    },
+    {
+      "date": "2021-05-24",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/472787.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【1076～1078例目】"
     },
     {
       "date": "2021-05-24",
