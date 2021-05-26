@@ -2,11 +2,6 @@
   "newsItems": [
     {
       "date": "2021-05-26",
-      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/472926.html",
-      "text": "(長野市)新型コロナウイルス感染症の発生について【1081～1083例目】"
-    },
-    {
-      "date": "2021-05-26",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/210526press.html",
       "text": "新型コロナウイルス感染症陽性者の発生について（4672～4699例目）"
     },
@@ -14,6 +9,11 @@
       "date": "2021-05-26",
       "url": "https://www.pref.nagano.lg.jp/kansensho-taisaku/happyou/20210526press.html",
       "text": "ワクチン接種を担う人材確保に関し知事と医療関係団体の皆さまで共同会見を行います（健康福祉部感染症対策課）"
+    },
+    {
+      "date": "2021-05-26",
+      "url": "https://www.city.nagano.nagano.jp/site/covid19-joho/472926.html",
+      "text": "(長野市)新型コロナウイルス感染症の発生について【1081～1083例目】"
     },
     {
       "date": "2021-05-26",
