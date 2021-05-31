@@ -1,10 +1,10 @@
 {
-  "lastUpdate": "2021/05/31 16:11",
+  "lastUpdate": "2021/05/31 20:01",
   "main_summary": {
     "children": [
       {
         "attr": "患者数",
-        "value": 295,
+        "value": 296,
         "children": [
           {
             "attr": "入院",
@@ -40,7 +40,7 @@
           },
           {
             "attr": "調整中",
-            "value": 0
+            "value": 1
           }
         ]
       }
