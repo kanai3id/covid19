@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2021/07/09 20:01",
+  "lastUpdate": "2021/07/10 16:09",
   "main_summary": {
     "children": [
       {
@@ -8,11 +8,11 @@
         "children": [
           {
             "attr": "入院",
-            "value": 26,
+            "value": 25,
             "children": [
               {
                 "attr": "入院中",
-                "value": 26
+                "value": 25
               },
               {
                 "attr": "入院予定",
@@ -22,11 +22,11 @@
           },
           {
             "attr": "宿泊療養",
-            "value": 3,
+            "value": 5,
             "children": [
               {
                 "attr": "宿泊療養中",
-                "value": 3
+                "value": 5
               },
               {
                 "attr": "宿泊療養予定",
@@ -40,7 +40,7 @@
           },
           {
             "attr": "調整中",
-            "value": 1
+            "value": 0
           }
         ]
       }
